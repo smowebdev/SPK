@@ -1,0 +1,200 @@
+/*=======================
+        General 
+=======================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: var(--Family-Body);
+}
+
+body {
+  background-color: #fdfeff;
+  font-family: var(--Family-Body);
+  color: var(--text-secondary);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0 0 20px;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1 15;
+}
+
+h1 {
+  font-size: 88px;
+}
+
+h2 {
+  font-size: 72px;
+}
+
+h3 {
+  font-size: 60px;
+}
+
+h4 {
+  line-height: 120%;
+  font-size: 54px;
+}
+
+h5 {
+  font-size: 44px;
+  line-height: 130%;
+}
+
+h6 {
+  font-size: 32px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/*=======================
+       Page Layout
+=======================*/
+:root {
+  --Family-Heading: "Instrument Serif";
+  --Family-Body: "General Sans Variable";
+  --text-secondary: #1e3f62;
+  --text-inverse: #fff;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1344px;
+  padding: 0 16px;
+}
+.heading-1 {
+  color: var(--text-inverse, #fff);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H1, 88px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+}
+.heading-2 {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H2, 72px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+}
+.heading-4 {
+  color: var(--text-inverse, #fff);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H4, 54px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.heading-5 {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H5, 44px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.desc-section {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-xl, 24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.hidden {
+  display: none !important;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  display: flex;
+  padding: 14px 16px;
+  align-items: center;
+  gap: var(--spacing-4, 4px);
+  border-radius: var(--radius-small, 8px);
+  border: 0.5px solid transparent;
+}
+
+.btn-primary {
+  color: var(--text-inverse, #fff);
+  border-color: var(--Button-Primary-border, #1e3f62);
+  background: var(--Button-Primary-background, #10243d);
+}
+
+.btn-secondary {
+  color: var(--Button-Secondary-text, #10243d);
+  border-color: var(--Button-Secondary-border, #10243d);
+  background: var(--Button-Secondary-background, #fff);
+}
+
+.btn-ghost {
+  color: var(--Button-Ghost-text, #10243d);
+  border-color: transparent;
+  background: transparent;
+}
+@media (min-width: 1024px) {
+  .hide-pc-header {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hide-pc {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-mb {
+    display: none !important;
+  }
+}

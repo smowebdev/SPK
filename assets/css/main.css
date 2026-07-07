@@ -1,0 +1,105 @@
+.site-header__wrap-topbar {
+  background: var(--background-white-2560, rgba(247, 247, 247, 0.6));
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  margin-bottom: 16px;
+  backdrop-filter: blur(50px);
+  position: relative;
+  z-index: 1;
+}
+.site-header__topbar {
+  display: flex;
+  padding: var(--spacing-16-8, 16px) var(--site-margin-small, 24px);
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  align-self: stretch;
+  margin: 0 auto;
+}
+.site-header__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  color: var(--text-primary, #10243d);
+
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.site-header__lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.site-header__lang-active {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4, 4px);
+}
+.site-header__lang {
+  position: relative;
+}
+.site-header__lang-list {
+  position: absolute;
+  width: max-content;
+  min-width: 100%;
+  top: 100%;
+  right: 0;
+  list-style: none;
+  padding: 1em;
+  background: #fff;
+  border-radius: 4px;
+  display: none;
+}
+.site-header__lang-item a {
+  color: var(--text-primary, #10243d);
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.site-header__main {
+  display: flex;
+  padding: var(--site-margin-small, 24px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: var(--radius-main, 16px);
+  background: var(--background-white-2560, rgba(247, 247, 247, 0.6));
+
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(50px);
+}
+.site-header__logo {
+  max-width: 215px;
+}
+.site-header__menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.site-header__menu li {
+}
+.site-header__menu li a {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.sub-menu {
+  display: none;
+  width: max-content;
+  min-width: none;
+  
+}
