@@ -43,8 +43,51 @@ function main() {
 				e.stopPropagation();
 			});
 
+			$(".hambuger-mobile").on("click", function () {
+				$(this).toggleClass("exit");
+				$(".site-header__nav").slideToggle();
+			});
+			function bindMobileMenu() {
+				if ($(window).width() <= 1200) {
 
+					$('.site-header__menu > li:has(.sub-menu) > a')
+						.off('click.mobileMenu')
+						.on('click.mobileMenu', function (e) {
 
+							const $a = $(this);
+							const $li = $a.parent();
+							const href = $a.attr('href');
+
+							if (!href || href === '#') {
+								e.preventDefault();
+
+								$li.toggleClass('active');
+								$li.children('.sub-menu').stop(true, true).slideToggle(200);
+								$a.find('svg').toggleClass('is-open');
+
+								return;
+							}
+
+							if (!$li.hasClass('active')) {
+								e.preventDefault();
+
+								$li.addClass('active');
+								$li.children('.sub-menu').stop(true, true).slideDown(200);
+								$a.find('svg').addClass('is-open');
+							}
+						});
+
+				} else {
+					$('.site-header__menu > li > a').off('click.mobileMenu');
+
+					$('.sub-menu').removeAttr('style');
+					$('.site-header__menu li').removeClass('active');
+					$('.site-header__menu svg').removeClass('is-open');
+				}
+			}
+
+			bindMobileMenu();
+			$(window).on('resize', bindMobileMenu);
 		});
 
 
