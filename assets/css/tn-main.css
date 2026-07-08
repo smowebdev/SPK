@@ -1,0 +1,102 @@
+.banner-vanuatu__subtitle {
+    font-family: 'Instrument Serif';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.35;
+    color: #fff;
+}
+
+.banner-vanuatu__content {
+    position: relative;
+    z-index: 2;
+    max-width: 470px;
+}
+
+.ct-sm-gap {
+    gap: 24px;
+}
+
+.section-sovereign__right .heading-4 {
+    color: #10243D;
+    letter-spacing: -0.01em;
+    margin-bottom: 40px;
+}
+
+.section-sovereign__flex {
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+.banner-vanuatu {
+    position: relative;
+    min-height: 960px;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    padding-bottom: 64px;
+}
+
+.banner-vanuatu .container {
+    width: 100%;
+}
+
+.section-sovereign__left {
+    width: calc(610px / 1312px * 100%);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.section-sovereign__right {
+    flex: 1;
+}
+
+.banner-vanuatu-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-sovereign {
+    padding: 112px 0;
+}
+
+.section-sovereign__bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.section-sovereign__box {
+    background: var(--background-sand-20, #CCBCA833);
+    padding: 40px 32px;
+    border-radius: 16px;
+}
+
+.banner-vanuatu__number {
+    font-family: 'Instrument Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1;
+    color: #10243D;
+    margin-bottom: 40px;
+}
+
+.banner-vanuatu__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #10243D;
+    margin-bottom: 24px;
+}
+
+.banner-vanuatu__des {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #586981;
+}
