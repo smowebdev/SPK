@@ -18,23 +18,36 @@
 
 .section-sovereign__right .heading-4 {
     color: #10243D;
-    letter-spacing: -0.01em;
-    margin-bottom: 40px;
+    letter-spacing: -0.001em;
+    margin-bottom: 18px;
+}
+
+.section-sovereign__right p {
+    margin-bottom: 27px;
+}
+
+.section-sovereign__right p:last-child {
+    margin-bottom: 0;
 }
 
 .section-sovereign__flex {
     display: flex;
     gap: 64px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .banner-vanuatu {
     position: relative;
-    min-height: 960px;
+    min-height: 916px;
     display: flex;
     align-items: end;
     justify-content: start;
-    padding-bottom: 64px;
+    padding-bottom: 52px;
+}
+
+.banner-vanuatu .heading-1 {
+    margin-bottom: 10px;
 }
 
 .banner-vanuatu .container {
@@ -45,10 +58,12 @@
     width: calc(610px / 1312px * 100%);
     border-radius: 16px;
     overflow: hidden;
+    display: flex;
 }
 
 .section-sovereign__right {
     flex: 1;
+    padding-bottom: 5px;
 }
 
 .banner-vanuatu-overlay {
@@ -57,9 +72,10 @@
     top: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-.section-sovereign {
+.pd-gobal-ct {
     padding: 112px 0;
 }
 
@@ -70,28 +86,28 @@
 
 .section-sovereign__box {
     background: var(--background-sand-20, #CCBCA833);
-    padding: 40px 32px;
+    padding: 40px 32px 35px;
     border-radius: 16px;
 }
 
-.banner-vanuatu__number {
+.section-sovereign__number {
     font-family: 'Instrument Serif';
     font-style: normal;
     font-weight: 400;
     font-size: 80px;
-    line-height: 1;
+    line-height: 0.78;
     color: #10243D;
-    margin-bottom: 40px;
+    margin-bottom: 27px;
 }
 
-.banner-vanuatu__subtitle {
+.section-sovereign__subtitle {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #10243D;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 
 .banner-vanuatu__des {
@@ -99,4 +115,257 @@
     font-size: 16px;
     line-height: 1.5;
     color: #586981;
+}
+
+.travel-freedom__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.travel-freedom {
+    background-color: #E8EEF2;
+    padding: 64px 0;
+}
+
+.travel-freedom__item {
+    background: var(--background-white, #FFFFFF);
+    box-shadow: 0px 2px 4px 0px #FFFFFF29 inset;
+    backdrop-filter: blur(20px);
+    padding: 16px 16px 10px;
+    border-radius: 16px;
+    width: calc((100% - 72px) / 4);
+}
+
+.travel-freedom__image {
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 278 / 170;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.travel-freedom__image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.travel-freedom__infor .btn {
+    box-shadow: 0px 2px 4px 0px #FFFFFF29 inset;
+    border: 1px solid var(--background-cyan, #0AD7F4);
+    color: var(--text-primary, #10243D);
+    width: fit-content;
+    border-radius: 20px;
+    padding: 8.5px 12px;
+    line-height: 1;
+}
+
+.travel-freedom__name {
+    color: #10243D;
+    font-family: 'Instrument Serif';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.35;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.travel-freedom__des,
+.travel-freedom__des p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #10243D;
+}
+
+.travel-freedom__bottom {
+    max-width: 688px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 56px;
+    font-size: 18px;
+    margin-top: 49px;
+    margin-bottom: -7px;
+}
+
+.financial-banking__flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.financial-banking__left,
+.financial-banking__right {
+    width: calc((100% - 24px) / 2);
+    border-radius: 16px;
+    padding: 24px 32px;
+}
+
+.financial-banking__left {
+    background: var(--background-sand-20, #CCBCA833);
+}
+
+.financial-banking__right {
+    background: var(--background-ocean-deep, #024D62);
+}
+
+.financial-banking__bottom {
+    border-radius: 16px;
+    padding: 67px 32px;
+    background: var(--Ocean-Pacific-Light, #D2ECF2);
+}
+
+.financial-banking__left .heading-4 {
+    color: var(--text-primary, #10243D);
+}
+
+.financial-banking__flex .heading-4 {
+    margin: 19px 0;
+}
+
+.financial-banking__list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin-bottom: 0px;
+}
+
+.financial-banking__list,
+.financial-banking__content p {
+    margin-bottom: 27px;
+}
+
+.financial-banking__content p:last-child {
+    margin-bottom: 0;
+}
+
+.financial-banking__list p {
+    margin: 0 0 27px;
+}
+
+.financial-banking__list li {
+    position: relative;
+    padding-left: 40px;
+    width: calc(45% - 24px);
+    align-content: center;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #10243D;
+    font-size: 18px;
+}
+
+.financial-banking__list li:nth-child(2n) {
+    width: calc(55% - 24px);
+}
+
+.financial-banking__list li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background-image: url('/assets/images/icon-ul.svg');
+}
+
+.financial-banking__right .financial-banking__content p {
+    color: var(--text-inverse, #fff);
+}
+
+.financial-banking__right .label-section {
+    color: var(--text-muted-white, #FFFFFFA6);
+}
+
+.travel-freedom_wrap .label-section {
+    text-align: center;
+    line-height: 0.6;
+    margin-bottom: 27px;
+}
+
+.travel-freedom__width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 759px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.travel-freedom__width p {
+    max-width: 688px;
+}
+
+.travel-freedom__width .heading-2 {
+    margin-bottom: 17px;
+}
+
+.financial-banking__bottom .heading-4 {
+    color: var(--text-primary, #10243D);
+}
+
+.the-legal__right {
+    width: calc((535px / 1312px) * 100%);
+    display: flex;
+}
+
+.the-legal__left {
+    flex: 1;
+}
+
+.the-legal__flex {
+    display: flex;
+    gap: 135px;
+    align-items: center;
+}
+
+.text-ct p {
+    margin-bottom: 27px;
+}
+
+.text-ct p:last-child {
+    margin-bottom: 0;
+}
+
+.the-legal__left .heading-4 {
+    color: var(--text-primary, #10243D);
+    margin: 20px 0;
+}
+
+.quality-life {
+    position: relative;
+    padding: 64px 0;
+    min-height: 819px;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+
+.quality-life .container {
+    width: 100%;
+}
+
+.quality-life__box {
+    position: relative;
+    z-index: 3;
+    max-width: 608px;
+    box-shadow: 0px 2.42px 4.84px 0px #FFFFFF29 inset;
+    background: linear-gradient(268.66deg, rgba(247, 247, 247, 0.3) 1.07%, rgba(247, 247, 247, 0.24) 17.36%, rgba(247, 247, 247, 0.06) 98.79%);
+    border-radius: 19px;
+    padding: 30px 40px;
+}
+
+.quality-life__box .heading-2,
+.quality-life__box p {
+    color: #fff;
+}
+
+.quality-life__box .label-section {
+    color: #FFFFFFB2;
+    margin-bottom: 10px;
+}
+
+.quality-life__box .heading-2 {
+    margin: 17px 0 10px;
 }
