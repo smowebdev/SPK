@@ -353,7 +353,7 @@
     box-shadow: 0px 2.42px 4.84px 0px #FFFFFF29 inset;
     background: linear-gradient(268.66deg, rgba(247, 247, 247, 0.3) 1.07%, rgba(247, 247, 247, 0.24) 17.36%, rgba(247, 247, 247, 0.06) 98.79%);
     border-radius: 19px;
-    padding: 30px 40px;
+    padding: 30px 40px 32px;
 }
 
 .quality-life__box .heading-2,
@@ -367,5 +367,19 @@
 }
 
 .quality-life__box .heading-2 {
-    margin: 17px 0 10px;
+    margin: 18px 0 15px;
+}
+
+.quality-life__box p {
+    font-family: 'General Sans Variable';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 1024px) {
+    .pd-gobal-ct {
+        padding: 80px 0;
+    }
 }
