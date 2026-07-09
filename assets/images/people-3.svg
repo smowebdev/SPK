@@ -1,0 +1,12 @@
+<svg width="60" height="36" viewBox="0 0 60 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.65">
+<path d="M14 15C17.866 15 21 11.866 21 8C21 4.13401 17.866 1 14 1C10.134 1 7 4.13401 7 8C7 11.866 10.134 15 14 15Z" fill="white" fill-opacity="0.15"/>
+<path d="M2 34C2 26.82 7.373 21 14 21C20.627 21 26 26.82 26 34" fill="white" fill-opacity="0.1"/>
+<path d="M14 14.25C17.4518 14.25 20.25 11.4518 20.25 8C20.25 4.54822 17.4518 1.75 14 1.75C10.5482 1.75 7.75 4.54822 7.75 8C7.75 11.4518 10.5482 14.25 14 14.25Z" stroke="white" stroke-opacity="0.7" stroke-width="1.5"/>
+<path d="M3 34C3 27.373 7.925 22 14 22C20.075 22 25 27.373 25 34" stroke="white" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+<path d="M46 15C49.866 15 53 11.866 53 8C53 4.13401 49.866 1 46 1C42.134 1 39 4.13401 39 8C39 11.866 42.134 15 46 15Z" fill="white" fill-opacity="0.15"/>
+<path d="M34 34C34 26.82 39.373 21 46 21C52.627 21 58 26.82 58 34" fill="white" fill-opacity="0.1"/>
+<path d="M46 14.25C49.4518 14.25 52.25 11.4518 52.25 8C52.25 4.54822 49.4518 1.75 46 1.75C42.5482 1.75 39.75 4.54822 39.75 8C39.75 11.4518 42.5482 14.25 46 14.25Z" stroke="white" stroke-opacity="0.7" stroke-width="1.5"/>
+<path d="M35 34C35 27.373 39.925 22 46 22C52.075 22 57 27.373 57 34" stroke="white" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
