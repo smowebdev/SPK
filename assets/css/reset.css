@@ -36,7 +36,8 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1 15;
+  line-height: 1.15;
+  font-family: var(--Family-Heading);
 }
 
 h1 {
@@ -114,7 +115,7 @@ ul {
   text-align: center;
 }
 .btn {
-  display: flex;
+  display: inline-flex;
   padding: 14px 16px;
   align-items: center;
   gap: var(--spacing-4, 4px);
@@ -142,6 +143,11 @@ ul {
   border-color: #fff;
   background: transparent;
 }
+.btn-ghost-secondary {
+  color: var(--Button-Secondary-text, #10243d);
+  border-color: #10243d;
+  background: transparent;
+}
 .btn-primary:hover {
   border-color: #1e3f62;
   background: var(--Button-Primary-background-hover, #10243db2);
@@ -153,6 +159,11 @@ ul {
   background: #e8eef2;
   color: var(--Button-Secondary-text, #10243d);
   border-color: #e8eef2;
+}
+.btn-ghost-secondary:hover{
+  background: #10243d;
+  color: #fff;
+
 }
 .heading-1 {
   color: var(--text-inverse, #fff);
@@ -168,6 +179,15 @@ ul {
 
   font-family: var(--Family-Heading, "Instrument Serif");
   font-size: var(--Size-H2, 72px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+}
+.heading-3 {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H3, 64px);
   font-style: normal;
   font-weight: 400;
   line-height: 115%;
@@ -202,10 +222,11 @@ ul {
   font-size: var(--Size-main, 18px);
   font-style: normal;
   font-weight: 500;
-  line-height: 170%;
+  line-height: 13px;
   letter-spacing: 0.36px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
+  display: block;
 }
 @media (min-width: 1024px) {
   .hide-pc-header {
@@ -230,7 +251,7 @@ ul {
   h2 {
     font-size: 58px;
   }
-
+  .heading-3,
   h3 {
     font-size: 50px;
   }
@@ -282,7 +303,7 @@ ul {
   h2 {
     font-size: 48px;
   }
-
+  .heading-3,
   h3 {
     font-size: 40px;
   }
