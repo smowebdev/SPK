@@ -158,6 +158,8 @@
     border-radius: 20px;
     padding: 8.5px 12px;
     line-height: 1;
+    font-weight: 500;
+    min-height: 35px;
 }
 
 .travel-freedom__name {
@@ -225,9 +227,14 @@
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 8px 24px;
     margin-bottom: 0px;
+}
+
+.financial-banking__list-flex {
+    display: flex;
+    gap: 32px 24px;
 }
 
 .financial-banking__list,
@@ -246,7 +253,7 @@
 .financial-banking__list li {
     position: relative;
     padding-left: 40px;
-    width: calc(45% - 24px);
+    width: 100%;
     align-content: center;
     font-weight: 500;
     line-height: 1.5;
@@ -254,7 +261,11 @@
     font-size: 18px;
 }
 
-.financial-banking__list li:nth-child(2n) {
+.financial-banking__list ul:nth-child(1) {
+    gap: 17px 24px;
+}
+
+.financial-banking__list ul:nth-child(2n) {
     width: calc(55% - 24px);
 }
 
@@ -308,6 +319,7 @@
 .the-legal__right {
     width: calc((535px / 1312px) * 100%);
     display: flex;
+    border-radius: 16px;
 }
 
 .the-legal__left {
@@ -383,16 +395,14 @@
         padding: 80px 0;
     }
     .section-sovereign__number {
-        font-size: 60px;
+        font-size: 52px;
     }
     .section-sovereign__subtitle {
         font-size: 16px;
+        margin-bottom: 12px;
     }
     .section-sovereign__box {
-        padding: 24px;
-    }
-    .travel-freedom__item {
-        padding: 10px;
+        padding: 24px 24px 18px;
     }
     .travel-freedom__name {
         font-size: 26px;
@@ -409,6 +419,12 @@
     .the-legal__flex,
     .section-sovereign__flex {
         gap: 57px;
+    }
+    .financial-banking__list-flex {
+        flex-direction: column;
+    }
+    .financial-banking__list ul:nth-child(2n) {
+        width: 100%
     }
 }
 
@@ -432,11 +448,93 @@
     }
     .section-sovereign__right .heading-4 {
         margin-bottom: 15px;
+        margin-top: 26px;
     }
-    .text-ct p {
+    .text-ct p,
+    .financial-banking__content p {
         margin-bottom: 24px;
     }
     .section-sovereign__flex {
-        gap: 57px;
+        gap: 30px;
+    }
+    .section-sovereign__bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-vanuatu__des,
+    .travel-freedom__des,
+    .travel-freedom__des p {
+        font-size: 15px;
+    }
+    .travel-freedom_wrap .label-section {
+        font-size: 16px;
+        margin-bottom: 23px;
+    }
+    .travel-freedom__width .heading-2 {
+        margin-bottom: 14px;
+    }
+    .travel-freedom__item {
+        width: 100%;
+    }
+    .travel-freedom__width {
+        margin-bottom: 34px;
+    }
+    .travel-freedom__image {
+        aspect-ratio: 278 / 152;
+    }
+    .travel-freedom__name {
+        margin-top: 17px;
+        margin-bottom: 10px;
+    }
+    .travel-freedom__bottom,
+    .financial-banking .label-section,
+    .financial-banking__list li,
+    .quality-life__box .label-section,
+    .label-section {
+        font-size: 16px;
+    }
+    .financial-banking__left,
+    .financial-banking__right {
+        padding: 25px 24px;
+    }
+    .financial-banking__flex .heading-4 {
+        margin: 16px 0 15px;
+    }
+    .financial-banking__list p {
+        margin: 0 0 22px;
+    }
+    .financial-banking__list ul:nth-child(1) {
+        gap: 20px;
+    }
+    .financial-banking__list ul {
+        gap: 9px 24px;
+    }
+    .financial-banking__list {
+        margin-bottom: 22px;
+    }
+    .financial-banking__bottom {
+        padding: 25px 24px;
+    }
+    .the-legal__flex {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .the-legal__right {
+        width: 100%;
+    }
+    .quality-life__box p {
+        font-size: 18px;
+        margin-bottom: 27px;
+    }
+    .quality-life__box {
+        padding: 23px 32px 25px;
+    }
+    .quality-life__box .heading-2 {
+        margin: 24px 0 21px;
+    }
+    .the-legal {
+        padding-top: 0px;
+    }
+    .the-legal__left .heading-4 {
+        margin: 15px 0;
     }
 }
