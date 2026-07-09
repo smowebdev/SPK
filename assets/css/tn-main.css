@@ -378,8 +378,65 @@
     margin-bottom: 30px;
 }
 
-@media(max-width: 1024px) {
+@media (max-width: 1023px) {
     .pd-gobal-ct {
         padding: 80px 0;
+    }
+    .section-sovereign__number {
+        font-size: 60px;
+    }
+    .section-sovereign__subtitle {
+        font-size: 16px;
+    }
+    .section-sovereign__box {
+        padding: 24px;
+    }
+    .travel-freedom__item {
+        padding: 10px;
+    }
+    .travel-freedom__name {
+        font-size: 26px;
+    }
+    .section-sovereign__bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .travel-freedom__item {
+        width: calc((100% - 24px) / 2);
+    }
+    .financial-banking__list li {
+        width: 100%!important;
+    }
+    .the-legal__flex,
+    .section-sovereign__flex {
+        gap: 57px;
+    }
+}
+
+@media (max-width: 767px) {
+    .financial-banking__left,
+    .financial-banking__right {
+        width: 100%;
+    }
+    .banner-vanuatu__subtitle {
+        font-size: 26px;
+    }
+    .banner-vanuatu {
+        padding-bottom: 56px;
+    }
+    .banner-vanuatu .heading-1 {
+        margin-bottom: 20px;
+    }
+    .section-sovereign__left {
+        width: 100%;
+        aspect-ratio: 343 / 500;
+    }
+    .section-sovereign__right .heading-4 {
+        margin-bottom: 15px;
+    }
+    .text-ct p {
+        margin-bottom: 24px;
+    }
+    .section-sovereign__flex {
+        gap: 57px;
     }
 }
