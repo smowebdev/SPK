@@ -1089,7 +1089,7 @@
   display: flex;
   gap: 64px;
   flex-wrap: wrap;
-  margin-right: calc(0px - calc(100vw - 1328px) / 2);
+  margin-right: calc(0px - calc(100vw - 1312px) / 2);
 }
 .why-choose__intro {
   max-width: 600px;

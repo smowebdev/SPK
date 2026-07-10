@@ -101,6 +101,45 @@ ul {
   --Family-Body: "General Sans Variable";
   --text-secondary: #1e3f62;
   --text-inverse: #fff;
+  --Size-H1: 88px;
+  --Size-H2: 72px;
+  --Size-H3: 64px;
+  --Size-H4: 54px;
+  --Size-H5: 44px;
+  --Size-H6: 32px;
+  --Size-text-lg: 20px;
+  --Size-main: 18px;
+  --Size-text-xl: 24px;
+  --Size-Number: 80px;
+}
+@media (max-width: 1024px) {
+  :root {
+    --Size-H1: 68px;
+    --Size-H2: 58px;
+    --Size-H3: 50px;
+    --Size-H4: 46px;
+    --Size-H5: 38px;
+    --Size-H6: 28px;
+    --Size-text-lg: 19px;  
+    --Size-main: 17px;      
+    --Size-text-xl: 22px;  
+    --Size-Number: 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --Size-H1: 54px;
+    --Size-H2: 48px;
+    --Size-H3: 40px;
+    --Size-H4: 38px;
+    --Size-H5: 34px;
+    --Size-H6: 26px;
+    --Size-text-lg: 18px;
+    --Size-main: 16px;
+    --Size-text-xl: 20px;
+    --Size-Number: 52px;
+  }
 }
 .container {
   margin: 0 auto;
@@ -241,7 +280,7 @@ ul {
 }
 
 /* Tablet */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .heading-1,
   h1 {
     font-size: 68px;
@@ -321,7 +360,7 @@ ul {
   }
 
   h6 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .desc-section {
