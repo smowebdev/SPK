@@ -257,7 +257,7 @@
   .site-header__cta-mb {
     display: flex;
     font-size: 14px;
-    padding: 12.5px 12px;
+    padding: 11px 12px;
     min-height: auto;
   }
   .site-header__main {
@@ -306,6 +306,8 @@
   }
   .site-header__logo {
     max-width: 150px;
+    aspect-ratio: 150 / 34.55;
+    display: block;
   }
 }
 
@@ -959,10 +961,7 @@
   background: var(--background-mist, #e8eef2);
   padding: 112px 0;
 }
-.programs__eyebrow {
-  line-height: 13px;
-  margin-bottom: 27px;
-}
+
 .programs__title {
   margin-bottom: 10px;
 }
@@ -1264,7 +1263,7 @@
 }
 
 .cost-calculator .programs__desc {
-  color: var(--text-muted-white, rgba(255, 255, 255, 0.65));
+  color: #fff;
 }
 .cost-calculator .programs__card {
   background: var(--background-navy-elevated, #1e3f62);
@@ -1719,4 +1718,303 @@
   flex: 1 0 0;
   border-radius: var(--spacing-16, 16px);
   background: rgba(255, 255, 255, 0.2);
+}
+.client-stories__quote-icon {
+  width: 64px;
+}
+@media (max-width: 1312px) {
+  .why-choose__wrap {
+    margin-right: -16px;
+  }
+}
+@media (max-width: 1024px) {
+  .why-choose__intro {
+    max-width: 400px;
+  }
+  .why-choose__slider {
+    width: calc(100% - 400px - 64px);
+  }
+  .why-vanuatu__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero__wrap {
+    flex-wrap: wrap;
+  }
+  .hero__stats {
+    max-width: 100%;
+    margin-top: 64px;
+  }
+  .hero__badge {
+    left: auto;
+    right: 0;
+    top: -40.16px;
+    width: 64px;
+    height: 63.289px;
+    aspect-ratio: 64/63.29;
+  }
+  .hero__wrap {
+    padding: 265px 0 130px;
+  }
+  .trust-bar__wrap {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 48px;
+  }
+  .trust-bar__item {
+    align-items: center;
+  }
+  .video-section__caption {
+    font-size: 28px;
+    bottom: 45px;
+  }
+  .programs__list {
+    flex-direction: column;
+  }
+  .programs,
+  .why-choose,
+  .impact-spotlight__contents,
+  .client-stories,
+  .why-vanuatu,
+  .recognition,
+  .impact-spotlight__content {
+    padding: 80px 0;
+  }
+  .why-choose__slider {
+    width: 100%;
+  }
+  .client-stories__featured,
+  .client-stories__side {
+    width: 100%;
+  }
+  .recognition__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .recognition__header-right {
+    max-width: 100%;
+  }
+  .recognition__grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .recognition__logos {
+    flex-wrap: wrap;
+  }
+  .hero__actions {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .hero__wrap {
+    padding: 217px 0 40px;
+  }
+  .hero__desc {
+    margin-bottom: 25px;
+  }
+  .hero__stats-list li {
+    padding: 22.5px 0;
+  }
+  .hero__stats-list {
+    padding: 30px 24px;
+    border: none;
+  }
+  .trust-bar__wrap {
+    grid-template-columns: 1fr;
+  }
+  .trust-bar__number {
+    line-height: 37px;
+  }
+  .trust-bar__label {
+    line-height: 14px;
+  }
+  .video-section__wrapper video {
+    aspect-ratio: 337/393;
+  }
+  .video-section__wrapper {
+    aspect-ratio: 337 / 393;
+  }
+  .video-section__caption {
+    font-size: 22px;
+    bottom: 37px;
+    width: calc(100% - 47px);
+    font-size: 22px;
+  }
+  .video-section {
+    padding: 64px 0 80px;
+  }
+  .programs__header {
+    margin-bottom: 35px;
+  }
+  .programs__card {
+    padding: 36px 24px 25px;
+    gap: 40px;
+  }
+  .programs__card-code {
+    margin-bottom: 8px;
+  }
+  .programs__card-title {
+    margin-bottom: 15px;
+  }
+  .programs__card-price-wrapper {
+    padding-top: 22px;
+    margin-top: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .programs__card-tags li {
+    padding: 4px 12px;
+  }
+  .programs__card-tags {
+    margin-top: 20px;
+  }
+  .programs__card-note {
+    line-height: 1.5;
+    margin-top: 25px;
+  }
+  .programs__list {
+    gap: 16px;
+  }
+  .programs__compare {
+    margin-top: 40px;
+  }
+  .why-choose__wrap {
+    gap: 35px;
+  }
+  .why-choose__item {
+    width: 318px;
+    padding: 32px 24px;
+  }
+  .why-choose__item-number {
+    line-height: 37px;
+    margin-bottom: 31px;
+  }
+  .why-choose__item-title {
+    margin-bottom: 14px;
+  }
+  .impact-spotlight {
+    background-image: var(--bg-mb);
+    min-height: 656px;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  .impact-spotlight .container {
+    padding: 0;
+  }
+  .impact-spotlight__overlay {
+    padding: 32px 16px 25px;
+  }
+  .impact-spotlight__eyebrow {
+    margin-bottom: 30px;
+  }
+  .impact-spotlight__title {
+    color: var(--text-inverse, #fff);
+    margin-bottom: 21px;
+  }
+  .impact-spotlight__paragraph p {
+    margin-bottom: 40px;
+  }
+  .impact-spotlight__content-wrap {
+    gap: 59px;
+  }
+  .impact-spotlight__actions {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .cost-calculator .programs__card-desc {
+    font-size: 16px;
+  }
+  .cost-calculator__card-price-note,
+  .cost-calculator__card-base {
+    font-size: 15px;
+  }
+  .cost-calculator .programs__card {
+    gap: 30px;
+  }
+  .client-stories__header {
+    margin-bottom: 35px;
+  }
+  .client-stories__featured,
+  .client-stories__card {
+    padding: 24px 16px;
+  }
+  .client-stories__quote-icon {
+    width: 56px;
+  }
+  .client-stories__footer {
+    margin-top: 30px;
+  }
+  .client-stories__featured-text {
+    margin-top: 26px;
+  }
+  .client-stories__grid,
+  .client-stories__side {
+    gap: 16px;
+  }
+  .client-stories__card {
+    gap: 28px;
+  }
+  .client-stories__actions {
+    margin-top: 32px;
+  }
+  .why-vanuatu__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .why-vanuatu__header {
+    margin-bottom: 35px;
+  }
+  .why-vanuatu {
+    background-image: var(--bg-mb);
+  }
+  .why-vanuatu__card-icon-wrap {
+    margin-bottom: 18px;
+  }
+  .why-vanuatu__card {
+    padding: 24px 16px 18px;
+  }
+  .why-vanuatu__card-title {
+    margin-bottom: 7px;
+  }
+  .why-vanuatu__actions {
+    margin-top: 40px;
+  }
+  .why-vanuatu__cta {
+    display: flex;
+  }
+  .recognition__header {
+    gap: var(--spacing-40-32, 13px);
+  }
+  .recognition__header {
+    margin-bottom: 72px;
+  }
+  .recognition__photo {
+    aspect-ratio: 343 / 458;
+  }
+  .recognition__photo-icon {
+    margin-bottom: 17px;
+  }
+  .recognition__photo-caption {
+    padding: var(--spacing-24, 24px) 24px 15px;
+  }
+  .recognition__item {
+    padding-bottom: 19px;
+  }
+  .recognition__item-title {
+    margin-bottom: 8px;
+  }
+  .recognition__logos {
+    gap: 16px;
+  }
+  .recognition__logo {
+    display: flex;
+    height: 60px;
+    padding: 8px 2px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+  }
 }
