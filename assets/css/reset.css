@@ -120,9 +120,9 @@ ul {
     --Size-H4: 46px;
     --Size-H5: 38px;
     --Size-H6: 28px;
-    --Size-text-lg: 19px;  
-    --Size-main: 17px;      
-    --Size-text-xl: 22px;  
+    --Size-text-lg: 19px;
+    --Size-main: 17px;
+    --Size-text-xl: 22px;
     --Size-Number: 64px;
   }
 }
@@ -199,10 +199,9 @@ ul {
   color: var(--Button-Secondary-text, #10243d);
   border-color: #e8eef2;
 }
-.btn-ghost-secondary:hover{
+.btn-ghost-secondary:hover {
   background: #10243d;
   color: #fff;
-
 }
 .heading-1 {
   color: var(--text-inverse, #fff);
@@ -309,15 +308,6 @@ ul {
     font-size: 28px;
   }
 
-  .desc-section {
-    font-size: 20px;
-  }
-
-  .label-section {
-    font-size: 16px;
-    margin-bottom: 32px;
-  }
-
   p {
     font-size: 17px;
   }
@@ -363,13 +353,9 @@ ul {
     font-size: 26px;
   }
 
-  .desc-section {
-    font-size: 18px;
-  }
-
   .label-section {
-    font-size: 14px;
     margin-bottom: 24px;
+    line-height: 11px;
   }
 
   p {
@@ -377,7 +363,8 @@ ul {
   }
 
   .btn {
-    padding: 15px 16px;
+    padding: 14px 16px;
     font-size: 15px;
+    min-height: 54px;
   }
 }
