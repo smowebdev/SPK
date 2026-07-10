@@ -51,11 +51,19 @@ $(document).ready(function () {
     }, 300);
   });
 
-  $(".team-card").on("click", function () {
-    $("#team-popup").css("display", "flex");
+  const $modal = $(".team-modal");
+  const $modalBody = $(".team-modal__body");
+
+  $(".team-card__link").on("click", function () {
+    const bioId = $(this).data("bio");
+    const bioContent = $("#" + bioId).html();
+
+    $modalBody.html(bioContent);
+
+    $modal.addClass("active");
   });
 
-  $(".close-btn").on("click", function () {
-    $("#team-popup").css("display", "none");
+  $(".team-modal__close, .team-modal__overlay").on("click", function () {
+    $modal.removeClass("active");
   });
 });
