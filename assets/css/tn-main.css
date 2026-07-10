@@ -31,9 +31,7 @@
 }
 
 .section-sovereign__flex {
-    display: flex;
     gap: 64px;
-    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -117,11 +115,6 @@
     color: #586981;
 }
 
-.travel-freedom__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .travel-freedom {
     background-color: #E8EEF2;
     padding: 64px 0;
@@ -187,11 +180,6 @@
     font-size: 18px;
     margin-top: 49px;
     margin-bottom: -7px;
-}
-
-.financial-banking__flex {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .financial-banking__left,
@@ -426,6 +414,8 @@
     line-height: 0.7;
     border-radius: 20px;
     display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .banner-programme__flex {
@@ -464,8 +454,6 @@
 }
 
 .programme-overview__flex {
-    display: flex;
-    flex-wrap: wrap;
     gap: 88px 68px;
 }
 
@@ -486,10 +474,6 @@
 .investment-breakdown {
     background: var(--background-ocean-deep, #024D62);
     padding: 64px 0;
-}
-
-.investment-breakdown__wrap {
-    text-align: center;
 }
 
 .row-table {
@@ -644,11 +628,6 @@
     width: calc((100% - 126px) / 2);
 }
 
-.timeline__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .timeline__wrap-item {
     width: 100%;
     display: flex;
@@ -776,7 +755,6 @@
 .eligibility__wrap {
     max-width: 753px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .eligibility__faq {
@@ -830,7 +808,6 @@
     font-size: 16px;
     line-height: 1.5;
     color: #10243D;
-    text-align: center;
 }
 
 .eligibility__bottom {
@@ -853,6 +830,72 @@
 .section-benefits .why-vanuatu__card {
     flex: 1 1 calc(25% - 18px);
     min-width: 250px;
+}
+
+.programme-comparison__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    padding: 40px 32px;
+    border-radius: 16px;
+    position: relative;
+    background: var(--background-ocean-deep, #024D62);
+}
+
+.programme-comparison__item .btn-label {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.programme-comparison__flex {
+    display: flex;
+    gap: 24px;
+}
+
+.programme-comparison__flex .programs__card-price-wrapper {
+    border-top: none
+}
+
+.programme-comparison__header {
+    margin: 0 auto;
+    max-width: 611px;
+    margin-bottom: 64px;
+}
+
+.programme-comparison__choose {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.programme-comparison__des p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.document-requirements__number {
+    font-family: 'Instrument Serif';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.3;
+    color: #10243D;
+}
+
+.document-requirements__title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.35;
+    color: #10243D;
+}
+
+.flex-wrap-ct {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 1023px) {
