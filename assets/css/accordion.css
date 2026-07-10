@@ -8,7 +8,7 @@
 }
 
 .faq-section {
-  padding: 47px 0 80px;
+  padding: 55px 0 80px;
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
@@ -174,7 +174,7 @@
   height: 70.5px;
 }
 
-.faq-header span {
+.faq-header .question {
   color: var(--text-primary, #10243d);
   font-family: var(--Family-Body, "General Sans Variable");
   font-size: var(--Size-text-xl, 24px);
@@ -193,21 +193,39 @@
   flex-shrink: 0;
 }
 
+.faq-header .icon-close {
+  display: none;
+}
+.faq-header .icon-down {
+  display: block;
+}
+
+.faq-header.active .icon-down {
+  display: none;
+}
+.faq-header.active .icon-close {
+  display: block;
+}
+
 .faq-item summary::-webkit-details-marker {
   display: none;
 }
 
 .faq-content {
   display: none;
-  color: #4a5568;
-  border-top: 1px solid #cbd5e0;
-  padding: var(--spacing-24-16, 24px);
+  /* border-top: 1px solid #cbd5e0; */
+  /* padding: var(--spacing-24-16, 24px); */
+  padding: 0 24px 24px;
 
   font-family: var(--Family-Body, "General Sans Variable");
-  font-size: var(--Size-text-xl, 20px);
+  font-size: var(--Size-small, 16px);
   font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+
+.faq-content p {
+  color: var(--text-primary, #10243d);
 }
 
 .faq-item {
@@ -267,11 +285,15 @@
     height: unset;
   }
 
+  .faq-content {
+    padding: 0 16px 16px;
+  }
+
   /* .faq-header.one {
     padding: 12px 16px;
   } */
 
-  .faq-header span {
+  .faq-header .question {
     font-size: var(--Size-text-xl, 20px);
     /* line-height: 1.5; */
   }
@@ -383,6 +405,12 @@
   height: 436px;
 }
 
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .featured-content {
   flex: 1; /* Chiếm 50% chiều rộng */
   /* padding: 40px; */
@@ -446,6 +474,11 @@
   line-height: 1;
 }
 
+.post-title.heading-4 a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 .featured-excerpt,
 .post-excerpt {
   color: var(--text-primary, #10243d);
@@ -691,4 +724,217 @@
   .load-more-wrapper {
     margin-top: 40px;
   }
+}
+
+/*meet the team*/
+.meet-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.founder-led {
+  background: var(--background-deep-navy, #10243d);
+  padding: 112px 64px;
+}
+
+.founder-led__title {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 82.8px */
+  max-width: 765px;
+  margin-bottom: 40px;
+}
+
+.founder-led__content {
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-xl, 24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  max-width: 765px;
+}
+
+.founder-led__description,
+.founder-led__note {
+  color: var(--text-inverse, #fff);
+}
+
+.founder-led__image {
+  margin-top: 80px;
+  border-radius: var(--radius-main, 16px);
+}
+
+/*team-grid*/
+.team-grid {
+  padding: 112px 64px;
+  background: var(--background-mist, #e8eef2);
+}
+
+.team-grid__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 40px;
+}
+
+.team-card__image {
+  height: 305px;
+  border-radius: var(--radius-main, 16px);
+  background: var(--White-25, #f7f7f7);
+  margin-bottom: 24px;
+}
+
+.team-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.team-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.team-card__role {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+  /* Eyebrow */
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+
+.team-card__name {
+  color: var(--text-primary, #10243d);
+  /* Heading/H6/Instrument */
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H6, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 43.2px */
+}
+
+.team-card__location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.team-card__bio {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+}
+
+.team-card__link {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Lớp nền mờ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*differentiator*/
+.differentiator {
+  padding: 112px 64px;
+}
+
+.differentiator__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.differentiator__content {
+  max-width: 642px;
+}
+
+.differentiator__label {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%; /* 30.6px */
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.differentiator__title {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 64.8px */
+  margin-bottom: 40px;
+}
+
+.differentiator__text {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+
+.differentiator__image {
+  width: 535px;
+  height: 622px;
+}
+
+.differentiator__image img {
+  /* min-height: 500px; */
+  background: #d7d7d7;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }

@@ -31,7 +31,9 @@ $(document).ready(function () {
   $(".faq-header").on("click", function () {
     var $content = $(this).siblings(".faq-content");
     $(".faq-content").not($content).slideUp(300);
+    $(".faq-header").not(this).removeClass("active");
     $content.slideToggle(300);
+    $(this).toggleClass("active");
   });
 
   $(window).on("resize", function () {
@@ -47,5 +49,13 @@ $(document).ready(function () {
         navText: ["<span>&#10094;</span>", "<span>&#10095;</span>"],
       });
     }, 300);
+  });
+
+  $(".team-card").on("click", function () {
+    $("#team-popup").css("display", "flex");
+  });
+
+  $(".close-btn").on("click", function () {
+    $("#team-popup").css("display", "none");
   });
 });
