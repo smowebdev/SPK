@@ -2018,3 +2018,183 @@
     flex: 1 0 0;
   }
 }
+
+/* comparison */
+.comparison {
+  padding: 228px 0 80px;
+}
+.comparison__table {
+  width: 100%;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.comparison__table thead tr {
+}
+.comparison__table thead tr th {
+  padding: var(--spacing-24-16, 24px) 12px;
+  border-top: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  background: var(--background-deep-navy, #10243d);
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H6, 32px);
+  font-style: normal;
+  color: var(--text-inverse, #fff);
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+.comparison__table thead tr th:first-child {
+  border-radius: var(--radius-main, 16px) 0 0 0;
+  padding-left: var(--spacing-24-16, 24px);
+}
+.comparison__table thead tr th:last-child {
+  border-radius: 0 var(--radius-main, 16px) 0 0;
+  padding-right: 24px;
+}
+.comparison__table tbody tr td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-lg, 20px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  vertical-align: top;
+}
+.comparison__table tbody tr td:first-child {
+  padding-left: var(--spacing-24-16, 24px);
+  border-left: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+}
+.comparison__table tbody tr td:last-child {
+  padding-right: var(--spacing-24-16, 24px);
+  border-right: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+}
+.comparison__table-label {
+  width: 500px;
+}
+.comparison__table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 16px;
+}
+
+.comparison__table tbody tr:last-child td:last-child {
+  border-radius: 0 0 var(--radius-main, 16px) 0;
+}
+.comparison__title {
+  margin-bottom: 12px;
+}
+.comparison__eyebrow {
+  margin-bottom: 20px;
+}
+.recommendation-logic .programs__card-price-wrapper {
+  border-top: none;
+  margin: 0 0 40px;
+  padding: 0 0 25px;
+  border-bottom: 0.5px solid #fff;
+}
+.programs__card-choose-title {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.programs__card-choose-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-12, 12px);
+  align-self: stretch;
+}
+.programs__card-choose-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  align-self: stretch;
+}
+.programs__card-choose-item svg {
+  width: 32px;
+  height: 32px;
+}
+.programs__card-choose-item span {
+  flex: 1 0 0;
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.recommendation-logic .programs__card-code {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H3, 64px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+}
+.programmes__compare-bottom {
+  max-width: 611.01px;
+  margin: 17px auto 0;
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 150%;
+}
+.comparison-family {
+  padding: 112px 0;
+}
+.comparison-family .comparison__table-label {
+  width: 450px;
+}
+.comparison__table-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+}
+.comparison__table-person {
+  display: flex;
+  align-items: flex-end;
+}
+.comparison__table-person-name {
+  flex: 1 0 0;
+}
+
+.comparison__note {
+  margin: 40px 0 0;
+  color: var(--text-primary, #10243d);
+  text-align: center;
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 16px 24px;
+  align-items: center;
+  border-radius: var(--radius-main, 16px);
+  border: 1px solid var(--border-mist, rgba(232, 238, 242, 0.3));
+  background: var(--background-mist, #e8eef2);
+}
+@media (max-width: 1024px ) {
+  .comparison__table-label {
+    width: 400px;
+  }
+
+}
+@media (max-width: 992px) {
+  .comparison__table-label {
+    width: 40%;
+  }
+  .comparison-family .comparison__table-label {
+    width: 350px;
+  }
+}
