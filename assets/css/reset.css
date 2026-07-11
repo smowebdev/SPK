@@ -248,6 +248,14 @@ ul {
   font-weight: 400;
   line-height: 130%;
 }
+.heading-6 {
+  color: var(--text-primary, #10243D);
+
+font-size: var(--Size-H6, 32px);
+font-style: normal;
+font-weight: 400;
+line-height: 135%; 
+}
 .desc-section {
   color: var(--text-primary, #10243d);
   font-size: var(--Size-text-xl, 24px);
