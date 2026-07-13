@@ -31,7 +31,9 @@ $(document).ready(function () {
   $(".faq-header").on("click", function () {
     var $content = $(this).siblings(".faq-content");
     $(".faq-content").not($content).slideUp(300);
+    $(".faq-header").not(this).removeClass("active");
     $content.slideToggle(300);
+    $(this).toggleClass("active");
   });
 
   $(window).on("resize", function () {
@@ -47,5 +49,21 @@ $(document).ready(function () {
         navText: ["<span>&#10094;</span>", "<span>&#10095;</span>"],
       });
     }, 300);
+  });
+
+  const $modal = $(".team-modal");
+  const $modalBody = $(".team-modal__body");
+
+  $(".team-card__link").on("click", function () {
+    const bioId = $(this).data("bio");
+    const bioContent = $("#" + bioId).html();
+
+    $modalBody.html(bioContent);
+
+    $modal.addClass("active");
+  });
+
+  $(".team-modal__close, .team-modal__overlay").on("click", function () {
+    $modal.removeClass("active");
   });
 });
