@@ -47,42 +47,42 @@
     items.forEach(item => observer.observe(item));
 
     // timeline-horizontal
-    const timeline = document.querySelector(".timeline-horizontal");
-    const items = [...timeline.querySelectorAll(".timeline-item")];
+    // const timeline = document.querySelector(".timeline-horizontal");
+    // const items = [...timeline.querySelectorAll(".timeline-item")];
 
-    let index = 0;
-    let lock = false;
+    // let index = 0;
+    // let lock = false;
 
-    function goTo(i) {
-        index = Math.max(0, Math.min(i, items.length - 1));
+    // function goTo(i) {
+    //     index = Math.max(0, Math.min(i, items.length - 1));
 
-        timeline.scrollTo({
-            left: items[index].offsetLeft,
-            behavior: "smooth"
-        });
+    //     timeline.scrollTo({
+    //         left: items[index].offsetLeft,
+    //         behavior: "smooth"
+    //     });
 
-        lock = true;
-        setTimeout(() => lock = false, 500);
-    }
+    //     lock = true;
+    //     setTimeout(() => lock = false, 500);
+    // }
 
-    timeline.addEventListener("wheel", e => {
+    // timeline.addEventListener("wheel", e => {
 
-        if (lock) return;
+    //     if (lock) return;
 
-        if (e.deltaY > 0) {
+    //     if (e.deltaY > 0) {
 
-            if (index < items.length - 1) {
-                e.preventDefault();
-                goTo(index + 1);
-            }
+    //         if (index < items.length - 1) {
+    //             e.preventDefault();
+    //             goTo(index + 1);
+    //         }
 
-        } else {
+    //     } else {
 
-            if (index > 0) {
-                e.preventDefault();
-                goTo(index - 1);
-            }
+    //         if (index > 0) {
+    //             e.preventDefault();
+    //             goTo(index - 1);
+    //         }
 
-        }
+    //     }
 
-    }, { passive: false });
+    // }, { passive: false });
