@@ -2639,6 +2639,7 @@
   justify-content: space-between !important;
   min-height: 340px;
   align-items: flex-start;
+  gap: 48px;
 }
 .timeline-application.timeline {
   background: var(--background-mist, #e8eef2);
@@ -2655,6 +2656,7 @@
   left: -41.5px !important;
   right: auto !important;
   transform: none;
+  background: var(--background-navy-elevated, #1e3f62);
 }
 .timeline-application .timeline__item::after {
   left: -66px !important;
@@ -2671,14 +2673,17 @@
   flex: 1 0 0;
   max-width: 660px;
   text-align: start !important;
+  width: 100%;
 }
 .timeline__item-duration {
   display: flex;
-  width: 185px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 17px;
+}
+.timeline__note-small {
+  max-width: 185px;
 }
 .timeline__duration {
   color: var(--text-muted, rgba(26, 58, 85, 0.7));
@@ -2687,10 +2692,9 @@
   font-size: var(--Size-main, 18px);
   font-style: normal;
   font-weight: 500;
-  line-height: 13px;
+  line-height: 1.7;
   letter-spacing: 0.36px;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 .timeline__note-small {
   color: var(--text-muted, rgba(26, 58, 85, 0.7));
@@ -2877,11 +2881,446 @@
   margin: 0 !important;
 }
 
-.enrolment-locations__note{
-  color: var(--text-primary, #10243D);
-font-family: var(--Family-Body, "General Sans Variable");
-font-size: var(--Size-main, 18px);
-font-style: italic;
-font-weight: 500;
-line-height: 150%;     margin-top: 17px;
+.enrolment-locations__note {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 17px;
+}
+.passport-fees__header {
+  max-width: 791px;
+}
+.passport-fees__title {
+  margin-bottom: 12px;
+}
+.passport-fees__box {
+  border-radius: var(--radius-main, 16px);
+  border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  overflow: hidden;
+}
+.passport-fees__box-head {
+  display: flex;
+  padding: var(--spacing-24, 24px);
+  align-items: center;
+  gap: var(--spacing-24-16, 24px);
+  align-self: stretch;
+  background: var(--background-mist, #e8eef2);
+}
+.passport-fees__box-label {
+  flex: 1 0 0;
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.passport-fees__tabs {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.passport-fees__tab {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4, 4px);
+  cursor: pointer;
+}
+.passport-fees__tab span {
+  color: #000;
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: block;
+}
+
+.passport-fees__tab-input {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  background-image: url("../images/Unchecked.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.passport-fees__tab-input:checked {
+  background-image: url("../images/input-checked.svg");
+}
+
+.passport-fees__row {
+  display: flex;
+  padding: var(--spacing-32-40, 32px) var(--spacing-32-24, 32px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 0 48px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+}
+.passport-fees__row-icon {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 16px;
+  background: #e8eef2;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(10px);
+}
+.passport-fees__row-price {
+  display: flex;
+  width: 265px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.passport-fees__row-value {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H5, 44px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  display: block;
+}
+.passport-fees__row-note {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.passport-fees__row-left {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-24, 24px);
+}
+.passport-fees__row-left > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.passport-fees__row-title {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-xl, 24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+}
+.passport-fees__row-tag {
+  color: var(--text-secondary, #1e3f62);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  background: var(--background-mist, #e8eef2);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(10px);
+  display: flex;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 48px;
+}
+.passport-fees__row-desc {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0;
+}
+.passport-fees__row-head {
+  max-width: 420px;
+}
+/* .passport-fees__row:first-child .passport-fees__row-left {
+  align-items: center;
+} */
+
+.passport-fees__note-content {
+  display: flex;
+  max-width: 659px;
+  padding: 8px 16px 9px;
+  margin-top: 16px;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  border-radius: var(--radius-small, 8px);
+  border: 1px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+  background: var(--background-cyan-5, rgba(10, 215, 244, 0.05));
+  margin-left: 80px;
+}
+.passport-fees__note-content svg {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+.passport-fees__note-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  flex: 1 0 0;
+}
+.passport-fees__note-label {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-xs, 14px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  display: block;
+}
+.passport-fees__note-text,
+.passport-fees__note-text p {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.passport-fees__note-text b,
+.passport-fees__note-text strong {
+  font-weight: 600;
+}
+.passport-fees__footer {
+  display: flex;
+  padding: var(--spacing-24-16, 24px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: var(--background-mist, #e8eef2);
+}
+.passport-fees__footer-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+  flex: 1 0 0;
+}
+.passport-fees__footer-item svg {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+}
+.passport-fees__footer-item p {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+  line-height: 150%;
+  flex: 1 0 0;
+}
+.passport-fees__row:last-child {
+  border-bottom: none;
+}
+.passport-fees__info {
+  display: flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: var(--spacing-12, 12px);
+  align-self: stretch;
+  border-radius: var(--radius-small, 8px);
+  border: 1px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+  background: var(--background-cyan-5, rgba(10, 215, 244, 0.05));
+  margin-top: 40px;
+}
+.passport-fees__info svg {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+}
+.passport-fees__info p {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  flex: 1 0 0;
+}
+.passport-fees {
+  padding: 112px 0;
+}
+.why-vanuatu-application .why-vanuatu__grid {
+  grid-template-columns: 1fr 1fr;
+}
+.why-vanuatu__card--stat .why-vanuatu__card-stat {
+}
+.why-vanuatu__card-stat-value {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-Number, 80px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 14px;
+}
+.why-vanuatu__card-stat-label {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-lg, 20px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  display: block;
+  margin-bottom: 17px;
+}
+.why-vanuatu-application .why-vanuatu__header {
+  margin-bottom: 46px;
+}
+.timeline-application .timeline__subdesc {
+  margin-top: 15px;
+}
+@media (max-width: 992px) {
+  .hero__stat-cards {
+    flex-wrap: wrap;
+  }
+  .hero__stat-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+  .timeline-application .timeline__list {
+    padding-left: 56px;
+  }
+  .timeline-application .timeline__list::after {
+    left: 15px !important;
+  }
+  .enrolment-locations__list {
+    flex-direction: column;
+  }
+  .enrolment-locations__item {
+    border-left: none;
+    border-bottom: 0.5px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+  }
+  .enrolment-locations__item:last-child {
+    border-bottom: none;
+  }
+
+  .passport-fees,
+  .how-it-works {
+    padding: 80px 0;
+  }
+  .passport-fees__row-price {
+    margin-top: 32px;
+    margin-left: 80px;
+  }
+  .passport-fees__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .hero-application .hero__wrap {
+    padding-top: 200px;
+  }
+  .hero__stat-card {
+    flex: 0 0 100%;
+  }
+  .hero__stat-cards {
+    margin-top: 32px;
+  }
+  .hero__stat-number {
+    line-height: 37px;
+  }
+  .hero__note p {
+    font-size: 15px;
+  }
+  .hero-application .hero__wrap {
+    padding-bottom: 74px;
+  }
+  .hero__note {
+    margin-top: 34px;
+  }
+  .how-it-works__desc p {
+    margin-bottom: 30px;
+  }
+  .how-it-works__intro {
+    margin-bottom: 56px;
+  }
+  .video-section__wrapper.video-section__wrapper-layoyut-2 {
+    aspect-ratio: 343 / 350;
+  }
+  .timeline-application .timeline__wrap-item {
+    flex-direction: column-reverse;
+    gap: 17px;
+    min-height: auto;
+  }
+  .timeline__summary-list {
+    flex-direction: column;
+  }
+  .timeline-application .timeline__item {
+    flex: 1;
+  }
+  .timeline-application .timeline__header {
+    margin-bottom: 33px;
+  }
+  .timeline-application .timeline__item::after {
+    left: -65px !important;
+    right: auto !important;
+    top: -46px;
+  }
+  .timeline-application .timeline__item::before {
+    left: -43px !important;
+    top: -56px;
+  }
+  .timeline-application .timeline__des {
+    margin: 0;
+  }
+  .timeline__note {
+    padding: 8px 16px;
+    margin-top: 26px;
+    margin-bottom: 16px;
+  }.timeline__note-small{
+    max-width: 100%;
+  }
 }
