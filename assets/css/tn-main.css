@@ -635,7 +635,7 @@
 .timeline__title {
     font-family: 'Instrument Serif';
     font-weight: 400;
-    font-size: 32px;
+    font-size: var(--Size-H6, 32px);
     line-height: 1.35;
     color: #10243D;
     margin-bottom: 6px;
