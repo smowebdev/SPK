@@ -91,7 +91,7 @@ function main() {
 			bindMobileMenu();
 			$(window).on('resize', bindMobileMenu);
 			// video
-			var $section = $('.video-section');
+			var $section = $('.video-section__wrapper');
 			var $video = $section.find('.video-section__video')[0];
 			var $playBtn = $section.find('.video-section__play');
 
