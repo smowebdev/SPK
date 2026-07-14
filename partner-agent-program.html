@@ -798,53 +798,140 @@
 
                   <div class="partner-enquiry__field">
                     <label>Company / firm*</label>
-                    <input type="text" />
+                    <input type="text" placeholder="Your firm" />
                   </div>
 
                   <div class="partner-enquiry__field">
                     <label>Role / Title*</label>
-                    <input type="text" />
+                    <input type="text" placeholder="Your role" />
                   </div>
 
                   <div class="partner-enquiry__field">
                     <label>Country*</label>
-                    <input type="text" />
+                    <input type="text" placeholder="Country of practice" />
                   </div>
 
                   <div class="partner-enquiry__field">
                     <label>Email*</label>
-                    <input type="email" />
+                    <input
+                      type="email"
+                      placeholder="Enter your email address"
+                    />
                   </div>
 
-                  <div class="partner-enquiry__field">
+                  <!-- <div class="partner-enquiry__field">
                     <label>Phone (optional)</label>
                     <input type="tel" />
+                  </div> -->
+                  <div class="partner-enquiry__field">
+                    <label>Phone (optional)</label>
+
+                    <div class="phone-input">
+                      <div class="phone-country">
+                        <select>
+                          <option value="+1">US</option>
+                          <option value="+84">VN</option>
+                        </select>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                        >
+                          <path
+                            d="M10.1475 4.89793L6.39746 8.64793C6.3452 8.70037 6.28311 8.74198 6.21473 8.77037C6.14636 8.79876 6.07306 8.81337 5.99902 8.81337C5.92499 8.81337 5.85169 8.79876 5.78331 8.77037C5.71494 8.74198 5.65284 8.70037 5.60058 8.64793L1.85059 4.89793C1.74491 4.79226 1.68555 4.64893 1.68555 4.49949C1.68555 4.35005 1.74491 4.20673 1.85059 4.10105C1.95626 3.99538 2.09958 3.93602 2.24902 3.93602C2.39847 3.93602 2.54179 3.99538 2.64746 4.10105L5.99949 7.45308L9.35152 4.10059C9.45719 3.99491 9.60052 3.93555 9.74996 3.93555C9.8994 3.93555 10.0427 3.99491 10.1484 4.10059C10.2541 4.20626 10.3134 4.34958 10.3134 4.49902C10.3134 4.64847 10.2541 4.79179 10.1484 4.89746L10.1475 4.89793Z"
+                            fill="#1A3A55"
+                            fill-opacity="0.7"
+                          />
+                        </svg>
+                      </div>
+
+                      <input type="tel" placeholder="+1" />
+                    </div>
                   </div>
 
                   <div class="partner-enquiry__field">
                     <label>Type of business</label>
-                    <select>
-                      <option>Wealth manager / family office</option>
-                    </select>
+                    <div class="partner-enquiry__select">
+                      <select>
+                        <option>Wealth manager / family office</option>
+                      </select>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                      >
+                        <path
+                          d="M10.1475 4.89793L6.39746 8.64793C6.3452 8.70037 6.28311 8.74198 6.21473 8.77037C6.14636 8.79876 6.07306 8.81337 5.99902 8.81337C5.92499 8.81337 5.85169 8.79876 5.78331 8.77037C5.71494 8.74198 5.65284 8.70037 5.60058 8.64793L1.85059 4.89793C1.74491 4.79226 1.68555 4.64893 1.68555 4.49949C1.68555 4.35005 1.74491 4.20673 1.85059 4.10105C1.95626 3.99538 2.09958 3.93602 2.24902 3.93602C2.39847 3.93602 2.54179 3.99538 2.64746 4.10105L5.99949 7.45308L9.35152 4.10059C9.45719 3.99491 9.60052 3.93555 9.74996 3.93555C9.8994 3.93555 10.0427 3.99491 10.1484 4.10059C10.2541 4.20626 10.3134 4.34958 10.3134 4.49902C10.3134 4.64847 10.2541 4.79179 10.1484 4.89746L10.1475 4.89793Z"
+                          fill="#1A3A55"
+                          fill-opacity="0.7"
+                        />
+                      </svg>
+                    </div>
                   </div>
 
-                  <div class="partner-enquiry__field">
+                  <!-- <div class="partner-enquiry__field">
                     <label>Estimated annual referral volume</label>
                     <select>
                       <option>Prefer not to say</option>
                     </select>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.1475 4.89793L6.39746 8.64793C6.3452 8.70037 6.28311 8.74198 6.21473 8.77037C6.14636 8.79876 6.07306 8.81337 5.99902 8.81337C5.92499 8.81337 5.85169 8.79876 5.78331 8.77037C5.71494 8.74198 5.65284 8.70037 5.60058 8.64793L1.85059 4.89793C1.74491 4.79226 1.68555 4.64893 1.68555 4.49949C1.68555 4.35005 1.74491 4.20673 1.85059 4.10105C1.95626 3.99538 2.09958 3.93602 2.24902 3.93602C2.39847 3.93602 2.54179 3.99538 2.64746 4.10105L5.99949 7.45308L9.35152 4.10059C9.45719 3.99491 9.60052 3.93555 9.74996 3.93555C9.8994 3.93555 10.0427 3.99491 10.1484 4.10059C10.2541 4.20626 10.3134 4.34958 10.3134 4.49902C10.3134 4.64847 10.2541 4.79179 10.1484 4.89746L10.1475 4.89793Z"
+                        fill="#1A3A55"
+                        fill-opacity="0.7"
+                      />
+                    </svg>
+                  </div> -->
+                  <div class="partner-enquiry__field">
+                    <label>Estimated annual referral volume</label>
+
+                    <div class="partner-enquiry__select">
+                      <select>
+                        <option>Prefer not to say</option>
+                      </select>
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                      >
+                        <path
+                          d="M10.1475 4.89793L6.39746 8.64793C6.3452 8.70037 6.28311 8.74198 6.21473 8.77037C6.14636 8.79876 6.07306 8.81337 5.99902 8.81337C5.92499 8.81337 5.85169 8.79876 5.78331 8.77037C5.71494 8.74198 5.65284 8.70037 5.60058 8.64793L1.85059 4.89793C1.74491 4.79226 1.68555 4.64893 1.68555 4.49949C1.68555 4.35005 1.74491 4.20673 1.85059 4.10105C1.95626 3.99538 2.09958 3.93602 2.24902 3.93602C2.39847 3.93602 2.54179 3.99538 2.64746 4.10105L5.99949 7.45308L9.35152 4.10059C9.45719 3.99491 9.60052 3.93555 9.74996 3.93555C9.8994 3.93555 10.0427 3.99491 10.1484 4.10059C10.2541 4.20626 10.3134 4.34958 10.3134 4.49902C10.3134 4.64847 10.2541 4.79179 10.1484 4.89746L10.1475 4.89793Z"
+                          fill="#1A3A55"
+                          fill-opacity="0.7"
+                        />
+                      </svg>
+                    </div>
                   </div>
 
                   <div class="partner-enquiry__field">
                     <label>How did you hear about us?</label>
-                    <input type="text" />
+                    <input
+                      type="text"
+                      placeholder="Referral, search, event..."
+                    />
                   </div>
 
                   <div
                     class="partner-enquiry__field partner-enquiry__field--full"
                   >
                     <label>Message*</label>
-                    <textarea rows="6"></textarea>
+                    <textarea
+                      rows="6"
+                      placeholder="Tell us about your client base and the kind of partnership you have in mind."
+                    ></textarea>
                   </div>
                 </div>
 
@@ -854,9 +941,35 @@
                   information
                 </label>
 
-                <button class="partner-enquiry__submit" type="submit">
-                  Send Partner Enquiry →
-                </button>
+                <a href="" class="btn btn-primary partner-enquiry__submit"
+                  >Send Partner Enquiry
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_261_2922)">
+                      <path
+                        d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M13 6L19 12L13 18M19 12L5 12"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_261_2922">
+                        <rect width="24" height="24" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
 
                 <p class="partner-enquiry__note">
                   All enquiries are treated in strict confidence. We respond
@@ -869,24 +982,57 @@
             <aside class="partner-enquiry__aside">
               <span class="partner-enquiry__aside-label"> IN CONFIDENCE </span>
 
-              <h3 class="partner-enquiry__aside-title">
+              <h3 class="partner-enquiry__aside-title heading-5">
                 How we handle your enquiry
               </h3>
 
               <ul class="partner-enquiry__benefits">
                 <li>
-                  <strong>Strict confidence</strong>
-                  <p>Every enquiry is treated in strict confidence.</p>
+                  <div class="partner-enquiry__icon">
+                    <img src="./assets/images/Locker.png" alt="Lock icon" />
+                  </div>
+
+                  <div class="partner-enquiry__benefit-content">
+                    <h4 class="partner-enquiry__benefit-title">
+                      Strict confidence
+                    </h4>
+                    <p class="partner-enquiry__benefit-description">
+                      Every enquiry is treated in strict confidence.
+                    </p>
+                  </div>
                 </li>
 
                 <li>
-                  <strong>A named senior adviser</strong>
-                  <p>You hear from a real person.</p>
+                  <div class="partner-enquiry__icon">
+                    <img
+                      src="./assets/images/Single person.png"
+                      alt="User icon"
+                    />
+                  </div>
+
+                  <div class="partner-enquiry__benefit-content">
+                    <h4 class="partner-enquiry__benefit-title">
+                      A named senior adviser
+                    </h4>
+                    <p class="partner-enquiry__benefit-description">
+                      You hear from a real person, never a sales desk.
+                    </p>
+                  </div>
                 </li>
 
                 <li>
-                  <strong>Reply within 2 business days</strong>
-                  <p>No automated drip campaigns.</p>
+                  <div class="partner-enquiry__icon">
+                    <img src="./assets/images/reply.png" alt="Reply icon" />
+                  </div>
+
+                  <div class="partner-enquiry__benefit-content">
+                    <h4 class="partner-enquiry__benefit-title">
+                      Reply within 2 business days
+                    </h4>
+                    <p class="partner-enquiry__benefit-description">
+                      No marketing follow-ups, no automated drip campaigns.
+                    </p>
+                  </div>
                 </li>
               </ul>
 
@@ -894,6 +1040,25 @@
                 <span>OR EMAIL US DIRECTLY</span>
 
                 <a href="mailto:partner@stanfordknight.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.2"
+                      d="M21 5.25L12 13.5L3 5.25H21Z"
+                      fill="#0AD7F4"
+                      fill-opacity="0.7"
+                    />
+                    <path
+                      d="M21 4.5H3C2.80109 4.5 2.61032 4.57902 2.46967 4.71967C2.32902 4.86032 2.25 5.05109 2.25 5.25V18C2.25 18.3978 2.40804 18.7794 2.68934 19.0607C2.97064 19.342 3.35218 19.5 3.75 19.5H20.25C20.6478 19.5 21.0294 19.342 21.3107 19.0607C21.592 18.7794 21.75 18.3978 21.75 18V5.25C21.75 5.05109 21.671 4.86032 21.5303 4.71967C21.3897 4.57902 21.1989 4.5 21 4.5ZM19.0716 6L12 12.4828L4.92844 6H19.0716ZM20.25 18H3.75V6.95531L11.4928 14.0531C11.6312 14.1801 11.8122 14.2506 12 14.2506C12.1878 14.2506 12.3688 14.1801 12.5072 14.0531L20.25 6.95531V18Z"
+                      fill="#0AD7F4"
+                      fill-opacity="0.7"
+                    />
+                  </svg>
                   partner@stanfordknight.com
                 </a>
               </div>
@@ -902,25 +1067,50 @@
         </div>
       </section>
 
-      <section class="partner-faq" aria-labelledby="partner-faq-title">
+      <section class="dsp-faq-bottom pd-gobal-ct">
         <div class="container">
-          <div class="partner-faq__wrapper">
-            <div class="partner-faq__content">
-              <span class="partner-faq__label">FAQ</span>
-
-              <h2 class="partner-faq__title" id="partner-faq-title">
+          <div class="dsp-faq-bottom__wrap">
+            <div class="dsp-faq-bottom__left">
+              <span class="label-section">FAQ</span>
+              <h2 class="heading-2">
                 Questions <br />
                 partners ask
               </h2>
-
-              <a class="partner-faq__button" href="/faq"> See all FAQ </a>
+              <a href="" class="btn btn-primary"
+                >See all FAQ
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_261_2922)">
+                    <path
+                      d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z"
+                      fill="white"
+                    ></path>
+                    <path
+                      d="M13 6L19 12L13 18M19 12L5 12"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_261_2922">
+                      <rect width="24" height="24" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
             </div>
-
-            <div class="faq-list">
+            <div class="dsp-faq-bottom__right">
               <div class="faq-item" data-category="basics">
                 <div class="faq-header">
                   <h2 class="question">
-                    What is Vanuatu’s Citizenship by Investment Programme?
+                    Are you currently accepting new partners?
                   </h2>
                   <svg
                     class="icon-down"
@@ -952,9 +1142,9 @@
                 </div>
                 <div class="faq-content">
                   <p>
-                    The DSP is a donation-based programme for fast-track
-                    citizenship. In contrast, the CIIP focuses on long-term
-                    capital investment in local economic projects.
+                    Yes, on a selective basis. We prioritise partners with
+                    established high-net-worth client bases and a long-term view
+                    of the relationship.
                   </p>
                 </div>
               </div>
@@ -962,7 +1152,7 @@
               <div class="faq-item" data-category="eligibility">
                 <div class="faq-header">
                   <h2 class="question">
-                    What is the difference between DSP and CIIP?
+                    Which programmes can partners offer through SKP?
                   </h2>
                   <svg
                     class="icon-down"
@@ -994,16 +1184,16 @@
                 </div>
                 <div class="faq-content">
                   <p>
-                    The DSP is a donation-based programme for fast-track
-                    citizenship. In contrast, the CIIP focuses on long-term
-                    capital investment in local economic projects.
+                    Yes, on a selective basis. We prioritise partners with
+                    established high-net-worth client bases and a long-term view
+                    of the relationship.
                   </p>
                 </div>
               </div>
 
               <div class="faq-item" data-category="cost">
                 <div class="faq-header one">
-                  <h2 class="question">Is this programme legitimate?</h2>
+                  <h2 class="question">Is market exclusivity available?</h2>
                   <svg
                     class="icon-down"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1034,16 +1224,16 @@
                 </div>
                 <div class="faq-content">
                   <p>
-                    The DSP is a donation-based programme for fast-track
-                    citizenship. In contrast, the CIIP focuses on long-term
-                    capital investment in local economic projects.
+                    Yes, on a selective basis. We prioritise partners with
+                    established high-net-worth client bases and a long-term view
+                    of the relationship.
                   </p>
                 </div>
               </div>
 
               <div class="faq-item" data-category="timeline">
                 <div class="faq-header">
-                  <h2 class="question">Can I keep my existing citizenship?</h2>
+                  <h2 class="question">What governing law applies?</h2>
                   <svg
                     class="icon-down"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1074,173 +1264,9 @@
                 </div>
                 <div class="faq-content">
                   <p>
-                    The DSP is a donation-based programme for fast-track
-                    citizenship. In contrast, the CIIP focuses on long-term
-                    capital investment in local economic projects.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item" data-category="family">
-                <div class="faq-header one">
-                  <h2 class="question">
-                    &nbsp;Will I need to live in Vanuatu?
-                  </h2>
-                  <svg
-                    class="icon-down"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.2949 9.79586L12.7949 17.2959C12.6904 17.4007 12.5662 17.484 12.4295 17.5407C12.2927 17.5975 12.1461 17.6267 11.998 17.6267C11.85 17.6267 11.7034 17.5975 11.5666 17.5407C11.4299 17.484 11.3057 17.4007 11.2012 17.2959L3.70117 9.79586C3.48983 9.58451 3.37109 9.29787 3.37109 8.99898C3.37109 8.7001 3.48983 8.41345 3.70117 8.20211C3.91251 7.99076 4.19916 7.87203 4.49805 7.87203C4.79693 7.87203 5.08358 7.99076 5.29492 8.20211L11.999 14.9062L18.703 8.20117C18.9144 7.98983 19.201 7.87109 19.4999 7.87109C19.7988 7.87109 20.0854 7.98983 20.2968 8.20117C20.5081 8.41252 20.6269 8.69916 20.6269 8.99805C20.6269 9.29693 20.5081 9.58358 20.2968 9.79492L20.2949 9.79586Z"
-                      fill="#10243D"
-                    />
-                  </svg>
-
-                  <svg
-                    class="icon-close"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M19.5449 17.954C19.7563 18.1653 19.875 18.452 19.875 18.7509C19.875 19.0497 19.7563 19.3364 19.5449 19.5477C19.3336 19.7591 19.0469 19.8778 18.748 19.8778C18.4492 19.8778 18.1625 19.7591 17.9512 19.5477L11.999 13.5937L6.04492 19.5459C5.83358 19.7572 5.54693 19.8759 5.24805 19.8759C4.94916 19.8759 4.66251 19.7572 4.45117 19.5459C4.23983 19.3345 4.12109 19.0479 4.12109 18.749C4.12109 18.4501 4.23983 18.1635 4.45117 17.9521L10.4052 11.9999L4.45305 6.04586C4.2417 5.83451 4.12297 5.54787 4.12297 5.24898C4.12297 4.9501 4.2417 4.66345 4.45305 4.45211C4.66439 4.24076 4.95103 4.12203 5.24992 4.12203C5.54881 4.12203 5.83545 4.24076 6.0468 4.45211L11.999 10.4062L17.953 4.45117C18.1644 4.23983 18.451 4.12109 18.7499 4.12109C19.0488 4.12109 19.3354 4.23983 19.5468 4.45117C19.7581 4.66251 19.8769 4.94916 19.8769 5.24804C19.8769 5.54693 19.7581 5.83358 19.5468 6.04492L13.5927 11.9999L19.5449 17.954Z"
-                      fill="#10243D"
-                    />
-                  </svg>
-                </div>
-                <div class="faq-content">
-                  <p>
-                    The DSP is a donation-based programme for fast-track
-                    citizenship. In contrast, the CIIP focuses on long-term
-                    capital investment in local economic projects.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item" data-category="tax">
-                <div class="faq-header one">
-                  <h2 class="question">Who is eligible?</h2>
-                  <svg
-                    class="icon-down"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.2949 9.79586L12.7949 17.2959C12.6904 17.4007 12.5662 17.484 12.4295 17.5407C12.2927 17.5975 12.1461 17.6267 11.998 17.6267C11.85 17.6267 11.7034 17.5975 11.5666 17.5407C11.4299 17.484 11.3057 17.4007 11.2012 17.2959L3.70117 9.79586C3.48983 9.58451 3.37109 9.29787 3.37109 8.99898C3.37109 8.7001 3.48983 8.41345 3.70117 8.20211C3.91251 7.99076 4.19916 7.87203 4.49805 7.87203C4.79693 7.87203 5.08358 7.99076 5.29492 8.20211L11.999 14.9062L18.703 8.20117C18.9144 7.98983 19.201 7.87109 19.4999 7.87109C19.7988 7.87109 20.0854 7.98983 20.2968 8.20117C20.5081 8.41252 20.6269 8.69916 20.6269 8.99805C20.6269 9.29693 20.5081 9.58358 20.2968 9.79492L20.2949 9.79586Z"
-                      fill="#10243D"
-                    />
-                  </svg>
-
-                  <svg
-                    class="icon-close"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M19.5449 17.954C19.7563 18.1653 19.875 18.452 19.875 18.7509C19.875 19.0497 19.7563 19.3364 19.5449 19.5477C19.3336 19.7591 19.0469 19.8778 18.748 19.8778C18.4492 19.8778 18.1625 19.7591 17.9512 19.5477L11.999 13.5937L6.04492 19.5459C5.83358 19.7572 5.54693 19.8759 5.24805 19.8759C4.94916 19.8759 4.66251 19.7572 4.45117 19.5459C4.23983 19.3345 4.12109 19.0479 4.12109 18.749C4.12109 18.4501 4.23983 18.1635 4.45117 17.9521L10.4052 11.9999L4.45305 6.04586C4.2417 5.83451 4.12297 5.54787 4.12297 5.24898C4.12297 4.9501 4.2417 4.66345 4.45305 4.45211C4.66439 4.24076 4.95103 4.12203 5.24992 4.12203C5.54881 4.12203 5.83545 4.24076 6.0468 4.45211L11.999 10.4062L17.953 4.45117C18.1644 4.23983 18.451 4.12109 18.7499 4.12109C19.0488 4.12109 19.3354 4.23983 19.5468 4.45117C19.7581 4.66251 19.8769 4.94916 19.8769 5.24804C19.8769 5.54693 19.7581 5.83358 19.5468 6.04492L13.5927 11.9999L19.5449 17.954Z"
-                      fill="#10243D"
-                    />
-                  </svg>
-                </div>
-                <div class="faq-content">
-                  <p>
-                    The DSP is a donation-based programme for fast-track
-                    citizenship. In contrast, the CIIP focuses on long-term
-                    capital investment in local economic projects.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item" data-category="thevanuatu">
-                <div class="faq-header one">
-                  <h2 class="question">What would disqualify me?</h2>
-                  <svg
-                    class="icon-down"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.2949 9.79586L12.7949 17.2959C12.6904 17.4007 12.5662 17.484 12.4295 17.5407C12.2927 17.5975 12.1461 17.6267 11.998 17.6267C11.85 17.6267 11.7034 17.5975 11.5666 17.5407C11.4299 17.484 11.3057 17.4007 11.2012 17.2959L3.70117 9.79586C3.48983 9.58451 3.37109 9.29787 3.37109 8.99898C3.37109 8.7001 3.48983 8.41345 3.70117 8.20211C3.91251 7.99076 4.19916 7.87203 4.49805 7.87203C4.79693 7.87203 5.08358 7.99076 5.29492 8.20211L11.999 14.9062L18.703 8.20117C18.9144 7.98983 19.201 7.87109 19.4999 7.87109C19.7988 7.87109 20.0854 7.98983 20.2968 8.20117C20.5081 8.41252 20.6269 8.69916 20.6269 8.99805C20.6269 9.29693 20.5081 9.58358 20.2968 9.79492L20.2949 9.79586Z"
-                      fill="#10243D"
-                    />
-                  </svg>
-
-                  <svg
-                    class="icon-close"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M19.5449 17.954C19.7563 18.1653 19.875 18.452 19.875 18.7509C19.875 19.0497 19.7563 19.3364 19.5449 19.5477C19.3336 19.7591 19.0469 19.8778 18.748 19.8778C18.4492 19.8778 18.1625 19.7591 17.9512 19.5477L11.999 13.5937L6.04492 19.5459C5.83358 19.7572 5.54693 19.8759 5.24805 19.8759C4.94916 19.8759 4.66251 19.7572 4.45117 19.5459C4.23983 19.3345 4.12109 19.0479 4.12109 18.749C4.12109 18.4501 4.23983 18.1635 4.45117 17.9521L10.4052 11.9999L4.45305 6.04586C4.2417 5.83451 4.12297 5.54787 4.12297 5.24898C4.12297 4.9501 4.2417 4.66345 4.45305 4.45211C4.66439 4.24076 4.95103 4.12203 5.24992 4.12203C5.54881 4.12203 5.83545 4.24076 6.0468 4.45211L11.999 10.4062L17.953 4.45117C18.1644 4.23983 18.451 4.12109 18.7499 4.12109C19.0488 4.12109 19.3354 4.23983 19.5468 4.45117C19.7581 4.66251 19.8769 4.94916 19.8769 5.24804C19.8769 5.54693 19.7581 5.83358 19.5468 6.04492L13.5927 11.9999L19.5449 17.954Z"
-                      fill="#10243D"
-                    />
-                  </svg>
-                </div>
-                <div class="faq-content">
-                  <p>
-                    The DSP is a donation-based programme for fast-track
-                    citizenship. In contrast, the CIIP focuses on long-term
-                    capital investment in local economic projects.
-                  </p>
-                </div>
-              </div>
-
-              <div class="faq-item" data-category="after">
-                <div class="faq-header">
-                  <h2 class="question">
-                    &nbsp;Are any nationalities restricted from applying?
-                  </h2>
-                  <svg
-                    class="icon-down"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M20.2949 9.79586L12.7949 17.2959C12.6904 17.4007 12.5662 17.484 12.4295 17.5407C12.2927 17.5975 12.1461 17.6267 11.998 17.6267C11.85 17.6267 11.7034 17.5975 11.5666 17.5407C11.4299 17.484 11.3057 17.4007 11.2012 17.2959L3.70117 9.79586C3.48983 9.58451 3.37109 9.29787 3.37109 8.99898C3.37109 8.7001 3.48983 8.41345 3.70117 8.20211C3.91251 7.99076 4.19916 7.87203 4.49805 7.87203C4.79693 7.87203 5.08358 7.99076 5.29492 8.20211L11.999 14.9062L18.703 8.20117C18.9144 7.98983 19.201 7.87109 19.4999 7.87109C19.7988 7.87109 20.0854 7.98983 20.2968 8.20117C20.5081 8.41252 20.6269 8.69916 20.6269 8.99805C20.6269 9.29693 20.5081 9.58358 20.2968 9.79492L20.2949 9.79586Z"
-                      fill="#10243D"
-                    />
-                  </svg>
-
-                  <svg
-                    class="icon-close"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M19.5449 17.954C19.7563 18.1653 19.875 18.452 19.875 18.7509C19.875 19.0497 19.7563 19.3364 19.5449 19.5477C19.3336 19.7591 19.0469 19.8778 18.748 19.8778C18.4492 19.8778 18.1625 19.7591 17.9512 19.5477L11.999 13.5937L6.04492 19.5459C5.83358 19.7572 5.54693 19.8759 5.24805 19.8759C4.94916 19.8759 4.66251 19.7572 4.45117 19.5459C4.23983 19.3345 4.12109 19.0479 4.12109 18.749C4.12109 18.4501 4.23983 18.1635 4.45117 17.9521L10.4052 11.9999L4.45305 6.04586C4.2417 5.83451 4.12297 5.54787 4.12297 5.24898C4.12297 4.9501 4.2417 4.66345 4.45305 4.45211C4.66439 4.24076 4.95103 4.12203 5.24992 4.12203C5.54881 4.12203 5.83545 4.24076 6.0468 4.45211L11.999 10.4062L17.953 4.45117C18.1644 4.23983 18.451 4.12109 18.7499 4.12109C19.0488 4.12109 19.3354 4.23983 19.5468 4.45117C19.7581 4.66251 19.8769 4.94916 19.8769 5.24804C19.8769 5.54693 19.7581 5.83358 19.5468 6.04492L13.5927 11.9999L19.5449 17.954Z"
-                      fill="#10243D"
-                    />
-                  </svg>
-                </div>
-                <div class="faq-content">
-                  <p>
-                    The DSP is a donation-based programme for fast-track
-                    citizenship. In contrast, the CIIP focuses on long-term
-                    capital investment in local economic projects.
+                    Yes, on a selective basis. We prioritise partners with
+                    established high-net-worth client bases and a long-term view
+                    of the relationship.
                   </p>
                 </div>
               </div>
