@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+		================================================== -->
+    <meta charset="utf-8" />
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <meta name="description" content="SFI" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/accordion.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tn-main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/sth-style.css" />
+</head>
+
+<body>
+    <header id="header" class="site-header">
+        <div class="site-header__wrap-topbar">
+            <div class="site-header__topbar">
+                <a href="tel:+6787566666" class="site-header__phone">
+                    <img src="assets/images/Telephone.png" alt="" />
+                    +678 756 6666
+                </a>
+
+                <div class="site-header__lang">
+                    <button class="site-header__lang-toggle" type="button">
+                        <img src="assets/images/lang.png" alt="" />
+                        <div class="site-header__lang-active">
+                            <span class="site-header__lang-current">English</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z" fill="#10243D" />
+                            </svg>
+                        </div>
+                    </button>
+                    <ul class="site-header__lang-list">
+                        <li class="site-header__lang-item active" data-lang="en">
+                            <a href="#">English</a>
+                        </li>
+                        <li class="site-header__lang-item" data-lang="fr">
+                            <a href="#">Français</a>
+                        </li>
+                        <li class="site-header__lang-item" data-lang="zh">
+                            <a href="#">中文</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="site-header__cta btn btn-primary site-header__cta-mb">
+                    Book Consultation
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="white" />
+                        <path d="M13 6L19 12L13 18M19 12L5 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="site-header__main">
+                <a href="/" class="site-header__logo">
+                    <img src="assets/images/Logo.png" alt="" />
+                </a>
+
+                <nav class="site-header__nav">
+                    <ul class="site-header__menu">
+                        <li>
+                            <a href="/test" class="site-header__menu-link">
+                                Vanuatu Citizenship
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z" fill="#10243D" />
+                                </svg>
+                            </a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href=" #">DSP</a>
+                                    </li>
+                                    <li>
+                                        <a href=" #">DSP</a>
+                                    </li>
+                                    <li>
+                                        <a href=" #">DSP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="site-header__menu-link">
+                                Resources &amp; Tools
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z" fill="#10243D" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-header__menu-link">
+                                About SKP
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z" fill="#10243D" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="site-header__cta btn btn-primary">
+                    Book Your Consultation
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="white" />
+                        <path d="M13 6L19 12L13 18M19 12L5 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <div class="site-header__mb-right">
+                    <div class="site-header__lang">
+                        <button class="site-header__lang-toggle" type="button">
+                            <div class="site-header__lang-active">
+                                <span class="site-header__lang-current">EN</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z" fill="#10243D" />
+                                </svg>
+                            </div>
+                        </button>
+                        <ul class="site-header__lang-list">
+                            <li class="site-header__lang-item active" data-lang="en">
+                                <a href="#">EN</a>
+                            </li>
+                            <li class="site-header__lang-item" data-lang="fr">
+                                <a href="#">FR</a>
+                            </li>
+                            <li class="site-header__lang-item" data-lang="zh">
+                                <a href="#">CN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hambuger-mobile">
+                        <span class="lines line-1"></span>
+                        <span class="lines line-2"></span>
+                        <span class="lines line-3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <section class="government-intro">
+            <div class="container">
+                <div class="intro-government__content">
+                    <span class="label-section intro-government__label">Our Role</span>
+                    <h1 class="heading-1 intro-government__heading">Our Role in Government</h1>
+                    <p class="desc-section sth-intro-desc">How Stanford Knight & Partners Helped Build Vanuatu’s Citizenship Programme</p>
+                </div>
+            </div>
+        </section>
+        <section class="government-story">
+            <div class="container">
+                <div class="story-government__content">
+                    <span class="label-section story-government__label">the founding story</span>
+                    <h6 class="heading-6 story-government__heading">In 2012, the Government of Vanuatu engaged Stanford Knight’s senior advisory team to help develop a citizenship by investment programme for the nation. Working directly with the Prime Minister’s office and the Citizenship Commission, our team contributed to the legislative framework that established the programme.</h6>
+                    <div class="story-government__paragraph">
+                        <p>This was not a consulting engagement at arm’s length. Our team was present in Port Vila, working alongside government officials, contributing to policy design, due diligence frameworks, and operational structures.</p>
+                        <p>The programme that exists today — the one that has issued thousands of citizenships and generated significant national revenue — is built on a foundation we helped create.</p>
+                    </div>
+                </div>
+                <div class="story-government__video">
+                    <div class="video-section__wrapper">
+                        <video class="video-section__video" poster="./assets/images/video-poster-empty.png" playsinline="">
+                            <source src="https://www.htplus.jp/wp-content/uploads/2024/03/4c65a5cb-3bf4-4fcf-ac56-242be488dfbc.mp4" type="video/mp4">
+                        </video>
+                        <button type="button" class="video-section__play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path opacity="0.2" d="M42.7931 25.2539L15.7781 41.7764C15.5527 41.9133 15.2951 41.9883 15.0314 41.9938C14.7678 41.9994 14.5073 41.9354 14.2762 41.8082C14.0452 41.6809 13.8518 41.4951 13.7155 41.2693C13.5792 41.0435 13.5049 40.7857 13.5 40.522V7.47703C13.5049 7.21333 13.5792 6.95559 13.7155 6.72979C13.8518 6.50399 14.0452 6.31811 14.2762 6.1909C14.5073 6.06369 14.7678 5.99964 15.0314 6.00522C15.2951 6.01079 15.5527 6.08579 15.7781 6.22265L42.7931 22.7451C43.0089 22.8758 43.1874 23.0598 43.3112 23.2796C43.4351 23.4993 43.5001 23.7473 43.5001 23.9995C43.5001 24.2518 43.4351 24.4997 43.3112 24.7195C43.1874 24.9392 43.0089 25.1233 42.7931 25.2539Z" fill="white"></path>
+                                <path d="M43.575 21.4668L16.56 4.94058C16.1045 4.66168 15.5829 4.50943 15.0489 4.49954C14.5149 4.48965 13.988 4.62249 13.5225 4.88433C13.0615 5.14211 12.6774 5.51804 12.4098 5.97347C12.1422 6.42889 12.0008 6.94737 12 7.47558V40.5243C12.0035 41.3167 12.3214 42.0752 12.884 42.6332C13.4466 43.1912 14.2077 43.5029 15 43.5C15.553 43.4997 16.0953 43.3473 16.5675 43.0593L43.575 26.5331C44.0091 26.2685 44.3679 25.8967 44.6168 25.4534C44.8658 25.0101 44.9966 24.5102 44.9966 24.0018C44.9966 23.4934 44.8658 22.9936 44.6168 22.5503C44.3679 22.107 44.0091 21.7352 43.575 21.4706V21.4668ZM15 40.4887V7.49996L41.9681 24L15 40.4887Z" fill="white"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="government-designation">
+            <div class="container">
+                <div class="designation-government__content">
+                    <span class="label-section text-center designation-government__label">The designation</span>
+                    <h2 class="heading-2 text-center designation-government__heading">What “Government-Appointed Master Agent” Means</h2>
+                    <p class="designation-government__desc">A Master Agent is not simply a licensed operator. It is a government-designated entity with specific responsibilities, access, and accountability.</p>
+                </div>
+                <div class="designation-government__appointed">
+                    <div class="government-appointed__box">
+                        <h6 class="heading-6 appointed-box__heading">It means</h6>
+                        <ul>
+                            <li>
+                                <img src="./assets/images/Check-icon.svg" alt="">
+                                <span>Formal recognition by the Government of Vanuatu as an authorised programme partner</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/Check-icon.svg" alt="">
+                                <span>Direct communication channels with the Citizenship Commission</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/Check-icon.svg" alt="">
+                                <span>Government remuneration (not client-funded) — SKP is paid by the Vanuatu government</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/Check-icon.svg" alt="">
+                                <span>Enhanced due diligence responsibilities — we are accountable for application quality</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/Check-icon.svg" alt="">
+                                <span>Ongoing participation in programme development and policy discussions</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="government-appointed__box">
+                        <h6 class="heading-6 appointed-box__heading">It does not mean</h6>
+                        <ul>
+                            <li>
+                                <img src="./assets/images/close-icon.svg" alt="">
+                                <span>Guaranteed approval for every application (due diligence still applies)</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/close-icon.svg" alt="">
+                                <span>Ability to bypass legal requirements (we operate within the legislation we helped write)</span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/close-icon.svg" alt="">
+                                <span>Exclusive government access (other agents operate legally, though without our history)</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="government-relationships">
+            <div class="container">
+                <div class="relationships-government__content">
+                    <span class="label-section relationships-government__label">Direct & ongoing</span>
+                    <h2 class="heading-2 relationships-government__heading">Our government relationships</h2>
+                    <p class="desc-section relationships-government__desc">Stanford Knight maintains direct, ongoing relationships with:</p>
+                </div>
+                <div class="government-relationships__wraper">
+                    <div class="government-relationships__box">
+                        <div class="relationships__box-head">
+                            <img src="./assets/images/home-icon.svg" alt="">
+                            <span class="desc-section sth-relationships__title">The Citizenship Commission of Vanuatu</span>
+                        </div>
+                        <div class="relationships__box-desc">
+                            <p>Paid directly to the Vanuatu Passport Office when your passport is issued.</p>
+                        </div>
+                    </div>
+                    <div class="government-relationships__box">
+                        <div class="relationships__box-head">
+                            <img src="./assets/images/home-icon.svg" alt="">
+                            <span class="desc-section sth-relationships__title">Senior government officials</span>
+                        </div>
+                        <div class="relationships__box-desc">
+                            <p>Including the Chairman of the Citizenship Commission and senior advisers to the Prime Minister.</p>
+                        </div>
+                    </div>
+                    <div class="government-relationships__box">
+                        <div class="relationships__box-head">
+                            <img src="./assets/images/home-icon.svg" alt="">
+                            <span class="desc-section sth-relationships__title">The legislative framework</span>
+                        </div>
+                        <div class="relationships__box-desc">
+                            <p>Our team monitors and contributes to policy developments affecting the programme.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="government-relationships__desc">These relationships are not transactional. They are built on over a decade of collaboration, shared objectives, and mutual accountability.</p>
+            </div>
+        </section>
+        <section class="government-credentials">
+            <div class="container">
+                <div class="credentials-government__content">
+                    <span class="label-section text-center credentials-government__label">Our credentials</span>
+                    <h3 class="heading-3 text-center credentials-government__heading">Government- appointed. <br>Verified. Reproduced here in full.</h3>
+                    <p class="text-center credentials-government__desc">Stanford Knight & Partners is formally licensed by the Citizenship Commission of Vanuatu as a Master Agent for the Development Support Programme (DSP) and the Capital Investment Immigration Programme (CIIP). Both certificates are reproduced below.</p>
+                </div>
+                <div class="government-credentials__verified">
+                    <div class="credentials__verified-box">
+                        <div class="verified-box-image">
+                            <img src="./assets/images/STANFORD KNIGHT PARTNERS DSP CERTIFICATE 2025.png" alt="">
+                            <a href="#" class="btn btn-primary btn-zoom">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.288 6.713C20.096 6.521 20 6.28333 20 6V4H18C17.7167 4 17.4793 3.904 17.288 3.712C17.0967 3.52 17.0007 3.28267 17 3C16.9993 2.71733 17.0953 2.48 17.288 2.288C17.4807 2.096 17.718 2 18 2H20C20.55 2 21.021 2.196 21.413 2.588C21.805 2.98 22.0007 3.45067 22 4V6C22 6.28333 21.904 6.521 21.712 6.713C21.52 6.905 21.2827 7.00067 21 7C20.7173 6.99933 20.48 6.90333 20.288 6.712M3 7C2.71667 7 2.47933 6.904 2.288 6.712C2.09667 6.52 2.00067 6.28267 2 6V4C2 3.45 2.196 2.97933 2.588 2.588C2.98 2.19667 3.45067 2.00067 4 2H6C6.28333 2 6.521 2.096 6.713 2.288C6.905 2.48 7.00067 2.71733 7 3C6.99933 3.28267 6.90333 3.52033 6.712 3.713C6.52067 3.90567 6.28333 4.00133 6 4H4V6C4 6.28333 3.904 6.521 3.712 6.713C3.52 6.905 3.28267 7.00067 3 7Z" fill="white" />
+                                    <path d="M17.288 21.712C17.4793 21.904 17.7167 22 18 22H20C20.5507 22.0007 21.0217 21.805 21.413 21.413C21.8043 21.021 22 20.55 22 20V18C22.0013 17.718 21.9057 17.4807 21.713 17.288C21.5203 17.0953 21.2827 16.9993 21 17C20.7173 17.0007 20.48 17.0967 20.288 17.288C20.096 17.4793 20 17.7167 20 18V20H18C17.718 20 17.4807 20.096 17.288 20.288C17.0953 20.48 16.9993 20.7173 17 21C17.0007 21.2827 17.0967 21.52 17.288 21.712Z" fill="white" />
+                                    <path d="M2.588 21.413C2.97933 21.8043 3.45 22 4 22H6C6.28333 22.0013 6.52067 21.9057 6.712 21.713C6.90333 21.5203 6.99933 21.2827 7 21C7.00067 20.7173 6.905 20.48 6.713 20.288C6.521 20.096 6.28333 20 6 20H4V18C4.00133 17.718 3.90567 17.4807 3.713 17.288C3.52033 17.0953 3.28267 16.9993 3 17C2.71733 17.0007 2.48 17.0967 2.288 17.288C2.096 17.4793 2 17.7167 2 18V20C2.00067 20.5507 2.19667 21.0217 2.588 21.413Z" fill="white" />
+                                </svg>
+                                <span>Click to zoom</span>
+                            </a>
+
+                            <div class="verified-popup-zoom">
+                                <div class="overlay-verified"></div>
+                                <div class="verified-content-zoom">
+                                    <img src="./assets/images/STANFORD KNIGHT PARTNERS DSP CERTIFICATE 2025.png" alt="">
+                                    <div class="btn-verified-close">
+                                        <img src="./assets/images/close-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="verified_box-view">
+                            <div class="verified_box-wraper">
+                                <div class="box-view_security">
+                                    <div class="view_security-icon">
+                                        <img src="./assets/images/Security.svg" alt="">
+                                    </div>
+                                    <span>Verified credential</span>
+                                </div>
+                                <h6 class="heading-6">Master Agent — Development Support Programme</h6>
+                                <span class="verified-sub-heading">DSP</span>
+                                <div class="meta-verified__wraper">
+                                    <div class="sth-meta-verified">
+                                        <span>License</span>
+                                        <span>Master Agent — DSP</span>
+                                    </div>
+                                    <div class="sth-meta-verified">
+                                        <span>Issuing authority</span>
+                                        <span>Citizenship Commission of Vanuatu</span>
+                                    </div>
+                                    <div class="sth-meta-verified">
+                                        <span>Issued</span>
+                                        <span><em>To be confirmed</em></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <a href="#" class="site-header__cta btn btn-primary">
+                                View Full Certificate
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="white"></path>
+                                    <path d="M13 6L19 12L13 18M19 12L5 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="credentials__verified-box">
+                        <div class="verified-box-image">
+                            <img src="./assets/images/Interaction.png" alt="">
+                            <a href="#" class="btn btn-primary btn-zoom">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.288 6.713C20.096 6.521 20 6.28333 20 6V4H18C17.7167 4 17.4793 3.904 17.288 3.712C17.0967 3.52 17.0007 3.28267 17 3C16.9993 2.71733 17.0953 2.48 17.288 2.288C17.4807 2.096 17.718 2 18 2H20C20.55 2 21.021 2.196 21.413 2.588C21.805 2.98 22.0007 3.45067 22 4V6C22 6.28333 21.904 6.521 21.712 6.713C21.52 6.905 21.2827 7.00067 21 7C20.7173 6.99933 20.48 6.90333 20.288 6.712M3 7C2.71667 7 2.47933 6.904 2.288 6.712C2.09667 6.52 2.00067 6.28267 2 6V4C2 3.45 2.196 2.97933 2.588 2.588C2.98 2.19667 3.45067 2.00067 4 2H6C6.28333 2 6.521 2.096 6.713 2.288C6.905 2.48 7.00067 2.71733 7 3C6.99933 3.28267 6.90333 3.52033 6.712 3.713C6.52067 3.90567 6.28333 4.00133 6 4H4V6C4 6.28333 3.904 6.521 3.712 6.713C3.52 6.905 3.28267 7.00067 3 7Z" fill="white" />
+                                    <path d="M17.288 21.712C17.4793 21.904 17.7167 22 18 22H20C20.5507 22.0007 21.0217 21.805 21.413 21.413C21.8043 21.021 22 20.55 22 20V18C22.0013 17.718 21.9057 17.4807 21.713 17.288C21.5203 17.0953 21.2827 16.9993 21 17C20.7173 17.0007 20.48 17.0967 20.288 17.288C20.096 17.4793 20 17.7167 20 18V20H18C17.718 20 17.4807 20.096 17.288 20.288C17.0953 20.48 16.9993 20.7173 17 21C17.0007 21.2827 17.0967 21.52 17.288 21.712Z" fill="white" />
+                                    <path d="M2.588 21.413C2.97933 21.8043 3.45 22 4 22H6C6.28333 22.0013 6.52067 21.9057 6.712 21.713C6.90333 21.5203 6.99933 21.2827 7 21C7.00067 20.7173 6.905 20.48 6.713 20.288C6.521 20.096 6.28333 20 6 20H4V18C4.00133 17.718 3.90567 17.4807 3.713 17.288C3.52033 17.0953 3.28267 16.9993 3 17C2.71733 17.0007 2.48 17.0967 2.288 17.288C2.096 17.4793 2 17.7167 2 18V20C2.00067 20.5507 2.19667 21.0217 2.588 21.413Z" fill="white" />
+                                </svg>
+                                <span>Click to zoom</span>
+                            </a>
+                            <div class="verified-popup-zoom">
+                                <div class="overlay-verified"></div>
+                                <div class="verified-content-zoom">
+                                    <img src="./assets/images/STANFORD KNIGHT PARTNERS DSP CERTIFICATE 2025.png" alt="">
+                                    <div class="btn-verified-close">
+                                        <img src="./assets/images/close-icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="verified_box-view">
+                            <div class="verified_box-wraper">
+                                <div class="box-view_security">
+                                    <div class="view_security-icon">
+                                        <img src="./assets/images/Security.svg" alt="">
+                                    </div>
+                                    <span>Verified credential</span>
+                                </div>
+                                <h6 class="heading-6">Master Agent — Development Support Programme</h6>
+                                <span class="verified-sub-heading">CIIP</span>
+                                <div class="meta-verified__wraper">
+                                    <div class="sth-meta-verified">
+                                        <span>License</span>
+                                        <span>Master Agent — CIIP</span>
+                                    </div>
+                                    <div class="sth-meta-verified">
+                                        <span>Issuing authority</span>
+                                        <span>Citizenship Commission of Vanuatu</span>
+                                    </div>
+                                    <div class="sth-meta-verified">
+                                        <span>Issued</span>
+                                        <span><em>To be confirmed</em></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="site-header__cta btn btn-primary">
+                                View Full Certificate
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="white"></path>
+                                    <path d="M13 6L19 12L13 18M19 12L5 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sth-credentials-licences">
+                    <p class="text-center">Licences are issued for a 5-year period and may be verified directly on the Vanuatu Government Citizenship Commission <a href="#">website</a>. Most current version is listed here."</p>
+                </div>
+            </div>
+        </section>
+        <section class="why-vanuatu why-vanuatu-application sth-application__bg">
+            <div class="container">
+                <div class="why-vanuatu__wrap">
+                    <div class="why-vanuatu__header text-center">
+                        <span class="why-vanuatu__eyebrow label-section">For you</span>
+                        <h2 class="why-vanuatu__title heading-2">Why Government Partnership <br>Matters for You</h2>
+
+                    </div>
+
+                    <div class="why-vanuatu__grid">
+                        <div class="why-vanuatu__card">
+                            <div class="why-vanuatu__card-icon-wrap">
+                                <img src="assets/images/Location.svg" alt="" class="why-vanuatu__card-icon">
+                            </div>
+                            <h3 class="why-vanuatu__card-title heading-6">Speed</h3>
+                            <p class="why-vanuatu__card-desc">When government has a question about your application, our team answers it same-day. We do not wait for email chains across time zones.</p>
+                        </div>
+
+                        <div class="why-vanuatu__card">
+                            <div class="why-vanuatu__card-icon-wrap">
+                                <img src="assets/images/Frame.svg" alt="" class="why-vanuatu__card-icon">
+                            </div>
+                            <h3 class="why-vanuatu__card-title heading-6">Quality</h3>
+                            <p class="why-vanuatu__card-desc">Government trusts our preparation. Applications submitted by Stanford Knight are complete, correctly formatted, and thoroughly vetted — which contributes to faster processing.</p>
+                        </div>
+
+                        <div class="why-vanuatu__card">
+                            <div class="why-vanuatu__card-icon-wrap">
+                                <img src="assets/images/Eye.svg" alt="" class="why-vanuatu__card-icon">
+                            </div>
+                            <h3 class="why-vanuatu__card-title heading-6">Insight</h3>
+                            <p class="why-vanuatu__card-desc">We understand how government evaluates applications because we helped design the evaluation framework. We know what matters, what raises questions, and how to present complex backgrounds clearly.</p>
+                        </div>
+
+                        <div class="why-vanuatu__card">
+                            <div class="why-vanuatu__card-icon-wrap">
+                                <img src="assets/images/Book.svg" alt="" class="why-vanuatu__card-icon">
+                            </div>
+                            <h3 class="why-vanuatu__card-title heading-6">Accountability</h3>
+                            <p class="why-vanuatu__card-desc">Government holds us to a higher standard than independent agents. <br>We maintain that standard because our reputation — and our programme role — depends on it.</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <section class="footer-cta">
+            <div class="container">
+                <div class="footer-cta__wrap">
+                    <h2 class="footer-cta__title heading-2 text-center">
+                        Experience the Advantage of <br>Working With Government Insiders
+                    </h2>
+                    <p class="footer-cta__desc desc-section">
+                        Book a confidential consultation with one
+                        of our senior advisers
+                    </p>
+                    <div class="footer-cta__actions">
+                        <a href="#" class="btn btn-secondary">
+                            Book Your Consultation
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="#10243D" />
+                                <path d="M13 6L19 12L13 18M19 12L5 12" stroke="#10243D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <!-- <a href="#" class="btn btn-ghost">Download Programme Guide</a> -->
+                    </div>
+                    <p class="footer-cta__note">
+                        Government-appointed. Founder expertise. Direct Commission access.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <a href="#" class="site-footer__whatsapp">
+            <img src="assets/images/Whatsapp.png" alt="WhatsApp" />
+        </a>
+        <div class="site-footer__top-wrap">
+            <div class="container">
+                <div class="site-footer__top">
+                    <div class="site-footer__about">
+                        <a href="#" class="site-footer__logo">
+                            <img src="assets/images/logo-white.png" alt="Stanford Knight & Partners" />
+                        </a>
+                        <p class="site-footer__about-text">
+                            Stanford Knight & Partners is the longest-established Master
+                            Agent for Vanuatu's Citizenship by Investment Programme.
+                            Government-appointed. Founder-led. Based in Port Vila, Vanuatu
+                            since 2013.
+                        </p>
+                    </div>
+
+                    <div class="site-footer__cols">
+                        <div class="site-footer__col">
+                            <h3 class="site-footer__col-title">Programmes</h3>
+                            <ul class="site-footer__list">
+                                <li><a href="#">DSP Programme</a></li>
+                                <li><a href="#">CIIP Programme</a></li>
+                                <li><a href="#">Programme Comparison</a></li>
+                                <li><a href="#">Eligibility Criteria</a></li>
+                                <li><a href="#">Cost Calculator</a></li>
+                                <li><a href="#">Document Checklist</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="site-footer__col">
+                            <h3 class="site-footer__col-title">Company</h3>
+                            <ul class="site-footer__list">
+                                <li><a href="#">Why Choose SKP</a></li>
+                                <li><a href="#">Our Government Role</a></li>
+                                <li><a href="#">Meet the Team</a></li>
+                                <li><a href="#">Partner & Agent Programme</a></li>
+                                <li><a href="#">Client Success Stories</a></li>
+                                <li><a href="#">Blog & Insights</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="site-footer__col">
+                            <h3 class="site-footer__col-title">Contact</h3>
+                            <div class="site-footer__contact-group">
+                                <span class="site-footer__contact-label">General Enquiries</span>
+                                <a href="mailto:info@stanfordknight.com">info@stanfordknight.com</a>
+                            </div>
+                            <div class="site-footer__contact-group">
+                                <span class="site-footer__contact-label">Partner Enquiries</span>
+                                <a href="mailto:partner@stanfordknight.com">partner@stanfordknight.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__offices-wrap">
+            <div class="container">
+                <div class="site-footer__offices">
+                    <div class="site-footer__office active">
+                        <span class="site-footer__office-badge">Head Office</span>
+
+                        <div>
+                            <div class="site-footer__office-heading">
+                                <span class="site-footer__office-country">Vanuatu</span>
+                            </div>
+                            <h6 class="site-footer__office-city">Port Vila</h6>
+                            <div class="site-footer__office-address">
+                                Two, The Paro, Winston Churchill Avenue, Port Vila, Vanuatu<em>Adjacent to the Citizenship Commission of Vanuatu</em>
+                            </div>
+                        </div>
+                        <a href="tel:+6787566666" class="site-footer__office-phone">+678 756 6666</a>
+                    </div>
+
+                    <div class="site-footer__office" style="">
+                        <div>
+                            <div class="site-footer__office-heading">
+                                <span class="site-footer__office-country">United Arab Emirates</span>
+                            </div>
+                            <h6 class="site-footer__office-city">Dubai</h6>
+                            <div class="site-footer__office-address">
+                                Burj Gate Tower, Level 1, Office 103<br />Sheikh Zayed Road,
+                                Dubai, UAE
+                            </div>
+                        </div>
+                        <a href="tel:+9714718725" class="site-footer__office-phone">+971 4 718 7257</a>
+                    </div>
+
+                    <div class="site-footer__office">
+                        <div>
+                            <div class="site-footer__office-heading">
+                                <span class="site-footer__office-country">United Kingdom</span>
+                            </div>
+                            <h6 class="site-footer__office-city">London</h6>
+                            <div class="site-footer__office-address">
+                                10 New Street<br />London EC2M 4TP, United Kingdom
+                            </div>
+                        </div>
+                        <a href="tel:+442079648077" class="site-footer__office-phone">+44 7960 834877</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__authorisation-wrap">
+            <div class="container">
+                <div class="site-footer__authorisation">
+                    <div class="site-footer__authorisation-left">
+                        <div class="site-footer__authorisation-badge">
+                            <div class="site-footer__authorisation-number">
+                                <img src="assets/images/badge.png" alt="" />
+                                <span>Government Authorisation </span>
+                                <strong>307812</strong>
+                            </div>
+                            <a href="#" class="site-footer__credentials-link">View Credentials
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                    <path d="M3.22433 1.49953C3.12368 1.50308 3.02333 1.48632 2.9293 1.45026C2.83526 1.41419 2.74945 1.35955 2.67698 1.2896C2.60452 1.21965 2.54688 1.13582 2.50752 1.04311C2.46816 0.950399 2.44787 0.850712 2.44787 0.749993C2.44787 0.649275 2.46816 0.549588 2.50752 0.45688C2.54688 0.364172 2.60452 0.280342 2.67698 0.210391C2.74945 0.14044 2.83526 0.0858001 2.9293 0.0497323C3.02333 0.0136645 3.12367 -0.00309233 3.22433 0.000460618L8.88119 0.000460692C9.07994 0.000584446 9.27051 0.0795926 9.41105 0.22013C9.55159 0.360668 9.63059 0.551243 9.63072 0.749993L9.63072 6.40685C9.63427 6.5075 9.61751 6.60784 9.58145 6.70188C9.54538 6.79592 9.49074 6.88173 9.42079 6.9542C9.35084 7.02666 9.26701 7.08429 9.1743 7.12366C9.08159 7.16302 8.9819 7.1833 8.88118 7.1833C8.78047 7.18331 8.68078 7.16302 8.58807 7.12366C8.49536 7.08429 8.41153 7.02666 8.34158 6.9542C8.27163 6.88173 8.21699 6.79592 8.18092 6.70188C8.14486 6.60784 8.1281 6.5075 8.13165 6.40685L8.13165 2.56019L1.27979 9.41205C1.13913 9.5527 0.948369 9.63172 0.749456 9.63172C0.550544 9.63172 0.359779 9.5527 0.219127 9.41205C0.0784749 9.2714 -0.000543362 9.08063 -0.000543025 8.88172C-0.000542687 8.68281 0.0784746 8.49204 0.219127 8.35139L7.07099 1.49953L3.22433 1.49953Z" fill="white" fill-opacity="0.65" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="site-footer__authorisation-note">
+                            The Government Authorisation number deep-links to Page 10
+                            Section 5, where both Master Agent certificates are displayed in
+                            full.
+                        </p>
+                    </div>
+                    <div class="site-footer__authorisation-right">
+                        <strong>Government-appointed Master Agent</strong>
+                        <span>Citizenship Commission of Vanuatu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="site-footer__bottom">
+                <div class="site-footer__registered">
+                    <p>Registered in Vanuatu</p>
+                    <p>|</p>
+                    <p>Offices in Port Vila, Dubai, and London</p>
+                </div>
+                <div class="site-footer__bottom-row">
+                    <p class="site-footer__copyright">
+                        © 2026 Stanford Knight & Partners Ltd. All rights reserved.
+                    </p>
+                    <ul class="site-footer__legal-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li>|</li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li>|</li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets/js/jquery-3.5.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/accordion.js"></script>
+    <script type="text/javascript" src="assets/js/sth-scripts.js"></script>
+    <script type="text/javascript"></script>
+</body>
+
+</html>
