@@ -1,420 +1,355 @@
-.document-hero{
-    padding: 66px 0 80px;
+.cost-cal-hero {
+    padding: 240px 0 80px;
 }
 
-.document-hero .label-section{
-    margin-bottom: 15px;
+.cost-cal-hero__label {
+    margin-bottom: 23px;
 }
 
-.document-hero .heading-1{
-    margin-bottom: 9px;
+.cost-cal-hero__heading {
     color: var(--text-primary, #10243d);
+    margin-bottom: 9px;
 }
 
-.document-hero__inner{
-    max-width: 791px;
+.cost-cal-hero__desc {
+    max-width: 780px;
+    margin-bottom: 30px;
 }
 
-.document-hero .desc-section{
-    
-    margin-bottom: 31px;
+.cost-cal-hero__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
-.document-hero__box{
-    border-radius: var(--radius-small, 8px);
-    border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.30));
+.cost-cal-hero__message {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+.cost-cal-hero__message p {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text-primary, #10243d);
+    line-height: 150%;
+}
+
+.cost-cal-hero__message img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.cost-cal-hero__content {
+    max-width: 967px;
+}
+
+.choose-programme-sec {
     background: var(--background-mist, #E8EEF2);
-    display: flex;
-    padding: 24px 31px;
-    align-items: flex-start;
-    gap: var(--spacing-12, 12px);
+    padding: 80px 0;
 }
 
-.document-hero__box p{
-    color: #10243D;
+.choose-programme__header {
+    text-align: center;
+    margin-bottom: 48px;
 }
 
-.document-hero__box svg{
-    width: 24px;
-    min-width: 24px;
-    height: 24px;
-    margin-top: 7px;
-}
-
-.why-list{
-    padding: 112px 0;
-    background: #E8EEF2;
-}
-
-.why-list__top{
-    max-width: 973px;
-    margin: 0 auto 40px;
-}
-
-.why-list .label-section{
-    margin-bottom: 19px;
-}
-
-.why-list .heading-2{
-    margin-bottom: 15px;
-}
-
-.why-list .why-list__desc{
-    color: #10243D;
-    margin-bottom: 73px;
-}
-
-.why-list .why-list__subtitle{
-    color: #10243D;
-}
-
-.why-list__cards{
+.choose-programme__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
 }
 
-.why-list__card{
-    border-radius: var(--radius-main, 16px);
-    background: var(--background-white, #FFF);
+.choose-programme__box {
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 40px 32px;
     display: flex;
-    padding: 41px 32px 17px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 22px;
+    align-items: start;
+    position: relative;
+    color: var(--text-primary, #10243D);
+    overflow: hidden;
 }
 
-.why-list__card-number{
-    color: var(--text-primary, #10243D);
-    font-size: var(--Size-Number-small, 44px);
-    font-weight: 400;
-    line-height: calc(32 / 44);
-    font-family: var(--Family-Heading);
-}
-
-.why-list__card-title{
-    color: var(--text-primary, #10243D);
+.choose-programme__box .box-label {
     font-size: var(--Size-H6, 32px);
-    font-style: normal;
     font-weight: 400;
-    line-height: 1.35;
+    line-height: 23px;
+    margin-bottom: 20px;
+
 }
 
-.why-list__card-text{
-    color: #10243D;
-    margin: 0;
+.choose-programme__box .box-title {
+    font-weight: 400;
+    font-size: var(--Size-H4, 54px);
+    line-height: 120%;
+    margin-bottom: 17px;
 }
 
-.why-list__card-link{
+.choose-programme__box .box-desc {
+    font-weight: 500;
+    color: var(--text-primary, #10243D);
+    font-size: var(--Size-text-lg, 20px);
+    line-height: 150%;
+}
+
+.choose-programme__box .box-price {
     display: flex;
+    align-items: start;
+    gap: 12px;
+}
+
+.choose-programme__box .box-price span {
+    font-weight: 500;
+    font-size: var(--Size-text-xl, 24px);
+    line-height: 150%;
+}
+
+.choose-programme__box .box-price .price {
+    font-weight: 400;
+    font-size: var(--Size-H5, 44px);
+    line-height: 130%;
+    font-family: var(--Family-Heading, "Instrument Serif");
+}
+
+.choose-programme__box .box-content-top {
+    padding-bottom: 26px;
+    border-bottom: 1px solid rgba(88, 105, 129, 0.3);
+    margin-bottom: 33px;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.choose-programme__box .box-fee-description {
+    font-weight: 500;
+    font-style: italic;
+    font-size: var(--Size-small, 16px);
+    line-height: 150%;
+    z-index: 2;
+    position: relative;
+    color: var(--text-primary, #10243D);
+    margin-bottom: 50px;
+}
+
+.choose-programme__box .box-btn {
+    position: relative;
+    z-index: 2;
+    margin-top: auto;
+}
+
+.choose-programme__box .box-btn svg {
+    display: none;
+}
+
+.choose-programme__box .box-label-selected {
+    display: inline-flex;
     align-items: center;
     gap: 4px;
-    padding: 15px 0;
-    color: var(--Button-Tertiary-text, #10243D);
-    font-size: var(--Size-small, 16px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    margin-top: 10px;
-}
-
-.doc-required__top {
-    max-width: 895px;
-    margin: 0 auto 55px;
-}
-
-.doc-required{
-    padding: 112px 0;
-}
-
-.doc-required .label-section{
-    margin-bottom: 19px;
-}
-
-.doc-required .heading-2{
-    margin-bottom: 12px;
-}
-
-.faq-list.doc-required__list {
-    max-width: 100%;
-    gap: 32px;
-}
-
-.faq-list.doc-required__list .faq-item .faq-header{
-    height: unset;
-    gap: 12px;
-    justify-content: unset;
-    padding: 23px;
-}
-
-.doc-required__icon{
-    display: flex;
-    width: 56px;
-    height: 56px;
-    padding: 8px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    background: var(--background-white, #FFF);
-}
-
-.faq-list.doc-required__list .faq-item  .faq-header.active .doc-required__action svg{
-    rotate: 180deg;
-}
-
-.doc-required__icon img{
-    width: auto;
-}
-
-.doc-required__title-group{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.faq-list.doc-required__list .faq-item .question{
-    color: var(--text-primary, #10243D);
-    font-family: var(--Family-Heading, "Instrument Serif");
-    font-size: var(--Size-text-xl, 24px);
-    font-weight: 400;
-    line-height: calc(17 / 24);
-}
-
-.doc-required__subtext{
-    color: #10243D;
-    line-height: 13px;
-}
-
-.doc-required__action{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-left: auto
-}
-
-.doc-required__action svg{
-    width: 24px;
-    height: 24px;
-    rotate: 0deg;
-    transition: all .3s ease-in-out;
-}
-
-.doc-required__row{
-    padding: 22px 23px 22px;
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    border-top: 1px solid rgba(88, 105, 129, 0.30);
-    border-bottom: 1px solid rgba(88, 105, 129, 0.30);
-    align-items: flex-start;
-}
-
-
-.doc-required__row:last-child{
-    border-bottom: none;
-}
-
-.doc-required__row:first-child{
-    padding-top: 23px;
-}
-
-.doc-required__row-name{
-    flex: 1;
-    color: var(--text-primary, #10243D);
-    font-size: var(--Size-text-lg, 20px);
-    font-style: normal;
     font-weight: 500;
-    line-height: 1.5; 
-    margin: -7px 0;
-}
-
-.doc-required__row-desc{
-    width: calc(40.9% - 16px);
-    color: var(--text-primary, #10243D);
-    font-size: var(--Size-text-lg, 20px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    margin: -7px 0;
-}
-
-.doc-required__badge{
-    width: calc(18.2% - 16px);
-    width: max-content;
-    min-width: calc(18.2% - 16px);
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0;
-}
-
-.doc-required__badge span{
-    border-radius: 50px;
-    border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.30));
-    background: var(--background-mist, #E8EEF2);
-    padding: 12px;
-    color: var(--text-slate-darker, #586981);
     font-size: var(--Size-main, 18px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: calc(13 / 18); 
+    line-height: 150%;
+    color: #fff;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(268.66deg, rgba(255, 255, 255, 0.12) 1.07%, rgba(255, 255, 255, 0.24) 73.35%, rgba(255, 255, 255, 0.3) 98.79%);
+    box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.16) inset;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: absolute;
+    z-index: 3;
+    top: 24px;
+    right: 24px;
+    padding: 5.5px 11.5px;
+    display: none;
+}
+
+.choose-programme__box.selected,
+.choose-programme__box.selected .box-desc,
+.choose-programme__box.selected .box-fee-description {
+    color: #fff;
+}
+
+.choose-programme__box.selected .box-content-top {
+    border-color: #fff;
+}
+
+.choose-programme__box.selected::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/bg-1.png') no-repeat center / cover;
+    pointer-events: none;
+    opacity: 0.75;
+}
+
+.choose-programme__box.selected::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-color: rgba(2, 77, 98, 0.75);
+}
+
+.choose-programme__box.selected .box-btn {
+    background-color: #fff;
+    border-color: #fff;
+    color: #10243D;
+}
+
+.choose-programme__box.selected .box-btn svg {
     display: block;
 }
 
-.doc-required__badge.doc-required__badge--skp span{
-    border-color: #1E3F62;
+.choose-programme__box.selected .box-label-selected {
+    display: flex;
 }
 
-.faq-list.doc-required__list .faq-item .faq-content{
-    background: #FDFEFF;
-    padding: 0;
-}
-
-.gov-relations{
+.full-cost-sec {
     padding: 112px 0;
-    background: var(--background-ocean-deep, #024D62);
+    background: var(--background-white-2560, rgba(247, 247, 247, 0.6));
 }
 
-.gov-relations__top{
-    max-width: 872px;
-    margin: 0 auto 54px;
-}
-
-.gov-relations .label-section{
-    color: rgba(255, 255, 255, 0.65);
-    margin-bottom: 27px;
-}
-
-.gov-relations .heading-2{
-    color: #fff;
-    margin-bottom: 12px;
-}
-
-.gov-relations .desc-section{
-    color: #fff;
-}
-
-.gov-relations .desc-section p{
-    margin-bottom: 36px;
-    color: #fff;
-    font-size: var(--Size-text-xl, 24px);
-    font-weight: 500;
-    line-height: 150%; 
-}
-
-.gov-relations .desc-section p:last-child{
-    margin: 0;
-}
-
-
-.gov-relations__table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: transparent;
-    border-radius: 16px;
-    overflow: hidden;
-    text-align: left;
-}
-
-.gov-relations__table-wrap{
-    overflow: hidden;
-    border-radius: var(--radius-main, 16px);
-    border: 1px solid var(--border-mist, rgba(232, 238, 242, 0.30));
-}
- 
-.gov-relations__table thead {
-  background-color: #FDFEFF;
-}
- 
-.gov-relations__table th {
-    font-family: var(--Family-Heading);
-    color: var(--text-primary, #10243D);
-    font-size: var(--Size-H6, 32px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.35; 
-    padding: 23px 31px 21px;
-}
- 
-.gov-relations__col-doc {
-  width: 32.7%;
-}
- 
-.gov-relations__col-action {
-  width: 67.3%;
-}
- 
-.gov-relations__row {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
- 
-.gov-relations__doc-name {
-    padding: 22px 31px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    vertical-align: top;
-    font-size: var(--Size-text-xl, 24px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-}
- 
-.gov-relations__doc-action {
-    padding: 26px 31px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #fff;
-    vertical-align: top;
-    font-size: var(--Size-main, 18px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-}
-
-.gov-relations__footnote{
-    color: var(--text-inverse, #FFF);
-    font-size: var(--Size-main, 18px);
-    font-style: italic;
-    font-weight: 500;
-    line-height: 150%;
+.full-cost__intro {
     display: flex;
     align-items: center;
-    gap: 12px;
     justify-content: center;
-    margin-top: 39px;
+    flex-direction: column;
+    max-width: 856px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.full-cost__intro .image {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 29px;
+}
+
+.full-cost__intro .intro-heading {
+    font-weight: 400;
+    font-size: var(--Size-H5, 44px);
+    line-height: 130%;
+    color: var(--text-primary, #10243D);
+    margin-bottom: 19px;
 
 }
 
-.gov-relations__footnote svg{
-    width: 32px;
-    height: 32px;
+.full-cost__intro .intro-desc {
+    font-weight: 500;
+    font-size: var(--Size-main, 18px);
+    line-height: 150%;
 }
 
-.document-process{
+.full-cost__intro .intro-btn {
+    margin-top: 38px;
+}
+
+.full-cost-sec .configure-family {
+    display: none;
+}
+
+.full-disclosure-sec {
     padding: 112px 0;
 }
 
-.document-process__top{
-    max-width: 760px;
-    margin: 0 auto 40px;
+.full-disclosure__header {
+    max-width: 791px;
+    margin-bottom: 64px;
 }
 
-.document-process .label-section{
-    margin-bottom: 19px;
-}   
-
-.document-process .heading-2{
-    margin-bottom: 32px;
-    max-width: 547px;
-    margin: 0 auto 16px;
+.full-disclosure__heading {
+    margin-bottom: 11px;
 }
 
-.document-process .document-process__desc{
-    color: #10243D;
+@media (max-width:1023px) {
+    .cost-cal-hero {
+        padding-top: 250px;
+    }
 }
 
-.document-process .timeline__wrap-item:nth-child(2n) {
-    justify-content: end;
-    text-align: left;
+@media (max-width:992px) {
+    .choose-programme__content {
+        grid-template-columns: 1fr;
+    }
+
+    .choose-programme-sec {
+        padding: 60px 0;
+    }
+
+    .full-cost-sec {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width:767px) {
+    .cost-cal-hero {
+        padding: 200px 0 75px;
+    }
+
+    .cost-cal-hero__desc {
+        margin-bottom: 26px;
+    }
+
+    .cost-cal-hero__btns {
+        gap: 16px;
+    }
+
+    .cost-cal-hero__message {
+        margin-top: 25px;
+    }
+
+    .cost-cal-hero__message p {
+        font-size: 15px;
+    }
+
+    .choose-programme-sec {
+        padding: 32px 0;
+    }
+
+    .choose-programme__header {
+        margin-bottom: 28px;
+    }
+
+    .choose-programme__box {
+        padding: 32px 24px;
+    }
+
+    .choose-programme__box .box-label {
+        line-height: 19px;
+        margin-bottom: 15px;
+    }
+
+    .choose-programme__box .box-title {
+        margin-bottom: 16px;
+    }
+
+    .choose-programme__box .box-desc {
+        margin-bottom: 15px;
+    }
+
+    .choose-programme__box .box-content-top {
+        padding-bottom: 28px;
+        margin-bottom: 36px;
+    }
+
+    .choose-programme__content {
+        gap: 16px;
+    }
+
+    .full-cost__intro .image {
+        margin-bottom: 17px;
+    }
+
+    .full-cost__intro .intro-heading {
+        margin-bottom: 15px;
+    }
+
+    .full-cost__intro .intro-btn {
+        margin-top: 13px;
+    }
 }
