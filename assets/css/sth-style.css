@@ -429,10 +429,12 @@
     padding: 8px 12px;
     position: absolute;
     right: 16px;
+    font-weight: 500;
     bottom: 16px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.2s ease-in-out;
+    min-height: 40px;
 }
 
 /* css popup */
@@ -488,4 +490,219 @@
 
 .verified-content-zoom img {
     max-height: 95vh;
+}
+
+@media screen and (max-width: 992px) {
+
+    .government-credentials,
+    .government-relationships,
+    .government-designation,
+    .government-story {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .relationships__box-desc,
+    .relationships__box-head {
+        width: 50%;
+    }
+
+    .government-credentials__verified {
+        gap: 32px;
+    }
+
+    .credentials__verified-box {
+        width: calc((100% - 32px) / 2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .designation-government__appointed {
+        padding-right: 0;
+        flex-wrap: wrap;
+        padding-top: 33px;
+    }
+
+    .government-appointed__box {
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .government-appointed__box:last-child {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        padding-bottom: 25px;
+    }
+
+    .government-appointed__box:last-child .appointed-box__heading {
+        margin-bottom: 8px;
+    }
+
+    .appointed-box__heading {
+        margin-bottom: 9px;
+    }
+
+    .government-appointed__box ul li {
+        margin-bottom: 3px;
+    }
+
+    .government-relationships__box {
+        flex-wrap: wrap;
+    }
+
+    .relationships__box-head span {
+        width: 100%;
+    }
+
+    .relationships__box-desc,
+    .relationships__box-head {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .government-credentials__verified {
+        padding-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .credentials__verified-box {
+        width: 100%;
+    }
+
+    .sth-meta-verified span {
+        width: 50%;
+    }
+
+    .sth-meta-verified span:last-child {
+        max-width: 200px;
+    }
+
+    .intro-government__heading {
+        margin-bottom: 11px;
+    }
+
+    .story-government__label {
+        margin-bottom: 25px;
+    }
+
+    .story-government__heading {
+        margin-bottom: 14px;
+    }
+
+    .story-government__paragraph p {
+        margin-bottom: 30px;
+    }
+
+    .story-government__content {
+        padding-bottom: 56px;
+    }
+
+    .story-government__video .video-section__wrapper video {
+        aspect-ratio: 342 / 350;
+    }
+
+    .story-government__video .video-section__wrapper {
+        aspect-ratio: 342 / 350;
+    }
+
+    .designation-government__label {
+        margin-bottom: 15px;
+    }
+
+    .relationships-government__content {
+        margin-bottom: 31px;
+    }
+
+    .government-relationships__box {
+        padding: 39px 23px;
+        padding-bottom: 33px;
+        gap: 19px;
+    }
+
+    .relationships__box-head {
+        gap: 15px;
+    }
+
+    .government-relationships__desc {
+        margin-top: 24px;
+    }
+
+    .government-relationships {
+        padding-bottom: 74px;
+    }
+
+    .credentials-government__label {
+        margin-bottom: 14px;
+    }
+
+    .credentials-government__content {
+        margin-bottom: 34px;
+    }
+
+    .verified-box-image {
+        border: none;
+    }
+
+    .btn-zoom {
+        font-size: 15px;
+        padding: 8px 12px;
+        right: 24px;
+        bottom: 24px;
+    }
+
+    .verified-box-image {
+        margin-bottom: 23px;
+    }
+
+    .verified_box-view {
+        padding: 23px;
+        gap: 39px;
+    }
+
+    .credentials__verified-box .verified_box-view {
+        padding-right: 19px;
+    }
+
+    .box-view_security {
+        margin-bottom: 26px;
+    }
+
+    .verified-sub-heading {
+        margin-top: 7px;
+        margin-bottom: 3px;
+    }
+
+    .sth-meta-verified {
+        padding-bottom: 18px;
+    }
+
+    .verified_box-view .btn {
+        width: 100%;
+    }
+
+    .government-credentials__verified {
+        gap: 40px;
+    }
+
+    .credentials__verified-box:last-child .verified-box-image {
+        margin-bottom: 24px;
+    }
+
+    .credentials__verified-box:last-child .verified_box-view {
+        gap: 31px;
+    }
+    .government-credentials__verified {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .sth-meta-verified span:last-child {
+        max-width: 118px;
+    }
+
+    .credentials-government__heading {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
 }
