@@ -187,8 +187,22 @@
 }
 
 .relationships__box-head img {
-    width: 56px;
     vertical-align: middle;
+}
+
+.rela-icon_wraper {
+    border-radius: 16px;
+    background: linear-gradient(269deg, rgba(247, 247, 247, 0.40) 1.07%, rgba(247, 247, 247, 0.32) 17.36%, rgba(247, 247, 247, 0.08) 98.79%);
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+    backdrop-filter: blur(10px);
+    display: flex;
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    aspect-ratio: 1/1;
 }
 
 .relationships__box-head span {
