@@ -691,6 +691,7 @@
     .credentials__verified-box:last-child .verified_box-view {
         gap: 31px;
     }
+
     .government-credentials__verified {
         margin-bottom: 40px;
     }
@@ -704,5 +705,319 @@
     .credentials-government__heading {
         padding-left: 1px;
         padding-right: 1px;
+    }
+}
+
+/* Cost Calculator Page*/
+
+.disclosure__billed-separately {
+    border-radius: 16px;
+    border: 1px solid rgba(88, 105, 129, 0.30);
+    overflow: hidden;
+}
+
+.billed-separately__head {
+    background-color: #E8EEF2;
+    padding: 20px 23px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separately__head-right {
+    display: flex;
+    gap: 23.08px;
+    width: max-content;
+}
+
+.separately-wrap-icon {
+    display: flex;
+    gap: 4px;
+    position: relative;
+}
+
+.separately-wrap-icon:first-child::before {
+    left: calc(100% + 2px);
+    top: 50%;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px dashed rgba(88, 105, 129, 0.80);
+}
+
+.separately__head-left {
+    flex: 1;
+}
+
+.separately__head-left span {
+    color: #10243D;
+    font-size: var(--Size-main, 18px);
+    font-weight: 500;
+    line-height: 170%;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+.full-disclosure__header {
+    margin-bottom: 55px;
+}
+
+.separately-wrap-icon span {
+    font-size: var(--Size-main, 18px);
+    font-weight: 400;
+    line-height: 150%;
+    color: #000;
+    letter-spacing: -0.2px;
+}
+
+.sth-box-icon {
+    padding: 8px;
+    background-color: #E8EEF2;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+}
+
+.separately__main-left {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    max-width: 646px;
+}
+
+.application__fee-left {
+    width: calc(100% - 80px);
+}
+
+.billed-separately__main {
+    padding: 23px 32px;
+    padding-bottom: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(88, 105, 129, 0.30);
+}
+
+.application__fee-title {
+    display: block;
+}
+
+.application__fee-desc {
+    font-size: var(--Size-main, 18px);
+    font-weight: 500;
+    line-height: 150%;
+    color: rgba(26, 58, 85, 0.70);
+    max-width: 435px;
+}
+
+.separately__main-right {
+    min-width: 264px;
+}
+
+.application__vuv-title {
+    margin-bottom: -7px;
+}
+
+.application__fee-wraper {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.application__tag-fee {
+    padding: 9px 12px;
+    font-size: var(--Size-small, 16px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    display: inline-flex;
+    border-radius: 20px;
+    border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.30));
+    background: var(--background-mist, #E8EEF2);
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+    backdrop-filter: blur(10px);
+    height: 36px;
+}
+
+.separately__main-wraper .billed-separately__main:last-child {
+    padding-top: 21px;
+    padding-bottom: 33px;
+}
+
+.separately__main-wraper .billed-separately__main:last-child .separately__main-left {
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.separately__main-wraper .billed-separately__main:last-child .application__fee-wraper {
+    margin-bottom: 17px;
+}
+
+.separately__main-wraper .billed-separately__main:last-child .application__fee-desc {
+    margin-bottom: 17px;
+}
+
+.check-vila-box {
+    padding: 8px 14px;
+    border-radius: var(--radius-small, 8px);
+    border: 1px solid var(--border-cyan, rgba(10, 215, 244, 0.70));
+    background: var(--background-cyan-5, rgba(10, 215, 244, 0.05));
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.check-vila-box svg {
+    width: 24px;
+}
+
+.check-vila-box p {
+    width: calc(100% - 32px);
+}
+
+.check-vila-box p {
+    font-size: 16px;
+}
+
+.check-vila-box p strong {
+    font-weight: 600;
+}
+
+.billed-separately__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px;
+    background-color: #E8EEF2;
+}
+
+.separately__footer-left {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    max-width: calc(100% - 340px);
+}
+
+.separately__footer-left svg {
+    max-width: 24px;
+}
+
+.separately__footer-left span {
+    width: calc(100% - 36px);
+}
+
+@media screen and (max-width: 767px) {
+
+    .separately__head-right {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .separately-wrap-icon:first-child::before {
+        left: 10px;
+        top: 25px;
+        height: 20px;
+        width: 1px;
+        border-right: 1px dashed rgba(88, 105, 129, 0.80);
+        border-bottom: 0;
+    }
+
+    .billed-separately__footer,
+    .billed-separately__head,
+    .separately__main-left,
+    .billed-separately__main {
+        flex-wrap: wrap;
+    }
+
+    .separately__footer-left,
+    .separately__head-left,
+    .separately-wrap-icon,
+    .separately__main-right,
+    .separately__main-left,
+    .application__fee-left {
+        width: 100%;
+    }
+
+    .separately__footer-left {
+        max-width: 100%;
+        padding-left: 11px;
+        padding-right: 12px;
+
+    }
+
+    .billed-separately__footer {
+        gap: 18px;
+        padding: 12px;
+        padding-top: 19px;
+        padding-bottom: 23px;
+    }
+
+    .choose-programme__box:last-child .box-fee-description {
+        margin-bottom: 33px;
+    }
+
+    .full-disclosure-sec {
+        padding: 80px 0;
+    }
+
+    .full-disclosure__header {
+        margin-bottom: 33px;
+    }
+
+    .billed-separately__head {
+        padding: 14px 23px;
+        padding-bottom: 24px;
+        gap: 16px;
+    }
+
+    .billed-separately__main {
+        padding: 40px 23px;
+        gap: 18px;
+        padding-bottom: 34px;
+    }
+
+    .separately__main-left {
+        gap: 16px;
+    }
+
+    .application__vuv-title {
+        margin-bottom: -2px;
+    }
+
+    .separately__main-wraper .billed-separately__main:last-child .separately__main-left {
+        padding-top: 18px;
+    }
+
+    .separately__main-wraper .billed-separately__main:last-child .application__fee-wraper {
+        gap: 23px;
+        margin-bottom: 25px;
+    }
+
+    .separately__main-wraper .billed-separately__main:last-child .application__fee-desc {
+        margin-bottom: -1px;
+    }
+
+    .separately__main-wraper .billed-separately__main:last-child .check-vila-box {
+        margin-top: 27px;
+        padding: 10px 14px;
+    }
+
+    .check-vila-box p {
+        font-size: 15px;
+    }
+
+    .separately__main-wraper .billed-separately__main:last-child {
+        padding-bottom: 39px;
+    }
+
+    .separately__footer-left span {
+        font-size: 15px;
     }
 }
