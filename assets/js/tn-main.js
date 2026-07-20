@@ -304,7 +304,15 @@
 
     const timeline = document.querySelector(".timeline-horizontal__wrap");
     const items = [...document.querySelectorAll("#timeline-horizontal .timeline-horizontal__item")];
+    const fullItem = document.querySelector(".timeline-item--full");
 
+    function updateFullWidth() {
+        fullItem.style.minWidth = `${timeline.offsetWidth}px`;
+    }
+
+    updateFullWidth();
+
+    window.addEventListener("resize", updateFullWidth);
     let current = document.querySelectorAll("#timeline-horizontal .timeline-horizontal__item.active").length - 1;
     if (current < 0) current = 0;
 
