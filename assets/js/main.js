@@ -91,7 +91,7 @@ function main() {
 			bindMobileMenu();
 			$(window).on('resize', bindMobileMenu);
 			// video
-			var $section = $('.video-section');
+			var $section = $('.video-section__wrapper');
 			var $video = $section.find('.video-section__video')[0];
 			var $playBtn = $section.find('.video-section__play');
 
@@ -158,6 +158,31 @@ function main() {
 				$emailInput.slideUp(200);
 			}
 		});
+
+		// passport fees
+		var $tabs = $('.passport-fees__tab-input');
+		var $notes = $('.passport-fees__note');
+
+		function showNote(target) {
+			$notes.stop(true, true).slideUp(300);
+			$notes
+				.filter('[data-note="' + target + '"]')
+				.stop(true, true)
+				.slideDown(300);
+		}
+
+		$tabs.on('change', function () {
+			if (!$(this).is(':checked')) {
+				$(this).prop('checked', true);
+				return;
+			}
+
+			$tabs.not(this).prop('checked', false);
+			showNote($(this).data('tab'));
+		});
+
+		$notes.hide();
+		showNote($tabs.filter(':checked').data('tab'));
 
 	}());
 }

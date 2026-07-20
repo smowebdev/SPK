@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Page Needs
+		================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="description" content="SFI">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tn-main.css" />
+
+
+</head>
+
+<body>
+    <header id="header" class="site-header">
+        <div class="site-header__wrap-topbar">
+            <div class="site-header__topbar">
+                <a href="tel:+6787566666" class="site-header__phone">
+                    <img src="assets/images/Telephone.png" alt="">
+                    +678 756 6666
+                </a>
+
+                <div class="site-header__lang">
+                    <button class="site-header__lang-toggle" type="button">
+                        <img src="assets/images/lang.png" alt="">
+                        <div class="site-header__lang-active">
+                            <span class="site-header__lang-current">English</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z"
+                                    fill="#10243D" />
+                            </svg>
+                        </div>
+                    </button>
+                    <ul class="site-header__lang-list">
+                        <li class="site-header__lang-item active" data-lang="en">
+                            <a href="#">English</a>
+                        </li>
+                        <li class="site-header__lang-item" data-lang="fr">
+                            <a href="#">Français</a>
+                        </li>
+                        <li class="site-header__lang-item" data-lang="zh">
+                            <a href="#">中文</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <a href="#" class="site-header__cta btn btn-primary site-header__cta-mb">
+                    Book Consultation
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="white" />
+                        <path d="M13 6L19 12L13 18M19 12L5 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="site-header__main">
+                <a href="/" class="site-header__logo">
+                    <img src="assets/images/Logo.png" alt="">
+                </a>
+
+                <nav class="site-header__nav">
+                    <ul class="site-header__menu">
+                        <li>
+                            <a href="/test" class="site-header__menu-link">
+                                Vanuatu Citizenship
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z"
+                                        fill="#10243D" />
+                                </svg>
+                            </a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li>
+                                        <a href=" #">DSP</a>
+                                    </li>
+                                    <li>
+                                        <a href=" #">DSP</a>
+                                    </li>
+                                    <li>
+                                        <a href=" #">DSP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="site-header__menu-link">
+                                Resources &amp; Tools
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z"
+                                        fill="#10243D" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="site-header__menu-link">
+                                About SKP
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z"
+                                        fill="#10243D" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="#" class="site-header__cta btn btn-primary">
+                    Book Your Consultation
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="white" />
+                        <path d="M13 6L19 12L13 18M19 12L5 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <div class="site-header__mb-right">
+                    <div class="site-header__lang">
+                        <button class="site-header__lang-toggle" type="button">
+                            <div class="site-header__lang-active">
+                                <span class="site-header__lang-current">EN</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M13.5326 6.53025L8.53255 11.5302C8.46287 11.6002 8.38008 11.6556 8.28892 11.6935C8.19775 11.7314 8.10001 11.7508 8.0013 11.7508C7.90259 11.7508 7.80485 11.7314 7.71369 11.6935C7.62252 11.6556 7.53973 11.6002 7.47005 11.5302L2.47005 6.53025C2.32915 6.38935 2.25 6.19825 2.25 5.999C2.25 5.79974 2.32915 5.60864 2.47005 5.46775C2.61095 5.32685 2.80204 5.2477 3.0013 5.2477C3.20056 5.2477 3.39165 5.32685 3.53255 5.46775L8.00193 9.93712L12.4713 5.46712C12.6122 5.32623 12.8033 5.24707 13.0026 5.24707C13.2018 5.24707 13.3929 5.32623 13.5338 5.46712C13.6747 5.60802 13.7539 5.79911 13.7539 5.99837C13.7539 6.19763 13.6747 6.38873 13.5338 6.52962L13.5326 6.53025Z"
+                                        fill="#10243D" />
+                                </svg>
+                            </div>
+                        </button>
+                        <ul class="site-header__lang-list">
+                            <li class="site-header__lang-item active" data-lang="en">
+                                <a href="#">EN</a>
+                            </li>
+                            <li class="site-header__lang-item" data-lang="fr">
+                                <a href="#">FR</a>
+                            </li>
+                            <li class="site-header__lang-item" data-lang="zh">
+                                <a href="#">CN</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="hambuger-mobile">
+                        <span class="lines line-1"></span>
+                        <span class="lines line-2"></span>
+                        <span class="lines line-3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <section class="hero-section hero-application"
+            style="--bg:url('/assets/images/application-process-bg.jpg');--min-h:847px">
+            <div class="container">
+                <div class="hero__wrap">
+                    <div class="hero__content">
+                        <span class="hero__eyebrow label-section">Application Process &amp; Timeline</span>
+                        <h1 class="hero__title heading-1">Your Path to Citizenship</h1>
+                        <p class="hero__desc desc-section">Seven clear steps. 60 days on average. Fully managed by our
+                            team. No
+                            travel required.</p>
+                    </div>
+
+                    <div class="hero__stat-cards">
+                        <div class="hero__stat-card">
+                            <span class="hero__stat-number ">7</span>
+                            <p class="hero__stat-label">Clear steps, start to finish</p>
+                        </div>
+                        <div class="hero__stat-card">
+                            <span class="hero__stat-number ">60<small>days</small></span>
+                            <p class="hero__stat-label">On average, submission to approval</p>
+                        </div>
+                        <div class="hero__stat-card">
+                            <span class="hero__stat-number ">100%</span>
+                            <p class="hero__stat-label">Remote process to approval</p>
+                        </div>
+                        <div class="hero__stat-card">
+                            <span class="hero__stat-number ">0</span>
+                            <p class="hero__stat-label">Travel required to apply</p>
+                        </div>
+                    </div>
+
+                    <div class="hero__note">
+                        <img src="assets/images/Biometric.svg" alt="">
+                        <p>One in-person biometric appointment is required at the passport-issuance stage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <div class="how-it-works__intro section-header">
+                    <span class="how-it-works__eyebrow label-section">How It Works</span>
+                    <h2 class="how-it-works__title heading-2">From your first conversation to passport in hand</h2>
+                    <div class="how-it-works__desc desc-section">
+                        <p class="">The Vanuatu citizenship application process is
+                            straightforward when
+                            managed by
+                            experienced professionals. Stanford Knight has processed thousands of applications and
+                            refined
+                            every
+                            step to
+                            minimise delays, prevent complications, and deliver results.</p>
+                        <p class="">Here is exactly what happens from your first conversation to passport
+                            delivery.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="video-section__wrapper video-section__wrapper-layoyut-2">
+                    <video class="video-section__video" poster="https://placehold.co/1312x738" playsinline>
+                        <source
+                            src="https://www.htplus.jp/wp-content/uploads/2024/03/4c65a5cb-3bf4-4fcf-ac56-242be488dfbc.mp4"
+                            type="video/mp4">
+                    </video>
+
+                    <button type="button" class="video-section__play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path opacity="0.2"
+                                d="M42.7931 25.2539L15.7781 41.7764C15.5527 41.9133 15.2951 41.9883 15.0314 41.9938C14.7678 41.9994 14.5073 41.9354 14.2762 41.8082C14.0452 41.6809 13.8518 41.4951 13.7155 41.2693C13.5792 41.0435 13.5049 40.7857 13.5 40.522V7.47703C13.5049 7.21333 13.5792 6.95559 13.7155 6.72979C13.8518 6.50399 14.0452 6.31811 14.2762 6.1909C14.5073 6.06369 14.7678 5.99964 15.0314 6.00522C15.2951 6.01079 15.5527 6.08579 15.7781 6.22265L42.7931 22.7451C43.0089 22.8758 43.1874 23.0598 43.3112 23.2796C43.4351 23.4993 43.5001 23.7473 43.5001 23.9995C43.5001 24.2518 43.4351 24.4997 43.3112 24.7195C43.1874 24.9392 43.0089 25.1233 42.7931 25.2539Z"
+                                fill="white" />
+                            <path
+                                d="M43.575 21.4668L16.56 4.94058C16.1045 4.66168 15.5829 4.50943 15.0489 4.49954C14.5149 4.48965 13.988 4.62249 13.5225 4.88433C13.0615 5.14211 12.6774 5.51804 12.4098 5.97347C12.1422 6.42889 12.0008 6.94737 12 7.47558V40.5243C12.0035 41.3167 12.3214 42.0752 12.884 42.6332C13.4466 43.1912 14.2077 43.5029 15 43.5C15.553 43.4997 16.0953 43.3473 16.5675 43.0593L43.575 26.5331C44.0091 26.2685 44.3679 25.8967 44.6168 25.4534C44.8658 25.0101 44.9966 24.5102 44.9966 24.0018C44.9966 23.4934 44.8658 22.9936 44.6168 22.5503C44.3679 22.107 44.0091 21.7352 43.575 21.4706V21.4668ZM15 40.4887V7.49996L41.9681 24L15 40.4887Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="timeline timeline-application pd-gobal-ct">
+            <div class="container">
+                <div class="timeline__header">
+                    <span class="label-section">timeline</span>
+                    <h2 class="heading-2">Seven steps, fully managed</h2>
+                    <p class="timeline__subdesc">Every stage is handled by your SKP team. The points where payment falls
+                        due are
+                        marked, so you always know what is owed and when.</p>
+                </div>
+
+                <div class="timeline__list flex-wrap-ct">
+                    <div class="timeline__wrap-item">
+                        <div class="timeline__item">
+                            <div class="timeline__item-head">
+                                <h3 class="timeline__title">Book Your Consultation</h3>
+                            </div>
+                            <p class="timeline__des">Your journey begins with a confidential conversation with one of
+                                our senior
+                                advisers. We discuss your situation, assess eligibility, recommend the right programme
+                                (DSP or
+                                CIIP), and answer every question. No commitment. No pressure.</p>
+                        </div>
+                        <div class="timeline__item-duration">
+                            <span class="timeline__duration">Duration: 45–60 minutes</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__wrap-item">
+                        <div class="timeline__item">
+                            <div class="timeline__item-head">
+                                <h3 class="timeline__title">Engage Stanford Knight</h3>
+                            </div>
+                            <p class="timeline__des">If you decide to proceed, we formalise our engagement. You receive
+                                a clear
+                                engagement letter outlining scope, timeline, costs,<br> and responsibilities.</p>
+                            <div class="timeline__note">
+                                <img src="assets/images/Wallet.svg" alt="">
+                                <span><strong>$5,000</strong> government due-diligence fee is paid at this stage.</span>
+                            </div>
+                        </div>
+                        <div class="timeline__item-duration">
+                            <span class="timeline__duration">Duration: 1–2 days</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__wrap-item">
+                        <div class="timeline__item">
+                            <div class="timeline__item-head">
+                                <h3 class="timeline__title">Document Collection</h3>
+                            </div>
+                            <p class="timeline__des">We provide a comprehensive document checklist tailored to your
+                                circumstances. Our team guides you through every requirement — what's needed, how to
+                                obtain it,
+                                how to format it. Nothing is left to guesswork. The full document set is available in
+                                advance on
+                                the Document Checklist page so you can begin gathering before you engage.</p>
+
+                            <a href="#" class="btn btn-primary timeline__cta">
+                                See the full Document Checklist
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="white" />
+                                    <path d="M13 6L19 12L13 18M19 12L5 12" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="timeline__item-duration">
+                            <span class="timeline__duration">Duration: 7–14 days</span>
+                            <span class="timeline__note-small">*Duration depends on your responsiveness and document
+                                availability.</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__wrap-item">
+                        <div class="timeline__item">
+                            <div class="timeline__item-head">
+                                <h3 class="timeline__title">Application Preparation</h3>
+
+                            </div>
+                            <p class="timeline__des">Our team compiles your formal application — every document
+                                reviewed,
+                                verified, formatted, and assembled to government standards. We check everything twice
+                                before
+                                submission.</p>
+                            <div class="timeline__note">
+                                <img src="assets/images/Wallet.svg" alt="">
+                                <span><strong>25% </strong> of the government contribution is paid immediately before
+                                    lodgement.</span>
+                            </div>
+                        </div>
+                        <div class="timeline__item-duration">
+                            <span class="timeline__duration">Duration: 5–7 days</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__wrap-item">
+                        <div class="timeline__item">
+                            <div class="timeline__item-head">
+                                <h3 class="timeline__title">Government Submission</h3>
+
+                            </div>
+                            <p class="timeline__des">Your application is submitted directly to the Citizenship
+                                Commission of
+                                Vanuatu by our Port Vila team. Because our office is adjacent to the Commission,
+                                submission is
+                                immediate and any initial queries are handled same-day.</p>
+                        </div>
+                        <div class="timeline__item-duration">
+                            <span class="timeline__duration">Duration: 1 day</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__wrap-item">
+                        <div class="timeline__item">
+                            <div class="timeline__item-head">
+                                <h3 class="timeline__title">Due Diligence &amp; Processing</h3>
+
+                            </div>
+                            <p class="timeline__des">The Citizenship Commission conducts its due diligence — background
+                                checks,
+                                financial verification, sanctions screening. If government has questions, our team
+                                responds
+                                directly and immediately. Our proximity to the Commission means no delays waiting for
+                                intermediary communication.</p>
+                        </div>
+                        <div class="timeline__item-duration">
+                            <span class="timeline__duration">Duration: 30–48 days (typical)</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline__wrap-item">
+                        <div class="timeline__item">
+                            <div class="timeline__item-head">
+                                <h3 class="timeline__title">Approval, Oath &amp; Passport</h3>
+
+                            </div>
+                            <p class="timeline__des">Your application is approved. You take the oath of allegiance —
+                                administered remotely via consultation or embassy — and your Vanuatu passport is issued
+                                and
+                                delivered securely to your specified address.</p>
+                            <div class="timeline__note">
+                                <img src="assets/images/Wallet.svg" alt="">
+                                <span>Remaining <strong>75%</strong> is paid on approval. For CIIP, the <strong>$50,000</strong> Impact Fund investment is
+                                    confirmed.</span>
+                            </div>
+                        </div>
+                        <div class="timeline__item-duration">
+                            <span class="timeline__duration">Duration: 7–14 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline__summary">
+                    <span class="timeline__summary-label">Typical total timeline</span>
+                    <div class="timeline__summary-list">
+                        <div class="timeline__summary-item">
+                            <span class="timeline__summary-value heading-5">~60 days</span>
+                            <span class="timeline__summary-desc">DSP — submission to citizenship approval</span>
+                        </div>
+                        <div class="timeline__summary-item">
+                            <span class="timeline__summary-value heading-5">~60 days</span>
+                            <span class="timeline__summary-desc">CIIP — submission to citizenship approval</span>
+                        </div>
+                        <div class="timeline__summary-item">
+                            <span class="timeline__summary-value heading-5">+2–3 wks</span>
+                            <span class="timeline__summary-desc">Biometric enrolment &amp; passport delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why-choose why-choose-light">
+            <div class="container">
+                <div class="why-choose__wrap">
+                    <div class="why-choose__intro">
+                        <span class="why-choose__eyebrow label-section">After approval</span>
+                        <h2 class="why-choose__title heading-2">From Approval to Passport in Hand</h2>
+                        <p class="why-choose__desc desc-section">Approval is the milestone. The passport is the
+                            deliverable. Here is what happens between the two — managed end to end by
+                            your SKP team.</p>
+
+
+                    </div>
+
+                    <div class="why-choose__slider">
+                        <div class="owl-carousel owl-theme why-choose__carousel">
+                            <div class="why-choose__item">
+                                <span class="why-choose__item-number">01</span>
+                                <h3 class="why-choose__item-title heading-5">Civil status registration</h3>
+                                <p class="why-choose__item-desc">Your citizenship certificate is issued by the
+                                    Citizenship Commission. We then complete your civil status registration,
+                                    which generates your Vanuatu birth registration certificate and national ID card. We
+                                    hold the originals on file and
+                                    provide certified copies for your immediate use.</p>
+                            </div>
+
+                            <div class="why-choose__item">
+                                <span class="why-choose__item-number">02</span>
+                                <h3 class="why-choose__item-title heading-5">Biometric enrolment booking</h3>
+                                <p class="why-choose__item-desc">Vanuatu’s passport is biometric and ICAO-compliant.
+                                    Manual passports are no longer issued, so every applicant —
+                                    including children — must attend an in-person enrolment appointment. We submit your
+                                    biometrics registration to the
+                                    Vanuatu Passport Office on your behalf, alongside the supporting documents
+                                    (citizenship certificate, civil status
+                                    certificates, FIU clearance, police clearance, and a copy of your original
+                                    passport), and book your appointment at the
+                                    location best suited to you.</p>
+                            </div>
+
+                            <div class="why-choose__item">
+                                <span class="why-choose__item-number">03</span>
+                                <h3 class="why-choose__item-title heading-5">In-person biometric appointment
+                                </h3>
+                                <p class="why-choose__item-desc">You attend in person to provide fingerprints, a
+                                    passport photograph, and facial recognition data.</p>
+                            </div>
+
+                            <div class="why-choose__item">
+                                <span class="why-choose__item-number">04</span>
+                                <h3 class="why-choose__item-title heading-5">Passport printed,
+                                    couriered, delivered
+                                </h3>
+                                <p class="why-choose__item-desc">Your passport is printed in Vanuatu, collected by our
+                                    team, and delivered to your nominated address by secure courier.
+                                    From biometric appointment to passport in hand is typically a further 2–3 weeks.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="why-choose__nav">
+                    <button type="button" class="why-choose__nav-btn why-choose__nav-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M14.2041 20.2959L6.70414 12.7959C6.59926 12.6914 6.51605 12.5672 6.45927 12.4304C6.40249 12.2937 6.37326 12.1471 6.37326 11.999C6.37326 11.851 6.40249 11.7043 6.45927 11.5676C6.51605 11.4309 6.59926 11.3067 6.70414 11.2021L14.2041 3.70215C14.4155 3.4908 14.7021 3.37207 15.001 3.37207C15.2999 3.37207 15.5865 3.4908 15.7979 3.70215C16.0092 3.91349 16.128 4.20014 16.128 4.49902C16.128 4.79791 16.0092 5.08455 15.7979 5.2959L9.09383 12L15.7988 18.704C16.0102 18.9154 16.1289 19.202 16.1289 19.5009C16.1289 19.7998 16.0102 20.0864 15.7988 20.2978C15.5875 20.5091 15.3008 20.6279 15.002 20.6279C14.7031 20.6279 14.4164 20.5091 14.2051 20.2978L14.2041 20.2959Z"
+                                fill="#1E3F62" />
+                        </svg>
+                    </button>
+                    <button type="button" class="why-choose__nav-btn why-choose__nav-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M9.79586 3.7041L17.2959 11.2041C17.4007 11.3086 17.484 11.4328 17.5407 11.5696C17.5975 11.7063 17.6267 11.8529 17.6267 12.001C17.6267 12.149 17.5975 12.2957 17.5407 12.4324C17.484 12.5691 17.4007 12.6933 17.2959 12.7979L9.79586 20.2979C9.58451 20.5092 9.29787 20.6279 8.99898 20.6279C8.7001 20.6279 8.41345 20.5092 8.20211 20.2979C7.99076 20.0865 7.87203 19.7999 7.87203 19.501C7.87203 19.2021 7.99076 18.9154 8.20211 18.7041L14.9062 12L8.20117 5.29598C7.98983 5.08464 7.87109 4.79799 7.87109 4.4991C7.87109 4.20022 7.98983 3.91358 8.20117 3.70223C8.41252 3.49089 8.69916 3.37215 8.99805 3.37215C9.29693 3.37215 9.58358 3.49089 9.79492 3.70223L9.79586 3.7041Z"
+                                fill="#1E3F62" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="enrolment-locations">
+                    <span class="enrolment-locations__label">Current Enrolment Locations</span>
+
+                    <div class="enrolment-locations__list">
+                        <div class="enrolment-locations__item active">
+                            <div class="enrolment-locations__item-head">
+                                <span class="enrolment-locations__city">Port Vila</span>
+                                <span class="enrolment-locations__badge">Head Office</span>
+                            </div>
+                            <p class="enrolment-locations__desc">Vanuatu Passport Office</p>
+                        </div>
+
+                        <div class="enrolment-locations__item">
+                            <div class="enrolment-locations__item-head">
+                                <span class="enrolment-locations__city">Dubai</span>
+                            </div>
+                            <p class="enrolment-locations__desc">Vanuatu Consulate, UAE</p>
+                        </div>
+
+                        <div class="enrolment-locations__item">
+                            <div class="enrolment-locations__item-head">
+                                <span class="enrolment-locations__city">Hong Kong</span>
+                            </div>
+                            <p class="enrolment-locations__desc">Vanuatu Consulate</p>
+                        </div>
+
+                        <div class="enrolment-locations__item">
+                            <div class="enrolment-locations__item-head">
+                                <span class="enrolment-locations__city">Noumèa</span>
+                            </div>
+                            <p class="enrolment-locations__desc">Vanuatu Consulate, New Caledonia</p>
+                        </div>
+                    </div>
+
+                    <p class="enrolment-locations__note">Additional enrolment centres are coming online in the coming
+                        months as the
+                        Vanuatu Government continues to expand its consular biometric infrastructure. Your SKP advisor
+                        will keep you
+                        informed as new locations open.</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="passport-fees">
+            <div class="container">
+                <div class="passport-fees__header section-header">
+                    <span class="passport-fees__eyebrow label-section">Passport-Stage Fees</span>
+                    <h2 class="passport-fees__title heading-2">What the passport stage costs</h2>
+                    <p class="passport-fees__desc desc-section">Your headline citizenship cost is all-inclusive. The
+                        fees in this
+                        section apply
+                        only to the passport issuance step, after citizenship has been granted. There are two routes,
+                        and they are
+                        priced differently.</p>
+                </div>
+
+                <div class="passport-fees__box">
+                    <div class="passport-fees__box-head ">
+                        <span class="passport-fees__box-label">Billed separately · At passport issuance</span>
+
+                        <div class="passport-fees__tabs">
+                            <label class="passport-fees__tab">
+                                <input type="checkbox" class="passport-fees__tab-input" name="passport-fee-tab"
+                                    data-tab="citizenship" checked>
+                                <span>Citizenship approved</span>
+                            </label>
+                            <label class="passport-fees__tab">
+                                <input type="checkbox" class="passport-fees__tab-input" name="passport-fee-tab"
+                                    data-tab="issuance">
+                                <span>Passport issuance</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="passport-fees__panel">
+                        <div class="passport-fees__row">
+                            <div class="passport-fees__row-left">
+                                <img src="assets/images/Passport.svg" alt="" class="passport-fees__row-icon">
+                                <div>
+                                    <div class="passport-fees__row-head">
+                                        <h3 class="passport-fees__row-title">Passport application fee</h3>
+                                        <p class="passport-fees__row-desc">Paid directly to the Vanuatu Passport Office
+                                            when
+                                            your passport is
+                                            issued.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="passport-fees__row-price">
+                                <span class="passport-fees__row-value">VUV 100,000</span>
+                                <span class="passport-fees__row-note">per person</span>
+                            </div>
+                            <div class="passport-fees__note" data-note="issuance" style="display:none;">
+                                <div class="passport-fees__note-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M19.8984 7.19822C19.8313 7.03637 19.733 6.88933 19.609 6.76552C19.4852 6.64156 19.3381 6.54323 19.1763 6.47614C19.0145 6.40905 18.841 6.37451 18.6658 6.37451C18.4906 6.37451 18.3171 6.40905 18.1552 6.47614C17.9934 6.54323 17.8464 6.64156 17.7225 6.76552L9.33348 15.1562L6.27715 12.0983C6.02699 11.8481 5.68771 11.7076 5.33393 11.7076C4.98015 11.7076 4.64086 11.8481 4.3907 12.0983C4.14054 12.3484 4 12.6877 4 13.0415C4 13.3953 4.14054 13.7346 4.3907 13.9847L8.39025 17.9843C8.51407 18.1082 8.6611 18.2066 8.82295 18.2736C8.9848 18.3407 9.15828 18.3753 9.33348 18.3753C9.50868 18.3753 9.68216 18.3407 9.84401 18.2736C10.0059 18.2066 10.1529 18.1082 10.2767 17.9843L19.609 8.65197C19.733 8.52816 19.8313 8.38112 19.8984 8.21928C19.9655 8.05743 20 7.88395 20 7.70875C20 7.53354 19.9655 7.36006 19.8984 7.19822Z"
+                                            fill="#10243D" />
+                                    </svg>
+                                    <div>
+                                        <span class="passport-fees__note-label">Overseas enrolment</span>
+                                        <div class="passport-fees__note-text">Fee applies when biometrics
+                                            are captured at a
+                                            consulate outside Vanuatu.</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="passport-fees__row">
+                            <div class="passport-fees__row-left">
+                                <img src="assets/images/Biometric-2.svg" alt="" class="passport-fees__row-icon">
+                                <div>
+                                    <div class="passport-fees__row-head">
+                                        <h3 class="passport-fees__row-title">
+                                            Biometric capture fee
+                                            <span class="passport-fees__row-tag">Overseas only</span>
+                                        </h3>
+                                        <p class="passport-fees__row-desc">Charged at the consulate when biometrics are
+                                            taken outside Vanuatu.
+                                        </p>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="passport-fees__row-price">
+                                <span class="passport-fees__row-value">USD 1,000</span>
+                                <span class="passport-fees__row-note">principal · USD 800 / dependant</span>
+                            </div>
+                            <div class="passport-fees__note" data-note="citizenship" style="display:none;">
+                                <div class="passport-fees__note-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M19.8984 7.19822C19.8313 7.03637 19.733 6.88933 19.609 6.76552C19.4852 6.64156 19.3381 6.54323 19.1763 6.47614C19.0145 6.40905 18.841 6.37451 18.6658 6.37451C18.4906 6.37451 18.3171 6.40905 18.1552 6.47614C17.9934 6.54323 17.8464 6.64156 17.7225 6.76552L9.33348 15.1562L6.27715 12.0983C6.02699 11.8481 5.68771 11.7076 5.33393 11.7076C4.98015 11.7076 4.64086 11.8481 4.3907 12.0983C4.14054 12.3484 4 12.6877 4 13.0415C4 13.3953 4.14054 13.7346 4.3907 13.9847L8.39025 17.9843C8.51407 18.1082 8.6611 18.2066 8.82295 18.2736C8.9848 18.3407 9.15828 18.3753 9.33348 18.3753C9.50868 18.3753 9.68216 18.3407 9.84401 18.2736C10.0059 18.2066 10.1529 18.1082 10.2767 17.9843L19.609 8.65197C19.733 8.52816 19.8313 8.38112 19.8984 8.21928C19.9655 8.05743 20 7.88395 20 7.70875C20 7.53354 19.9655 7.36006 19.8984 7.19822Z"
+                                            fill="#10243D" />
+                                    </svg>
+                                    <div>
+
+
+                                        <span class="passport-fees__note-label">Most cost-effective route</span>
+                                        <div class="passport-fees__note-text"><strong>No fee in Port
+                                                Vila.</strong> Complete
+                                            enrolment at the Passport Office in person and this cost disappears
+                                            entirely.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="passport-fees__footer">
+                        <div class="passport-fees__footer-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path opacity="0.9"
+                                    d="M11.9999 2.72705L4.36353 5.99978V11.9998C4.36353 16.5816 7.63625 20.8361 11.9999 22.3634C16.3635 20.8361 19.6363 16.5816 19.6363 11.9998V5.99978L11.9999 2.72705Z"
+                                    fill="#10243D" fill-opacity="0.2" />
+                                <path opacity="0.9" d="M8.18188 12.0002L10.9092 14.7275L16.3637 9.27295"
+                                    stroke="#10243D" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <p>
+                                No agent markup, ever — both fees
+                                are
+                                government
+                                charges, not ours.
+                            </p>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">
+                            Read the full post-approval process
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="white" />
+                                <path d="M13 6L19 12L13 18M19 12L5 12" stroke="white" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="passport-fees__info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path opacity="0.2"
+                            d="M28 16C28 18.3734 27.2962 20.6935 25.9776 22.6668C24.6591 24.6402 22.7849 26.1783 20.5922 27.0866C18.3995 27.9948 15.9867 28.2324 13.6589 27.7694C11.3312 27.3064 9.19295 26.1635 7.51472 24.4853C5.83649 22.8071 4.6936 20.6689 4.23058 18.3411C3.76756 16.0133 4.0052 13.6005 4.91345 11.4078C5.8217 9.21509 7.35977 7.34094 9.33316 6.02236C11.3066 4.70379 13.6266 4 16 4C19.1826 4 22.2348 5.26428 24.4853 7.51472C26.7357 9.76515 28 12.8174 28 16Z"
+                            fill="black" />
+                        <path
+                            d="M18 22C18 22.2652 17.8946 22.5196 17.7071 22.7071C17.5196 22.8946 17.2652 23 17 23C16.4696 23 15.9609 22.7893 15.5858 22.4142C15.2107 22.0391 15 21.5304 15 21V16C14.7348 16 14.4804 15.8946 14.2929 15.7071C14.1054 15.5196 14 15.2652 14 15C14 14.7348 14.1054 14.4804 14.2929 14.2929C14.4804 14.1054 14.7348 14 15 14C15.5304 14 16.0391 14.2107 16.4142 14.5858C16.7893 14.9609 17 15.4696 17 16V21C17.2652 21 17.5196 21.1054 17.7071 21.2929C17.8946 21.4804 18 21.7348 18 22ZM29 16C29 18.5712 28.2376 21.0846 26.8091 23.2224C25.3807 25.3603 23.3503 27.0265 20.9749 28.0104C18.5995 28.9944 15.9856 29.2518 13.4638 28.7502C10.9421 28.2486 8.6257 27.0105 6.80762 25.1924C4.98953 23.3743 3.75141 21.0579 3.2498 18.5362C2.74819 16.0144 3.00563 13.4006 3.98957 11.0251C4.97351 8.64968 6.63975 6.61935 8.77759 5.1909C10.9154 3.76244 13.4288 3 16 3C19.4467 3.00364 22.7512 4.37445 25.1884 6.81163C27.6256 9.24882 28.9964 12.5533 29 16ZM27 16C27 13.8244 26.3549 11.6977 25.1462 9.88873C23.9375 8.07979 22.2195 6.66989 20.2095 5.83733C18.1995 5.00476 15.9878 4.78692 13.854 5.21136C11.7202 5.6358 9.76021 6.68345 8.22183 8.22183C6.68345 9.7602 5.63581 11.7202 5.21137 13.854C4.78693 15.9878 5.00477 18.1995 5.83733 20.2095C6.66989 22.2195 8.07979 23.9375 9.88873 25.1462C11.6977 26.3549 13.8244 27 16 27C18.9164 26.9967 21.7123 25.8367 23.7745 23.7745C25.8367 21.7123 26.9967 18.9164 27 16ZM15.5 12C15.7967 12 16.0867 11.912 16.3334 11.7472C16.58 11.5824 16.7723 11.3481 16.8858 11.074C16.9994 10.7999 17.0291 10.4983 16.9712 10.2074C16.9133 9.91639 16.7704 9.64912 16.5607 9.43934C16.3509 9.22956 16.0836 9.0867 15.7926 9.02882C15.5017 8.97094 15.2001 9.00065 14.926 9.11418C14.6519 9.22771 14.4176 9.41997 14.2528 9.66665C14.088 9.91332 14 10.2033 14 10.5C14 10.8978 14.158 11.2794 14.4393 11.5607C14.7206 11.842 15.1022 12 15.5 12Z"
+                            fill="black" />
+                    </svg>
+                    <p>For families travelling together, completing biometrics in Port Vila is the most cost-effective
+                        route — and
+                        combines naturally with a few days in the country whose citizenship you have just acquired. We
+                        lay out both
+                        options in writing as part of your post-approval briefing — precise fees, available appointment
+                        dates, and
+                        travel logistics — so you can decide based on convenience, cost, or both.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-vanuatu why-vanuatu-application "
+            style="--bg:url('/assets/images/vanuatu-application.png');--bg-mb:url('/assets/images/vanuatu-application-mb.png')">
+            <div class="container">
+                <div class="why-vanuatu__wrap">
+                    <div class="why-vanuatu__header text-center">
+                        <span class="why-vanuatu__eyebrow label-section">Why it works</span>
+                        <h2 class="why-vanuatu__title heading-2">Why Applications <br> Succeed With SKP</h2>
+
+                    </div>
+
+                    <div class="why-vanuatu__grid">
+                        <div class="why-vanuatu__card">
+                            <div class="why-vanuatu__card-icon-wrap">
+                                <img src="assets/images/Location.svg" alt="" class="why-vanuatu__card-icon">
+                            </div>
+                            <h3 class="why-vanuatu__card-title heading-6">Our proximity</h3>
+                            <p class="why-vanuatu__card-desc">Our Port Vila office is directly adjacent to the
+                                Citizenship Commission. When government has a question, our team
+                                answers it the same day — often the same hour. Other agents wait for emails across time
+                                zones.</p>
+                        </div>
+
+                        <div class="why-vanuatu__card">
+                            <div class="why-vanuatu__card-icon-wrap">
+                                <img src="assets/images/Frame.svg" alt="" class="why-vanuatu__card-icon">
+                            </div>
+                            <h3 class="why-vanuatu__card-title heading-6">Our preparation</h3>
+                            <p class="why-vanuatu__card-desc">We check every document before submission. Incomplete or
+                                incorrectly formatted documents are the primary cause of delays
+                                in citizenship applications. Our preparation eliminates this risk.</p>
+                        </div>
+
+                        <div class="why-vanuatu__card">
+                            <div class="why-vanuatu__card-icon-wrap">
+                                <img src="assets/images/family.svg" alt="" class="why-vanuatu__card-icon">
+                            </div>
+                            <h3 class="why-vanuatu__card-title heading-6">Our relationships</h3>
+                            <p class="why-vanuatu__card-desc">We work with the Citizenship Commission daily. Our team
+                                knows the officials, understands the process, and anticipates
+                                requirements before they become complications.</p>
+                        </div>
+
+                        <div class="why-vanuatu__card why-vanuatu__card--stat">
+                            <h3 class="why-vanuatu__card-title heading-6">Our track record</h3>
+
+                            <div class="why-vanuatu__card-stat">
+                                <span class="why-vanuatu__card-stat-value">100%</span>
+                                <span class="why-vanuatu__card-stat-label">Success on all properly submitted
+                                    applications</span>
+                            </div>
+
+                            <p class="why-vanuatu__card-desc">That statistic reflects the quality of our preparation and
+                                the rigour of our
+                                eligibility assessment.</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer class="site-footer" id="footer">
+        <section class="footer-cta">
+            <div class="container">
+                <div class="footer-cta__wrap">
+                    <h2 class="footer-cta__title heading-2 text-center">Ready to Explore<br>Your Options?</h2>
+                    <p class="footer-cta__desc desc-section">Book a confidential consultation with one of our senior
+                        advisers —
+                        or
+                        download our programme guide.</p>
+                    <div class="footer-cta__actions">
+                        <a href="#" class="btn btn-secondary">
+                            Book Your Consultation
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M19 12L13 18L19 12ZM19 12L13 6L19 12ZM19 12L5 12L19 12Z" fill="#10243D" />
+                                <path d="M13 6L19 12L13 18M19 12L5 12" stroke="#10243D" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#" class="btn btn-ghost">Download Programme Guide</a>
+                    </div>
+                    <p class="footer-cta__note">No commitment. Fully confidential. Government-appointed advisers.</p>
+                </div>
+
+            </div>
+
+        </section>
+        <a href="#" class="site-footer__whatsapp">
+            <img src="assets/images/Whatsapp.png" alt="WhatsApp">
+        </a>
+        <div class="site-footer__top-wrap">
+            <div class="container">
+                <div class="site-footer__top">
+                    <div class="site-footer__about">
+                        <a href="#" class="site-footer__logo">
+                            <img src="assets/images/logo-white.png" alt="Stanford Knight & Partners">
+                        </a>
+                        <p class="site-footer__about-text">Stanford Knight & Partners is the longest-established Master
+                            Agent
+                            for
+                            Vanuatu's Citizenship by Investment Programme. Government-appointed. Founder-led. Based in
+                            Port
+                            Vila,
+                            Vanuatu since 2013.</p>
+                    </div>
+
+                    <div class="site-footer__cols">
+                        <div class="site-footer__col">
+                            <h3 class="site-footer__col-title">Programmes</h3>
+                            <ul class="site-footer__list">
+                                <li><a href="#">DSP Programme</a></li>
+                                <li><a href="#">CIIP Programme</a></li>
+                                <li><a href="#">Programme Comparison</a></li>
+                                <li><a href="#">Eligibility Criteria</a></li>
+                                <li><a href="#">Cost Calculator</a></li>
+                                <li><a href="#">Document Checklist</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="site-footer__col">
+                            <h3 class="site-footer__col-title">Company</h3>
+                            <ul class="site-footer__list">
+                                <li><a href="#">Why Choose SKP</a></li>
+                                <li><a href="#">Our Government Role</a></li>
+                                <li><a href="#">Meet the Team</a></li>
+                                <li><a href="#">Partner & Agent Programme</a></li>
+                                <li><a href="#">Client Success Stories</a></li>
+                                <li><a href="#">Blog & Insights</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="site-footer__col">
+                            <h3 class="site-footer__col-title">Contact</h3>
+                            <div class="site-footer__contact-group">
+                                <span class="site-footer__contact-label">General Enquiries</span>
+                                <a href="mailto:info@stanfordknight.com">info@stanfordknight.com</a>
+                            </div>
+                            <div class="site-footer__contact-group">
+                                <span class="site-footer__contact-label">Partner Enquiries</span>
+                                <a href="mailto:partner@stanfordknight.com">partner@stanfordknight.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer__offices-wrap">
+            <div class="container">
+                <div class="site-footer__offices">
+                    <div class="site-footer__office active">
+                        <span class="site-footer__office-badge">Head Office</span>
+
+                        <div>
+
+                            <div class="site-footer__office-heading">
+                                <span class="site-footer__office-country">Vanuatu</span>
+                            </div>
+                            <h6 class="site-footer__office-city">Port Vila</h6>
+                            <div class="site-footer__office-address">Two, The Paro, Winston Churchill Avenue, Port Vila,
+                                Vanuatu<em>Adjacent to the Citizenship Commission of Vanuatu</em></div>
+                        </div>
+                        <a href="tel:+6787566666" class="site-footer__office-phone">+678 756 6666</a>
+                    </div>
+
+                    <div class="site-footer__office" style="">
+                        <div>
+                            <div class="site-footer__office-heading">
+                                <span class="site-footer__office-country">United Arab Emirates</span>
+                            </div>
+                            <h6 class="site-footer__office-city">Dubai</h6>
+                            <div class="site-footer__office-address">Burj Gate Tower, Level 1, Office 103<br>Sheikh
+                                Zayed
+                                Road,
+                                Dubai,
+                                UAE
+                            </div>
+                        </div>
+                        <a href="tel:+9714718725" class="site-footer__office-phone">+971 4 718 7257</a>
+                    </div>
+
+                    <div class="site-footer__office">
+                        <div>
+                            <div class="site-footer__office-heading">
+                                <span class="site-footer__office-country">United Kingdom</span>
+                            </div>
+                            <h6 class="site-footer__office-city">London</h6>
+                            <div class="site-footer__office-address">10 New Street<br>London EC2M 4TP, United Kingdom
+                            </div>
+                        </div>
+                        <a href="tel:+442079648077" class="site-footer__office-phone">+44 7960 834877</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="site-footer__authorisation-wrap">
+            <div class="container">
+                <div class="site-footer__authorisation">
+                    <div class="site-footer__authorisation-left">
+                        <div class="site-footer__authorisation-badge">
+                            <div class="site-footer__authorisation-number">
+                                <img src="assets/images/badge.png" alt="">
+                                <span>Government Authorisation </span>
+                                <strong>307812</strong>
+                            </div>
+                            <a href="#" class="site-footer__credentials-link">View Credentials <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"
+                                    fill="none">
+                                    <path
+                                        d="M3.22433 1.49953C3.12368 1.50308 3.02333 1.48632 2.9293 1.45026C2.83526 1.41419 2.74945 1.35955 2.67698 1.2896C2.60452 1.21965 2.54688 1.13582 2.50752 1.04311C2.46816 0.950399 2.44787 0.850712 2.44787 0.749993C2.44787 0.649275 2.46816 0.549588 2.50752 0.45688C2.54688 0.364172 2.60452 0.280342 2.67698 0.210391C2.74945 0.14044 2.83526 0.0858001 2.9293 0.0497323C3.02333 0.0136645 3.12367 -0.00309233 3.22433 0.000460618L8.88119 0.000460692C9.07994 0.000584446 9.27051 0.0795926 9.41105 0.22013C9.55159 0.360668 9.63059 0.551243 9.63072 0.749993L9.63072 6.40685C9.63427 6.5075 9.61751 6.60784 9.58145 6.70188C9.54538 6.79592 9.49074 6.88173 9.42079 6.9542C9.35084 7.02666 9.26701 7.08429 9.1743 7.12366C9.08159 7.16302 8.9819 7.1833 8.88118 7.1833C8.78047 7.18331 8.68078 7.16302 8.58807 7.12366C8.49536 7.08429 8.41153 7.02666 8.34158 6.9542C8.27163 6.88173 8.21699 6.79592 8.18092 6.70188C8.14486 6.60784 8.1281 6.5075 8.13165 6.40685L8.13165 2.56019L1.27979 9.41205C1.13913 9.5527 0.948369 9.63172 0.749456 9.63172C0.550544 9.63172 0.359779 9.5527 0.219127 9.41205C0.0784749 9.2714 -0.000543362 9.08063 -0.000543025 8.88172C-0.000542687 8.68281 0.0784746 8.49204 0.219127 8.35139L7.07099 1.49953L3.22433 1.49953Z"
+                                        fill="white" fill-opacity="0.65" />
+                                </svg> </a>
+                        </div>
+                        <p class="site-footer__authorisation-note">The Government Authorisation number deep-links to
+                            Page 10
+                            Section 5, where both Master Agent certificates are displayed in full.</p>
+                    </div>
+                    <div class="site-footer__authorisation-right">
+                        <strong>Government-appointed Master Agent</strong>
+                        <span>Citizenship Commission of Vanuatu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="site-footer__bottom">
+                <div class="site-footer__registered">
+                    <p>Registered in Vanuatu</p>
+                    <p>|</p>
+                    <p>Offices in Port Vila,
+                        Dubai,
+                        and London </p>
+                </div>
+                <div class="site-footer__bottom-row">
+                    <p class="site-footer__copyright">© 2026 Stanford Knight & Partners Ltd. All rights reserved.</p>
+                    <ul class="site-footer__legal-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li>|</li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li>|</li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="assets/js/jquery-3.5.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/tn-main.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

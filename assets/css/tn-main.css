@@ -450,6 +450,39 @@
     padding: 32px;
 }
 
+.banner-ciip-programme .label-section {
+    line-height: 30px;
+    margin-bottom: 21px;
+}
+
+.banner-ciip-programme .banner-programme__box {
+    padding-top: 22px;
+}
+
+.banner-ciip-programme .banner-programme__box-content {
+    margin-bottom: 33px;
+}
+
+.banner-ciip-programme .banner-programme__card {
+    padding: 15px 12px 12px;
+}
+
+.banner-ciip-programme .line-ct {
+    margin: 47px 0 40px;
+}
+
+.banner-ciip-programme .btn {
+    margin-top: 8px;
+}
+
+.banner-ciip-programme .banner-programme__card-cost {
+    margin-top: 7px;
+}
+
+.banner-ciip-programme .banner-programme__subtitle {
+    margin-bottom: 24px;
+}
+
 .banner-programme {
     padding: 240px 0 80px;
     background: var(--background-deep-navy, #10243D);
@@ -635,7 +668,7 @@
 .timeline__title {
     font-family: 'Instrument Serif';
     font-weight: 400;
-    font-size: 32px;
+    font-size: var(--Size-H6, 32px);
     line-height: 1.35;
     color: #10243D;
     margin-bottom: 6px;
@@ -762,15 +795,15 @@
     transition: all 0.5s ease-in-out;
 }
 
-.faq-green .faq-header span {
+.faq-green .faq-header .question {
     color: var(--Feedback-positive, #007400);
 }
 
-.faq-orange .faq-header span {
+.faq-orange .faq-header .question {
     color: var(--Feedback-attention, #8E5901);
 }
 
-.faq-red .faq-header span {
+.faq-red .faq-header .question {
     color: var(--Feedback-negative, #C80909);
 }
 
@@ -796,19 +829,31 @@
 
 .eligibility__faq li {
     position: relative;
-    padding-left: 44px;
-    margin-bottom: 16px;
+    padding-left: 39px;
+    margin-bottom: 17px;
+    color: #10243D;
+}
+
+.eligibility__faq li:last-child {
+    margin-bottom: 0;
 }
 
 .eligibility__faq .faq-content {
     font-size: 18px;
+    padding-top: 2px;
+    padding-bottom: 26px;
+}
+
+.eligibility__faq .faq-header {
+    padding: var(--spacing-24-16, 17px) var(--spacing-24-16, 23px);
+    height: inherit
 }
 
 .eligibility__faq li::before {
     content: "";
     position: absolute;
-    left: 0;
-    top: 2px;
+    left: -2px;
+    top: -1px;
     width: 32px;
     height: 32px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Cpath opacity='0.2' d='M28 16C28 18.3734 27.2962 20.6935 25.9776 22.6668C24.6591 24.6402 22.7849 26.1783 20.5922 27.0866C18.3995 27.9948 15.9867 28.2324 13.6589 27.7694C11.3312 27.3064 9.19295 26.1635 7.51472 24.4853C5.83649 22.8071 4.6936 20.6689 4.23058 18.3411C3.76756 16.0133 4.0052 13.6005 4.91345 11.4078C5.8217 9.21509 7.35977 7.34094 9.33316 6.02236C11.3066 4.70379 13.6266 4 16 4C19.1826 4 22.2348 5.26428 24.4853 7.51472C26.7357 9.76515 28 12.8174 28 16Z' fill='%2310243D'/%3E%3Cpath d='M21.7075 12.2925C21.8005 12.3854 21.8742 12.4957 21.9246 12.6171C21.9749 12.7385 22.0008 12.8686 22.0008 13C22.0008 13.1314 21.9749 13.2615 21.9246 13.3829C21.8742 13.5043 21.8005 13.6146 21.7075 13.7075L14.7075 20.7075C14.6146 20.8005 14.5043 20.8742 14.3829 20.9246C14.2615 20.9749 14.1314 21.0008 14 21.0008C13.8686 21.0008 13.7385 20.9749 13.6171 20.9246C13.4957 20.8742 13.3854 20.8005 13.2925 20.7075L10.2925 17.7075C10.1049 17.5199 9.99945 17.2654 9.99945 17C9.99945 16.7346 10.1049 16.4801 10.2925 16.2925C10.4801 16.1049 10.7346 15.9994 11 15.9994C11.2654 15.9994 11.5199 16.1049 11.7075 16.2925L14 18.5863L20.2925 12.2925C20.3854 12.1995 20.4957 12.1258 20.6171 12.0754C20.7385 12.0251 20.8686 11.9992 21 11.9992C21.1314 11.9992 21.2615 12.0251 21.3829 12.0754C21.5043 12.1258 21.6146 12.1995 21.7075 12.2925ZM29 16C29 18.5712 28.2376 21.0846 26.8091 23.2224C25.3807 25.3603 23.3503 27.0265 20.9749 28.0104C18.5995 28.9944 15.9856 29.2518 13.4638 28.7502C10.9421 28.2486 8.6257 27.0105 6.80762 25.1924C4.98953 23.3743 3.75141 21.0579 3.2498 18.5362C2.74819 16.0144 3.00563 13.4006 3.98957 11.0251C4.97351 8.64968 6.63975 6.61935 8.77759 5.1909C10.9154 3.76244 13.4288 3 16 3C19.4467 3.00364 22.7512 4.37445 25.1884 6.81163C27.6256 9.24882 28.9964 12.5533 29 16ZM27 16C27 13.8244 26.3549 11.6977 25.1462 9.88873C23.9375 8.07979 22.2195 6.66989 20.2095 5.83733C18.1995 5.00476 15.9878 4.78692 13.854 5.21136C11.7202 5.6358 9.76021 6.68345 8.22183 8.22183C6.68345 9.7602 5.63581 11.7202 5.21137 13.854C4.78693 15.9878 5.00477 18.1995 5.83733 20.2095C6.66989 22.2195 8.07979 23.9375 9.88873 25.1462C11.6977 26.3549 13.8244 27 16 27C18.9164 26.9967 21.7123 25.8367 23.7745 23.7745C25.8367 21.7123 26.9967 18.9164 27 16Z' fill='%2310243D'/%3E%3C/svg%3E") no-repeat center;
@@ -846,7 +891,8 @@
     margin-bottom: 17px;
 }
 
-.section-benefits .why-vanuatu__grid {
+.section-benefits .why-vanuatu__grid,
+.section-benefits-grid-3 .why-vanuatu__grid {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -858,6 +904,11 @@
 
 .section-benefits .why-vanuatu__card {
     flex: 1 1 calc(25% - 18px);
+    min-width: 250px;
+}
+
+.section-benefits-grid-3 .why-vanuatu__card {
+    flex: 1 1 calc((100% - 48px) / 3);
     min-width: 250px;
 }
 
@@ -907,6 +958,10 @@
     flex-wrap: wrap;
 }
 
+.ciip-programme-comparison .programme-comparison__card-value {
+    padding-top: 3px;
+}
+
 .programme-comparison__flex .cost-calculator__card-price-note {
     font-size: 18px;
     white-space: nowrap;
@@ -914,8 +969,17 @@
     padding-bottom: 6px;
 }
 
+.ciip-programme-comparison .cost-calculator__card-price-note {
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
 .programme-comparison__flex .line-ct {
     margin: 24px 0 30px;
+}
+
+.ciip-programme-comparison .line-ct {
+    margin: 30px 0 30px;
 }
 
 .programme-comparison__flex .programs__card-price-value {
@@ -960,7 +1024,8 @@
     font-size: 32px;
     line-height: 1.35;
     color: #10243D;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    margin-top: 1px;
 }
 
 .flex-wrap-ct {
@@ -975,7 +1040,7 @@
 .document-requirements__item {
     background: var(--background-white-2560, #F7F7F799);
     border-radius: 16px;
-    padding: 20px 24px 26px;
+    padding: 20px 24px 24px 24px;
 }
 
 .document-requirements__flex {
@@ -985,12 +1050,21 @@
 .document-requirements__item {
     flex: 1 1 calc(33.3% - 24px);
     min-width: 250px;
+    border: 1px solid var(--background-white-2560, #F7F7F799);
+}
+
+.ciip-document-requirements .btn-primary {
+    padding: 14px 30px;
 }
 
 .document-requirements__header {
     gap: 40px;
     display: flex;
     margin-bottom: 46px;
+}
+
+.ciip-document-requirements .document-requirements__header {
+    margin-bottom: 58px;
 }
 
 .document-requirements__right {
@@ -1101,10 +1175,11 @@
 
 .timeline-horizontal__list {
     display: flex;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     gap: 106px;
     display: flex;
     gap: 106px;
+    padding: 0 40px;
     /* scrollbar-width: none;
     -ms-overflow-style: none; */
 }
@@ -1117,7 +1192,7 @@
 
 .timeline-horizontal__body {
     position: relative;
-    margin-top: 90px;
+    margin-top: 59px;
     overflow: hidden;
 }
 
@@ -1125,14 +1200,14 @@
     flex: 0 0 calc((100% - 212px) / 3);
     text-align: center;
     position: relative;
-    padding-top: 50px;
+    padding-top: 85px;
 }
 
 .timeline-horizontal__wrap {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    max-width: 1312px;
+    max-width: 1392px;
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -1150,6 +1225,10 @@
 .timeline-horizontal__item .heading-5,
 .timeline-horizontal__text {
     color: var(--text-tertiary, #7A9BB0);
+}
+
+.timeline-horizontal__item .heading-5 {
+    margin-bottom: 3px;
 }
 
 .timeline-horizontal__item.active .heading-5,
@@ -1173,12 +1252,28 @@
     border-radius: 100px;
     border: 1px solid #c4c8cd;
     background: #c4c8cd;
-    margin: 0 8px;
     top: 0;
     transform: translateX(-50%);
     left: 50%;
     transition: all 0.2s ease-in-out;
     z-index: 5;
+}
+
+.timeline-horizontal__item::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 46px;
+    height: 40px;
+    border-radius: 100px;
+    z-index: 4;
+    top: -18px;
+    transform: translateX(-50%) rotate(270deg);
+    left: 50%;
+    background: var(--background-mist, #E8EEF2);
+    width: 58px;
+    height: 52px;
+    clip-path: polygon(50% 4%, 100% 0, 100% 100%, 50% 96%, 0 100%, 0 0);
 }
 
 .timeline-item--full {
@@ -1194,13 +1289,13 @@
     top: 14px;
     overflow: hidden;
     left: 0;
-    transform: translateX(-61.5%);
+    transform: translateX(-65.5%);
     transition: all 0.3s ease;
     width: 0;
 }
 
 .timeline-horizontal__item.active .line-time__width {
-    width: calc(100% + 40px);
+    width: calc(100% + 90px);
 }
 
 .dots-time {
@@ -1244,10 +1339,85 @@
     top: 14px;
 }
 
-.show-result.timeline-horizontal__list::after {
+.show-result .timeline-horizontal__list::after {
     width: 58px;
     transform: translateX(-58%);
     left: 50%;
+}
+
+.timeline-horizontal__title {
+    color: var(--text-primary, #10243D);
+    margin-top: 44px;
+}
+
+.ciip-impact-spotlight.impact-spotlight {
+    padding: 64px 0 229px;
+    min-height: 819px;
+    justify-content: start;
+}
+
+.ciip-impact-spotlight.impact-spotlight__content {
+    padding: 99px 0 112px;
+    background-color: #fff;
+}
+
+.ciip-impact-spotlight .impact-spotlight__overlay {
+    max-width: 638px;
+}
+
+.ciip-impact-spotlight .impact-spotlight__paragraph p {
+    margin-bottom: 48px;
+}
+
+.ciip-impact-spotlight .impact-spotlight__paragraph p:last-child {
+    margin-bottom: 0;
+}
+
+.ciip-impact-spotlight .impact-spotlight__content-wrap {
+    gap: 67px;
+}
+
+.ciip-impact-spotlight .video-section__wrapper {
+    margin-top: 110px;
+}
+
+.timeline__header-subtite {
+    margin-top: 15px;
+    margin-bottom: 57px!important;
+}
+
+.eligibility__subtitle {
+    margin-top: 14px;
+    padding-bottom: 12px;
+}
+
+.why-vanuatu__subtitle {
+    margin-top: -5px;
+    padding-bottom: 2px;
+}
+
+.why-vanuatu__subtitle p {
+    color: #fff
+}
+
+.ciip-programme-comparison .btn-label {
+    position: relative;
+    right: inherit;
+    top: inherit;
+    font-size: 18px;
+}
+
+.ciip-programme-comparison .programme-comparison__item {
+    padding: 38px 32px 32px;
+}
+
+.ciip-programme-comparison .heading-3 {
+    margin-top: 28px;
+    color: #fff
+}
+
+.ciip-programme-comparison .programs__card-price-value {
+    font-size: var(--Size-H5, 44px);
 }
 
 @media (max-width: 1023px) {
@@ -1310,6 +1480,16 @@
     }
     .investment-breakdown__list {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .timeline-horizontal__list {
+        gap: 40px;
+        padding: 0;
+    }
+    .timeline-horizontal__item {
+        flex: 0 0 calc((100% - 80px) / 3);
+    }
+    .timeline-item--full {
+        flex: 0 0 100%;
     }
 }
 
@@ -1424,5 +1604,55 @@
     }
     .programme-overview__flex {
         gap: 40px;
+    }
+    .document-requirements__header,
+    .banner-programme__flex,
+    .programme-overview__flex,
+    .dsp-faq-bottom__wrap {
+        flex-wrap: wrap;
+    }
+    .document-requirements__right {
+        width: 100%;
+    }
+    .programme-comparison__flex {
+        flex-wrap: wrap;
+    }
+    .banner-programme__content,
+    .banner-programme__box,
+    .programme-overview_left,
+    .dsp-faq-bottom__left {
+        width: 100%;
+    }
+    .programme-overview__bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ciip-impact-spotlight.impact-spotlight__content {
+        padding: 80px 0;
+    }
+    .ciip-impact-spotlight .video-section__wrapper {
+        margin-top: 0px;
+    }
+    .ciip-impact-spotlight.impact-spotlight {
+        min-height: 656px;
+    }
+    .programme-comparison__item {
+        width: 100%;
+    }
+    .timeline-horizontal__item {
+        flex: 0 0 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .line-time__width {
+        transform: translateX(-55.5%);
+    }
+    .ciip-impact-spotlight .video-section__wrapper.video-section__wrapper-layoyut-2 {
+        max-width: 100%;
+    }
+    .timeline-horizontal__wrap {
+        padding: 0;
+    }
+    .timeline-horizontal__item.active .line-time__width {
+        width: calc(100% + 80px);
     }
 }

@@ -788,7 +788,7 @@
 
 /* Hero */
 .hero-section {
-  background-image: var(--bg);
+  background: var(--bg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -800,7 +800,7 @@
 }
 .hero__wrap {
   display: flex;
-  padding: 130px 0;
+  padding: 240px 0 130px;
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
@@ -837,7 +837,7 @@
   align-items: flex-start;
   align-self: stretch;
   border-radius: var(--radius-main, 16px);
-  border: 0.3px solid var(--White-0, #fff);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-width: 0.3px;
   background: linear-gradient(
     269deg,
@@ -857,7 +857,7 @@
   font-weight: 500;
   line-height: 17px;
   padding: 23.5px 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   width: 100%;
 }
 .hero__stats-list li:first-child {
@@ -997,7 +997,7 @@
   margin-bottom: 55px;
 }
 .programs__card-price-wrapper {
-  border-top: 0.5px solid #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .programs__card-desc {
@@ -2521,5 +2521,1552 @@
   }
   .next-steps__email-cta {
     margin-top: 19px;
+  }
+}
+
+/* Application */
+.hero-application .hero__wrap {
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+
+.hero-application .hero__desc {
+  max-width: 765px;
+}
+.hero__content .hero__eyebrow {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.hero__stat-cards {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-24, 24px);
+  align-self: stretch;
+  margin-top: 46px;
+}
+.hero__stat-card {
+  display: flex;
+  padding: var(--spacing-24, 24px) 24px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-main, 16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+    269deg,
+    rgba(247, 247, 247, 0.3) 1.07%,
+    rgba(247, 247, 247, 0.24) 17.36%,
+    rgba(247, 247, 247, 0.06) 98.79%
+  );
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(10px);
+}
+.hero__stat-number {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-Number, 80px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-8, 8px);
+}
+.hero__stat-number small {
+  color: var(--text-inverse, #fff);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H6, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+.hero__stat-label {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-lg, 20px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.hero__note {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+  margin-top: 56px;
+}
+.hero__note img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.hero__note p {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0;
+}
+.video-section__wrapper-layoyut-2 video {
+  border-radius: var(--radius-main, 16px);
+}
+.how-it-works {
+  padding: 112px 0;
+  background: var(--background-white-50, #fdfeff);
+}
+.how-it-works__intro {
+  max-width: 791px;
+  margin-bottom: 71px;
+}
+.how-it-works__desc p {
+  color: var(--text-primary, #10243d);
+  font-size: var(--Size-text-xl, 24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 36px;
+}
+.how-it-works__title {
+  margin-bottom: 12px;
+}
+
+.timeline-application .timeline__wrap-item {
+  padding-top: 33px !important;
+  justify-content: space-between !important;
+  min-height: 340px;
+  align-items: flex-start;
+  gap: 48px;
+}
+.timeline-application.timeline {
+  background: var(--background-mist, #e8eef2);
+}
+.timeline-application .timeline__list {
+  padding-left: 187px;
+}
+.timeline-application .timeline__list::after {
+  left: 145px !important;
+  right: auto !important;
+  transform: none;
+}
+.timeline-application .timeline__wrap-item::before {
+  left: -41.5px !important;
+  right: auto !important;
+  transform: none;
+  background: var(--background-navy-elevated, #1e3f62);
+}
+.timeline-application .timeline__item::after {
+  left: -66px !important;
+  right: auto !important;
+  top: -1px;
+}
+.timeline-application .timeline__item::before {
+  left: -43.5px !important;
+  top: -10px;
+}
+
+.timeline-application .timeline__item {
+  padding-top: 0 !important;
+  flex: 1 0 0;
+  max-width: 660px;
+  text-align: start !important;
+  width: 100%;
+}
+.timeline__item-duration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 17px;
+}
+.timeline__note-small {
+  max-width: 185px;
+}
+.timeline__duration {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.timeline__note-small {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 150%;
+}
+.timeline__note {
+  display: flex;
+  max-width: 590.805px;
+  padding: 15px 16px;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  border-radius: var(--radius-small, 8px);
+  border: 1px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+  background: var(--background-cyan-5, rgba(10, 215, 244, 0.05));
+}
+.timeline__note img {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.timeline__note span {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  display: block;
+  flex: 1 0 0;
+}
+.timeline__note span b,
+.timeline__note span strong {
+  font-weight: 600;
+  line-height: 160%;
+}
+.timeline-application .timeline__title {
+  margin-bottom: 12px;
+}
+.timeline-application .timeline__des {
+  margin-bottom: 25px;
+}
+.timeline__summary {
+  margin-top: 64px;
+  display: flex;
+  padding: var(--spacing-32-24, 32px) 32px 25px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-40, 40px);
+  align-self: stretch;
+  border-radius: var(--radius-main, 16px);
+  border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  background: var(--background-white-50, #fdfeff);
+}
+.timeline__summary-label {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.timeline__summary-list {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.timeline__summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  flex: 1 0 0;
+  border-left: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  padding: 0 32px 0 40px;
+}
+.timeline__summary-item:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+.timeline__summary-desc {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.timeline__summary-value {
+  line-height: 32px;
+}
+.why-choose-light {
+  background: var(--background-white-50, #fdfeff);
+}
+.enrolment-locations {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.enrolment-locations__label {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.36px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.enrolment-locations__list {
+  display: flex;
+  align-items: stretch; /* thay vì flex-start */
+  border-radius: 16px;
+  overflow: hidden;
+  align-self: stretch;
+  background: var(--background-cyan-10, rgba(10, 215, 244, 0.1));
+  border: 0.5px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+}
+
+.enrolment-locations__item {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--spacing-24-16, 24px) 24px 18px;
+  gap: 23px;
+  align-self: stretch;
+  position: relative;
+  border-left: 0.5px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+}
+.enrolment-locations__item:first-child {
+  border-left: none;
+}
+.enrolment-locations__item.active {
+  background: var(--background-cyan-20, rgba(10, 215, 244, 0.2));
+}
+.enrolment-locations__badge {
+  display: flex;
+  padding: 8px 8px;
+  align-items: flex-start;
+  gap: 48px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  background: var(--background-mist, #e8eef2);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(10px);
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-xs, 14px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 10px;
+}
+.enrolment-locations__city {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-lg, 20px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  display: block;
+}
+.enrolment-locations__desc {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0 !important;
+}
+
+.enrolment-locations__note {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 17px;
+}
+.passport-fees__header {
+  max-width: 791px;
+}
+.passport-fees__title {
+  margin-bottom: 12px;
+}
+.passport-fees__box {
+  border-radius: var(--radius-main, 16px);
+  border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  overflow: hidden;
+}
+.passport-fees__box-head {
+  display: flex;
+  padding: var(--spacing-24, 24px);
+  align-items: center;
+  gap: var(--spacing-24-16, 24px);
+  align-self: stretch;
+  background: var(--background-mist, #e8eef2);
+}
+.passport-fees__box-label {
+  flex: 1 0 0;
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.passport-fees__tabs {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.passport-fees__tab {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4, 4px);
+  cursor: pointer;
+}
+.passport-fees__tab span {
+  color: #000;
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: block;
+}
+
+.passport-fees__tab-input {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  background-image: url("../images/Unchecked.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.passport-fees__tab-input:checked {
+  background-image: url("../images/input-checked.svg");
+}
+
+.passport-fees__row {
+  display: flex;
+  padding: var(--spacing-32-40, 32px) var(--spacing-32-24, 32px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  gap: 0 48px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+}
+.passport-fees__row-icon {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 16px;
+  background: #e8eef2;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(10px);
+}
+.passport-fees__row-price {
+  display: flex;
+  width: 265px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.passport-fees__row-value {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H5, 44px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  display: block;
+}
+.passport-fees__row-note {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.passport-fees__row-left {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-24, 24px);
+}
+.passport-fees__row-left > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.passport-fees__row-title {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-xl, 24px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+}
+.passport-fees__row-tag {
+  color: var(--text-secondary, #1e3f62);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  background: var(--background-mist, #e8eef2);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(10px);
+  display: flex;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 48px;
+}
+.passport-fees__row-desc {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0;
+}
+.passport-fees__row-head {
+  max-width: 420px;
+}
+/* .passport-fees__row:first-child .passport-fees__row-left {
+  align-items: center;
+} */
+
+.passport-fees__note-content {
+  display: flex;
+  max-width: 659px;
+  padding: 8px 16px 9px;
+  margin-top: 16px;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  border-radius: var(--radius-small, 8px);
+  border: 1px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+  background: var(--background-cyan-5, rgba(10, 215, 244, 0.05));
+  margin-left: 80px;
+}
+.passport-fees__note-content svg {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+}
+.passport-fees__note-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+  flex: 1 0 0;
+}
+.passport-fees__note-label {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-xs, 14px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 170%;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  display: block;
+}
+.passport-fees__note-text,
+.passport-fees__note-text p {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.passport-fees__note-text b,
+.passport-fees__note-text strong {
+  font-weight: 600;
+}
+.passport-fees__footer {
+  display: flex;
+  padding: var(--spacing-24-16, 24px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: var(--background-mist, #e8eef2);
+}
+.passport-fees__footer-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+  flex: 1 0 0;
+}
+.passport-fees__footer-item svg {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+}
+.passport-fees__footer-item p {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+  line-height: 150%;
+  flex: 1 0 0;
+}
+.passport-fees__row:last-child {
+  border-bottom: none;
+}
+.passport-fees__info {
+  display: flex;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: var(--spacing-12, 12px);
+  align-self: stretch;
+  border-radius: var(--radius-small, 8px);
+  border: 1px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+  background: var(--background-cyan-5, rgba(10, 215, 244, 0.05));
+  margin-top: 40px;
+}
+.passport-fees__info svg {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+}
+.passport-fees__info p {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  flex: 1 0 0;
+}
+.passport-fees {
+  padding: 112px 0;
+}
+.why-vanuatu-application .why-vanuatu__grid {
+  grid-template-columns: 1fr 1fr;
+}
+.why-vanuatu__card--stat .why-vanuatu__card-stat {
+}
+.why-vanuatu__card-stat-value {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-Number, 80px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 14px;
+}
+.why-vanuatu__card-stat-label {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-text-lg, 20px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  display: block;
+  margin-bottom: 17px;
+}
+.why-vanuatu-application .why-vanuatu__header {
+  margin-bottom: 46px;
+}
+.timeline-application .timeline__subdesc {
+  margin-top: 15px;
+}
+@media (max-width: 992px) {
+  .hero__stat-cards {
+    flex-wrap: wrap;
+  }
+  .hero__stat-card {
+    flex: 0 0 calc(50% - 12px);
+  }
+  .timeline-application .timeline__list {
+    padding-left: 56px;
+  }
+  .timeline-application .timeline__list::after {
+    left: 15px !important;
+  }
+  .enrolment-locations__list {
+    flex-direction: column;
+  }
+  .enrolment-locations__item {
+    border-left: none;
+    border-bottom: 0.5px solid var(--border-cyan, rgba(10, 215, 244, 0.7));
+  }
+  .enrolment-locations__item:last-child {
+    border-bottom: none;
+  }
+
+  .passport-fees,
+  .how-it-works {
+    padding: 80px 0;
+  }
+  .passport-fees__row-price {
+    margin-top: 32px;
+    margin-left: 80px;
+  }
+  .passport-fees__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767px) {
+  .hero-application .hero__wrap {
+    padding-top: 200px;
+  }
+  .hero__stat-card {
+    flex: 0 0 100%;
+  }
+  .hero__stat-cards {
+    margin-top: 32px;
+  }
+  .hero__stat-number {
+    line-height: 37px;
+  }
+  .hero__note p {
+    font-size: 15px;
+  }
+  .hero-application .hero__wrap {
+    padding-bottom: 74px;
+  }
+  .hero__note {
+    margin-top: 34px;
+  }
+  .how-it-works__desc p {
+    margin-bottom: 30px;
+  }
+  .how-it-works__intro {
+    margin-bottom: 56px;
+  }
+  .video-section__wrapper.video-section__wrapper-layoyut-2 {
+    aspect-ratio: 343 / 350;
+  }
+  .timeline-application .timeline__wrap-item {
+    flex-direction: column-reverse;
+    gap: 17px;
+    min-height: auto;
+  }
+  .timeline__summary-list {
+    flex-direction: column;
+  }
+  .timeline-application .timeline__item {
+    flex: 1;
+  }
+  .timeline-application .timeline__header {
+    margin-bottom: 33px;
+  }
+  .timeline-application .timeline__item::after {
+    left: -65px !important;
+    right: auto !important;
+    top: -46px;
+  }
+  .timeline-application .timeline__item::before {
+    left: -43px !important;
+    top: -56px;
+  }
+  .timeline-application .timeline__des {
+    margin: 0;
+  }
+  .timeline__note {
+    padding: 8px 16px;
+    margin-top: 26px;
+    margin-bottom: 16px;
+  }
+  .timeline__note-small {
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .timeline__item-duration {
+    gap: 8px;
+  }
+  .timeline__cta {
+    margin-top: 26px;
+    padding: 14px 12px;
+  }
+  .timeline__summary {
+    margin-top: 40px;
+    padding: 24px 24px 16px;
+  }
+  .timeline__summary-label {
+    line-height: 11px;
+  }
+  .timeline__summary-value {
+    line-height: 24px;
+  }
+  .timeline__summary-list {
+    gap: 27px;
+  }
+  .timeline__summary-item {
+    padding: 0 0 0 16px;
+  }
+  .timeline__summary-item:first-child {
+    border-left: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+    padding-left: 16px;
+  }
+  .enrolment-locations__city {
+    line-height: 13px;
+  }
+  .enrolment-locations__item {
+    padding: 16px 16px 9px;
+    gap: 17px;
+  }
+  .passport-fees__header {
+    margin-bottom: 31px;
+  }
+  .passport-fees__box-head {
+    display: flex;
+    padding: 7px 16px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-24, 17px);
+    align-self: stretch;
+  }
+  .passport-fees__tabs {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+  }
+  .passport-fees__row-left {
+    flex-direction: column;
+    gap: var(--spacing-24, 22px);
+  }
+  .passport-fees__row-price {
+    margin-left: 0;
+    margin-top: 13px;
+    gap: 4px;
+  }
+  .passport-fees__note-content {
+    margin: 26px 0 0 0;
+  }
+  .passport-fees__row {
+    padding: 40px 24px;
+  }
+  .passport-fees__row-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-12, 10px);
+  }
+  .passport-fees__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 13px 15px;
+    gap: 5px;
+  }
+  .passport-fees__footer {
+    padding: 16px 13px;
+  }
+  .why-vanuatu-application .why-vanuatu__grid {
+    grid-template-columns: 1fr;
+  }
+  .why-vanuatu__card-stat-value {
+    line-height: 37px;
+    margin-bottom: 17px;
+  }
+}
+
+/* Book Consultation */
+.hero-book-consultation .hero__eyebrow {
+  color: var(--text-muted, rgba(26, 58, 85, 0.7));
+}
+.hero-book-consultation .hero__title {
+  color: var(--text-primary, #10243d);
+}
+.hero-book-consultation .hero__desc {
+  color: var(--text-primary, #10243d);
+}
+.hero-book-consultation .hero__content {
+  max-width: 537px;
+}
+.hero__booking {
+  flex: 1 0 0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.hero-book-consultation .hero__wrap {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-64-40, 64px);
+  padding-top: 66px;
+}
+.hero__tags {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-16, 16px);
+  list-style: none;
+  flex-wrap: wrap;
+}
+.hero__tags li {
+  display: flex;
+  padding: 11px 12px;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  border-radius: 50px;
+  border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  background: var(--background-mist, #e8eef2);
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0;
+}
+
+.what-to-expect {
+  padding: 112px 0;
+  background: var(--background-mist, #e8eef2);
+}
+
+.what-to-expect__compare {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-24-16, 24px);
+  align-self: stretch;
+  margin-bottom: 24px;
+}
+.what-to-expect__desc {
+  color: var(--text-primary, #10243d);
+  text-align: center;
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.what-to-expect__header {
+  margin: 0 auto 57px;
+  max-width: 972px;
+}
+.what-to-expect__title {
+  margin-bottom: 15px;
+}
+.what-to-expect__box {
+  display: flex;
+  padding: var(--spacing-40-32, 31px) var(--spacing-32-24, 32px) 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-40-32, 32px);
+  flex: 1 0 0;
+  border-radius: var(--radius-main, 16px);
+  color: var(--text-inverse, #fff);
+  background: var(--background-deep-navy, #10243d);
+  min-height: 397px;
+}
+.what-to-expect__box--dont {
+  background: linear-gradient(
+    269deg,
+    rgba(88, 105, 129, 0.17) 1.05%,
+    rgba(88, 105, 129, 0.21) 40.77%,
+    rgba(88, 105, 129, 0.21) 109.42%
+  );
+  color: var(--text-primary, #10243d);
+}
+.what-to-expect__box-label {
+  display: block;
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.what-to-expect__box-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-16-24, 16px);
+}
+.what-to-expect__box-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8, 8px);
+  align-self: stretch;
+}
+.what-to-expect__box-list li svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.what-to-expect__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-24, 24px);
+  align-self: stretch;
+}
+.what-to-expect__meta-item {
+  display: flex;
+  padding: var(--spacing-40-32, 40px) var(--spacing-32-24, 32px) 33px;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--radius-main, 16px);
+  background: var(--background-white, #fff);
+  flex-direction: column;
+}
+.what-to-expect__meta-label {
+  color: var(--text-primary, #10243d);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 21px;
+}
+.what-to-expect__meta-desc {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.what-to-expect__meta-value {
+  display: block;
+  color: var(--text-primary, #10243d);
+  margin-bottom: 10px;
+}
+
+.what-to-expect__footer {
+  margin-top: 64px;
+}
+.what-to-expect__footer-note {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 11px;
+  margin-top: 24px;
+}
+.your-adviser {
+  padding: 112px 0;
+  background: var(--background-deep-navy, #10243d);
+}
+.your-adviser-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-64, 64px);
+  align-self: stretch;
+}
+.your-adviser__photo {
+  width: 46.49%;
+}
+.your-adviser__content {
+  width: calc(100% - 46.49% - 64px);
+}
+.your-adviser__eyebrow {
+  color: var(--text-muted-white, rgba(255, 255, 255, 0.65));
+}
+.your-adviser__desc,
+.your-adviser__desc p {
+  color: var(--text-inverse, #fff);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.your-adviser__desc p {
+  margin-bottom: 28px;
+}
+.your-adviser__title {
+  color: var(--text-inverse, #fff);
+  margin-bottom: 18px;
+}
+.your-adviser__stats {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-24, 24px);
+  align-self: stretch;
+}
+.your-adviser__stat {
+  display: flex;
+  padding: var(--spacing-32-24, 22px) var(--spacing-24-16, 24px) 26px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border: 1px solid rgba(204, 188, 168, 0.2);
+  border-radius: var(--radius-main, 16px);
+  background: var(--background-sand-20, rgba(204, 188, 168, 0.2));
+}
+.your-adviser__stat-value {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-Number-small, 44px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.your-adviser__stat-label {
+  color: var(--text-inverse, #fff);
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.your-adviser__photo img {
+  flex-shrink: 0;
+  border-radius: var(--radius-main, 16px);
+  width: 100%;
+}
+.direct-lines {
+  padding: 112px 0;
+  background: var(--background-white-2560, rgba(247, 247, 247, 0.6));
+}
+.direct-lines__desc {
+  font-size: var(--Size-main, 18px);
+}
+.direct-lines__title {
+  margin-bottom: 16px;
+}
+.direct-lines__whatsapp {
+  display: flex;
+  padding: var(--spacing-32-24, 32px) var(--spacing-24, 24px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: var(--radius-main, 16px);
+  border: 1px solid var(--border-mist, rgba(232, 238, 242, 0.3));
+  background: var(--background-deep-navy, #10243d);
+}
+.direct-lines__row-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-12, 12px);
+}
+.direct-lines__icon {
+  border-radius: 16px;
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
+  backdrop-filter: blur(10px);
+  display: flex;
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  aspect-ratio: 1/1;
+  background: var(--background-mist, #e8eef2);
+}
+.direct-lines__whatsapp .direct-lines__icon {
+  background: #75c852;
+}
+.direct-lines__row-left > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 17px;
+}
+.direct-lines__row-label {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  display: block;
+}
+.direct-lines__row-desc {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.direct-lines__whatsapp .direct-lines__row-label {
+  color: var(--text-inverse, #fff);
+}
+.direct-lines__whatsapp .direct-lines__row-desc {
+  color: var(--text-inverse, #fff);
+}
+.direct-lines__cta {
+}
+.direct-lines__box {
+  display: flex;
+  padding: var(--spacing-32-24, 32px) var(--spacing-24, 24px);
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: var(--radius-main, 16px);
+  border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+  background: var(--background-white, #fff);
+}
+.direct-lines__office:last-child {
+  padding-bottom: 0;
+}
+.direct-lines__offices {
+  list-style: none;
+  width: 100%;
+  padding-top: 24px;
+}
+.direct-lines__office {
+  display: flex;
+  padding: var(--spacing-24, 24px) 0;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-top: 0.5px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+}
+.direct-lines__office > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-24, 24px);
+}
+.direct-lines__office-city {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H6, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: block;
+}
+.direct-lines__office-note {
+  color: var(--text-slate-darker, #586981);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-main, 18px);
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+  line-height: 13px;
+}
+.direct-lines__office-phone,
+.direct-lines__email-value {
+  color: var(--text-primary, #10243d);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H6, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+.direct-lines__email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  flex-direction: row;
+}
+.direct-lines__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24, 24px);
+  align-items: flex-start;
+  align-self: stretch;
+  width: 100%;
+}
+.reassurance-cta {
+  padding: 80px 0 64px;
+}
+.reassurance-cta-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-64-40, 64px);
+  align-self: stretch;
+}
+.reassurance-cta__intro {
+  width: calc(100% - 57.39% - 64px);
+}
+.reassurance-cta__grid {
+  width: 57.39%;
+}
+.reassurance-cta__eyebrow {
+  color: var(--text-inverse, #fff);
+  margin-bottom: 24px;
+}
+.reassurance-cta__number {
+  display: block;
+  color: var(--text-inverse, #fff);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-Number, 80px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.725;
+  margin-bottom: 22px;
+}
+.reassurance-cta__desc {
+  color: var(--text-inverse, #fff);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.reassurance-cta__title {
+  color: var(--text-inverse, #fff);
+  margin-bottom: 14px;
+}
+
+.reassurance-cta__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.reassurance-cta__card {
+  display: flex;
+  padding: 30px var(--spacing-32-24, 32px) 34px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgba(204, 188, 168, 0.2);
+  gap: var(--spacing-32-24, 14px);
+  flex: 1 0 0;
+  border-radius: var(--radius-main, 16px);
+  background: var(--background-sand-20, rgba(204, 188, 168, 0.2));
+}
+.reassurance-cta__card-title {
+  color: var(--text-inverse, #fff);
+
+  font-family: var(--Family-Heading, "Instrument Serif");
+  font-size: var(--Size-H6, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+.reassurance-cta__card-desc {
+  color: var(--text-inverse, #fff);
+
+  font-family: var(--Family-Body, "General Sans Variable");
+  font-size: var(--Size-small, 16px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+@media (max-width: 992px) {
+  .what-to-expect__meta,
+  .your-adviser-wrapper,
+  .reassurance-cta-wrapper {
+    flex-wrap: wrap;
+  }
+  .what-to-expect__meta-item {
+    flex: 1 1 auto;
+  }
+  .what-to-expect,
+  .your-adviser,
+  .direct-lines {
+    padding: 80px 0;
+  }
+  .your-adviser__content {
+    width: 100%;
+  }
+  .reassurance-cta__intro,
+  .reassurance-cta__grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-book-consultation .hero__wrap {
+    padding-top: 53.45px;
+    padding-bottom: 80px;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .hero__booking {
+    flex: auto;
+  }
+  .what-to-expect__compare {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .what-to-expect__box {
+    flex: auto;
+  }
+  .hero-book-consultation .hero__eyebrow {
+    margin-bottom: 14px;
+  }
+  .your-adviser__stats {
+    flex-direction: column;
+  }
+  .reassurance-cta__grid {
+    grid-template-columns: 1fr;
+  }
+  .site-footer__contact-group {
+    align-items: center;
+  }
+  .site-footer__copyright {
+    text-align: center;
+  }
+  .site-footer__registered {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-footer {
+    padding-bottom: 27px;
+  }
+  .what-to-expect__header {
+    margin: 0 auto 34px;
+  }
+  .what-to-expect__box {
+    padding: 24px 24px 26px;
+    gap: 16px;
+    min-height: auto;
+  }
+  .what-to-expect__box-list {
+    gap: 11px;
+  }
+  .what-to-expect__meta-item {
+    padding: 32px 24px 26px;
+  }
+  .what-to-expect__meta-label {
+    line-height: 11px;
+    margin-bottom: 17px;
+  }
+  .what-to-expect__meta-value {
+    margin-bottom: 6px;
+  }
+  .what-to-expect__footer {
+    margin-top: 40px;
+  }
+  .what-to-expect__footer-note {
+    font-size: 15px;
+  }
+  .your-adviser__photo {
+    width: 100%;
+  }
+  .your-adviser__photo img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  .your-adviser__stat {
+    padding: 17px 16px 18px;
+    gap: 8px;
+  }
+  .direct-lines__title {
+    margin-bottom: 12px;
+  }
+  .direct-lines__header {
+    margin-bottom: 58px;
+  }
+  .direct-lines__whatsapp {
+    flex-direction: column;
+    padding: 24px;
+    gap: 25px;
+  }
+  .direct-lines__row-left {
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .direct-lines__whatsapp .direct-lines__row-label {
+    line-height: 11px;
+  }
+  .direct-lines__cta {
+    width: 100%;
+  }
+  .direct-lines__office {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .direct-lines__office-city {
+    line-height: 19px;
+  }
+  .direct-lines__office-note {
+    line-height: 11px;
+  }
+  .direct-lines__office-phone,
+  .direct-lines__email-value {
+    line-height: 19px;
+  }
+  .direct-lines__box {
+    padding: 24px;
+  }
+  .direct-lines__email {
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+  .direct-lines__row-left {
+    gap: 24px 12px;
+  }
+  .reassurance-cta__number {
+    margin-bottom: 15px;
+  }
+  .reassurance-cta-wrapper {
+    gap: 33px;
+  }
+  .reassurance-cta__card {
+    padding: 25px 24px 27px;
+    gap: 10px;
   }
 }
