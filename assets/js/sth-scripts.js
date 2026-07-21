@@ -26,15 +26,34 @@ jQuery(document).ready(function ($) {
       });
 
     const $box = $(this).closest(".choose-programme__box");
-
+    const data_box = $(this)
+      .closest(".choose-programme__box")
+      .attr("data-programe");
+    $(".configure-family").slideUp(300);
+    $("#configure_" + data_box).slideDown(300);
     $box.addClass("selected");
     $(this).find("span").text("Selected");
   });
 
   $(".intro-btn").on("click", function (e) {
     e.preventDefault();
-    $(".configure-family").slideDown(300);
-    $(".full-cost__intro").slideUp(300);
+
+    if ($(".choose-programme__box.selected").length) {
+      $(".wraper-configure_fc").show();
+      const data_prgrame = $(".choose-programme__box.selected").attr(
+        "data-programe"
+      );
+      $("#configure_" + data_prgrame).slideDown(300);
+      // $(".configure-family").slideDown(300);
+      $(".full-cost__intro").slideUp(300);
+    } else {
+      $("html, body").animate(
+        {
+          scrollTop: $(".choose-programme__content").offset().top,
+        },
+        500
+      );
+    }
   });
 
   $(".sth-spouse-status").on("click", function () {
@@ -46,11 +65,26 @@ jQuery(document).ready(function ($) {
     $(this).parent().find(".anything-anusual-content").slideToggle(300);
     $(this).toggleClass("active");
   });
+
+  $(".btn-estimate").on("click", function () {
+    $(this).parent().find(".wraper-estimate").slideToggle(300);
+  });
+
+  $(".btn-show-popup").click(function (e) {
+    event.preventDefault();
+    $(".sth-right-family").addClass("active");
+  });
+  $(".overlay-family").click(function () {
+    $(".sth-right-family").removeClass("active");
+  });
+  $(".btn-close-family").click(function () {
+    $(".sth-right-family").removeClass("active");
+  });
 });
 
 jQuery(function ($) {
   const MIN = 0;
-  const MAX = $("#under_18").attr("data-max");
+  const MAX = 99;
 
   function updateButton($wrapper) {
     const value = parseInt($wrapper.find('input[type="number"]').val()) || 0;
