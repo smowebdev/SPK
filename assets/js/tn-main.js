@@ -123,16 +123,19 @@
                 e.preventDefault();
                 return;
             }
-
+            const atTop = current === 0 && e.deltaY < 0;
+            const atBottom = current === items.length - 1 && e.deltaY > 0;
             if (isMobile()) {
 
-                const atTop = current === 0 && e.deltaY < 0;
-                const atBottom = current === items.length - 1 && e.deltaY > 0;
+
 
                 if (atTop || atBottom) {
                     return;
                 }
 
+            }
+            if (atTop || atBottom) {
+                return;
             }
 
             e.preventDefault();
@@ -145,6 +148,7 @@
                     current++;
 
             } else {
+
 
                 if (current > 0)
                     current--;

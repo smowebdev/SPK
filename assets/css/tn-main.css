@@ -206,7 +206,7 @@
 .financial-banking__right {
     width: calc((100% - 24px) / 2);
     border-radius: 16px;
-    padding: 24px 32px;
+    padding: 32px 32px 26px;
 }
 
 .financial-banking__left {
@@ -219,7 +219,7 @@
 
 .financial-banking__bottom {
     border-radius: 16px;
-    padding: 67px 32px;
+    padding: 73px 32px 65px;
     background: var(--Ocean-Pacific-Light, #D2ECF2);
 }
 
@@ -228,7 +228,7 @@
 }
 
 .financial-banking__flex .heading-4 {
-    margin: 19px 0;
+    margin: 28px 0 19px;
 }
 
 .financial-banking__list ul {
@@ -299,7 +299,7 @@
 .travel-freedom_wrap .label-section {
     text-align: center;
     line-height: 0.6;
-    margin-bottom: 27px;
+    margin-bottom: 29px;
 }
 
 .travel-freedom__width {
@@ -332,6 +332,7 @@
 
 .the-legal__left {
     flex: 1;
+    padding-top: 10px;
 }
 
 .the-legal__flex {
@@ -373,7 +374,7 @@
     box-shadow: 0px 2.42px 4.84px 0px #FFFFFF29 inset;
     background: linear-gradient(268.66deg, rgba(247, 247, 247, 0.3) 1.07%, rgba(247, 247, 247, 0.24) 17.36%, rgba(247, 247, 247, 0.06) 98.79%);
     border-radius: 19px;
-    padding: 30px 40px 32px;
+    padding: 40px 40px 32px;
 }
 
 .quality-life__box .heading-2,
@@ -387,7 +388,7 @@
 }
 
 .quality-life__box .heading-2 {
-    margin: 18px 0 15px;
+    margin: 29px 0 12px;
 }
 
 .quality-life__box p {
@@ -399,7 +400,7 @@
 }
 
 .btn-programme__flex {
-    gap: 24px;
+    gap: 22px;
 }
 
 .heading-3__programme {
@@ -630,7 +631,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
-    padding-top: 4px;
+    padding-top: 5px;
 }
 
 .investment-breakdown__item {
@@ -643,8 +644,8 @@
 }
 
 .investment-breakdown__box {
-    padding: 17px 24px 15px;
-    margin-top: 48px;
+    padding: 16px 24px 16px;
+    margin-top: 49px;
     background: #0687A04D;
     border: 1px solid var(--border-mist, #E8EEF24D);
     border-radius: 16px;
@@ -845,6 +846,17 @@
     padding-bottom: 26px;
 }
 
+.dsp-faq-bottom .faq-content p {
+    font-size: 16px;
+}
+
+.dsp-faq-bottom .faq-content {
+    padding-top: 0px;
+    margin-top: -6px;
+    padding-bottom: 18px;
+    color: var(--text-primary, #10243D);
+}
+
 .eligibility__faq .faq-header {
     padding: var(--spacing-24-16, 17px) var(--spacing-24-16, 23px);
     height: inherit
@@ -900,7 +912,7 @@
 }
 
 .section-benefits .why-vanuatu__header {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
 }
 
 .section-benefits .why-vanuatu__card {
@@ -917,7 +929,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: calc(50% - 12px);
-    padding: 30px 32px 32px;
+    padding: 28px 32px 32px;
     border-radius: 16px;
     position: relative;
     background: var(--background-ocean-deep, #024D62);
@@ -926,7 +938,10 @@
 .programme-comparison__item .btn-label {
     position: absolute;
     right: 24px;
-    top: 24px;
+    top: 22px;
+    padding: 8px 12px;
+    font-size: 18px;
+    min-height: 40px;
 }
 
 .programme-comparison .eligibility__bottom .btn-primary {
@@ -948,7 +963,7 @@
 
 .programme-comparison__flex .programs__card-price-wrapper {
     border-top: none;
-    margin-top: 5px;
+    margin-top: 6px;
     padding-top: 0;
 }
 
@@ -980,7 +995,7 @@
 }
 
 .ciip-programme-comparison .line-ct {
-    margin: 30px 0 30px;
+    margin: 29px 0 30px;
 }
 
 .programme-comparison__flex .programs__card-price-value {
@@ -992,6 +1007,10 @@
     margin: 0 auto;
     max-width: 611px;
     margin-bottom: 47px;
+}
+
+.ciip-programme-comparison .programme-comparison__header {
+    margin-bottom: 45px;
 }
 
 .programme-comparison__choose {
@@ -1144,7 +1163,7 @@
 }
 
 .dsp-faq-bottom__left .heading-2 {
-    margin: 20px 0;
+    margin: 20px 0 23px;
 }
 
 .banner-programme__content .btn-label {
@@ -1632,6 +1651,18 @@
     .doc-required .doc-required__subtext {
         line-height: 1;
     }
+    .ciip-programme-comparison .programme-comparison__card-value {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: start;
+    }
+    .ciip-impact-spotlight .video-section__wrapper {
+        margin-top: 40px;
+    }
+    .timeline-horizontal__text {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1700,7 +1731,7 @@
     }
     .financial-banking__left,
     .financial-banking__right {
-        padding: 25px 24px;
+        padding: 32px 24px 25px;
     }
     .financial-banking__flex .heading-4 {
         margin: 16px 0 15px;
@@ -1718,7 +1749,7 @@
         margin-bottom: 22px;
     }
     .financial-banking__bottom {
-        padding: 25px 24px;
+        padding: 32px 24px 25px;
     }
     .the-legal__flex {
         flex-wrap: wrap;
@@ -1732,16 +1763,19 @@
         margin-bottom: 27px;
     }
     .quality-life__box {
-        padding: 23px 32px 25px;
+        padding: 32px 32px 25px;
     }
     .quality-life__box .heading-2 {
-        margin: 24px 0 21px;
+        margin: 30px 0 22px;
     }
     .the-legal {
         padding-top: 0px;
     }
     .the-legal__left .heading-4 {
         margin: 15px 0;
+    }
+    .the-legal__left {
+        padding-top: 8px;
     }
     .programme-overview__flex {
         gap: 40px;
@@ -1814,5 +1848,17 @@
     }
     .doc-required__row-desc {
         width: 100%!important;
+    }
+    .quality-life {
+        position: relative;
+    }
+    .quality-life::after {
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(47.55% 100.68% at 50% 60.94%, #10243D 0%, rgb(16 36 61 / 63%) 100%);
+        position: absolute;
     }
 }
