@@ -2676,8 +2676,52 @@
     .examine-box-item:last-child {
         border-bottom: none;
     }
+
     .our-track-record {
         padding-top: 80px;
         padding-bottom: 80px;
     }
+}
+
+.btn-category-fillter {
+    display: flex;
+    padding: var(--spacing-12, 5px) var(--spacing-16, 16px);
+    align-items: center;
+    gap: var(--spacing-8, 8px);
+    border-radius: 50px;
+    border: 1px solid var(--border-slate-darker-80, rgba(88, 105, 129, 0.8));
+    background: var(--background-white, #fff);
+    color: var(--text-primary, #10243d);
+    font-size: var(--Size-main, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    cursor: pointer;
+    letter-spacing: 0.01em;
+    transition: all 0.3s ease;
+    letter-spacing: 0.02em;
+}
+
+.btn-category-fillter:hover {
+    background: #eaf0f6;
+    border-color: #10243d;
+}
+
+.btn-category-fillter.active {
+    pointer-events: none;
+    border: 1px solid var(--border-slate-darker, rgba(88, 105, 129, 0.3));
+    background: var(--background-deep-navy, #10243d);
+    color: var(--text-inverse, #fff);
+}
+
+.post-card.three svg path {
+    stroke: #fff;
+}
+
+.blog .post-card:nth-child(n + 7) {
+    display: none;
+}
+
+.data-spouse-additions {
+    display: none;
 }

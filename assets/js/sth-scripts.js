@@ -59,6 +59,7 @@ jQuery(document).ready(function ($) {
   $(".sth-spouse-status").on("click", function () {
     $(this).toggleClass("active");
     $(".added-application-fee").slideToggle(300);
+    $(this).closest('.configure-family').find('.data-spouse-additions').slideToggle(300);
   });
 
   $(".anything-anusual-head").on("click", function () {
@@ -133,5 +134,29 @@ jQuery(function ($) {
 
   $(".wraper-fc-number").each(function () {
     updateButton($(this));
+  });
+});
+
+jQuery(document).ready(function ($) {
+  $(".btn-category-fillter").on("click", function () {
+    let data_Filter = $(this).attr("data-filter");
+    const ajax_url = $(".blog-filter").attr("data-ajaxurl");
+    $.ajax({
+      url: ajax_url,
+      type: "POST",
+      data: {
+        action: "filter_blog",
+        data_filter: data_Filter,
+      },
+      beforeSend: function () {
+        $(".blog-filter").addClass("loading");
+      },
+      success: function (res) {
+        $(".blog-filter").html(res);
+      },
+      complete: function () {
+        $(".blog-filter").removeClass("loading");
+      },
+    });
   });
 });
