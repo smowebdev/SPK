@@ -350,7 +350,6 @@
 
 .page-intro__desc {
   color: var(--text-primary, #10243d);
-  /* text-main/Medium */
   font-family: var(--Family-Body, "General Sans Variable");
   font-size: var(--Size-main, 18px);
   font-style: normal;
@@ -1421,9 +1420,12 @@
 }
 
 .about-intro__inner {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 28px; */
+  display: flex;
   gap: 28px;
+  flex-wrap: wrap;
 }
 
 .about-intro__title {
@@ -1603,6 +1605,8 @@
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .partner-benefits__featured-title {
@@ -1628,8 +1632,10 @@
 
 .partner-benefits__license-image {
   display: flex;
-  width: 281px;
-  height: 370px;
+  /* width: 281px;
+  height: 370px; */
+  aspect-ratio: 281/370;
+  /* aspect-ratio: 29/41; */
   padding: var(--spacing-24, 24px);
   align-items: flex-start;
   gap: var(--spacing-32, 32px);
@@ -1644,6 +1650,12 @@
   box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.16) inset;
   backdrop-filter: blur(10px);
   margin-bottom: 8px;
+}
+
+.partner-benefits__license-image img {
+  border-radius: var(--radius-small, 8px);
+  width: 100%;
+  height: 100%;
 }
 
 .partner-benefits__license-caption {
@@ -1661,6 +1673,150 @@
   font-weight: 600;
   line-height: 150%;
   /* 24px */
+}
+
+/* .license-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.license-modal.active {
+  display: flex;
+}
+
+.license-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 36, 61, 0.6);
+}
+
+.license-modal__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  max-height: calc(100vh - 64px);
+  padding: 77.833px;
+  border-radius: 52px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+    269deg,
+    rgba(247, 247, 247, 0.3) 1.07%,
+    rgba(247, 247, 247, 0.24) 17.36%,
+    rgba(247, 247, 247, 0.06) 98.79%
+  );
+  box-shadow: inset 0 6px 13px rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(32px);
+}
+
+.license-modal__image {
+  width: 100%;
+  max-width: 756px;
+  max-height: calc(100vh - 160px);
+  object-fit: contain;
+}
+
+.license-modal__close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+} */
+
+.license-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.license-modal.active {
+  display: flex;
+}
+
+.license-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 36, 61, 0.6);
+}
+
+.license-modal__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(911px, calc(100vw - 44px));
+  height: min(1200px, calc(100vh - 64px));
+
+  padding: 77.833px;
+  box-sizing: border-box;
+  border-radius: 51.888px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+    269deg,
+    rgba(247, 247, 247, 0.3),
+    rgba(247, 247, 247, 0.06)
+  );
+
+  backdrop-filter: blur(32px);
+}
+
+/* .license-modal__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 25.944px;
+  object-fit: contain;
+}
+
+.license-modal__content img {
+  border-radius: 25.944px;
+} */
+
+.license-modal__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 25.944px;
+  /* width: auto;
+  height: auto; */
+}
+
+.license-modal__close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 80px;
+  height: 80px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.license-modal__close svg {
+  width: 80px;
+  height: 80px;
+  display: block;
 }
 
 /*time-line-partner*/
@@ -1735,8 +1891,8 @@
 
 .partner-models__card {
   display: flex;
-  width: 640px;
-  height: 261px;
+  max-width: 640px;
+  max-height: 261px;
   padding: var(--spacing-32-24, 32px);
   flex-direction: column;
   align-items: flex-start;
@@ -2053,6 +2209,7 @@ select {
   width: 100%;
   appearance: none;
   padding-right: 40px;
+  line-height: 25px;
 }
 
 .partner-enquiry__select svg {
@@ -2086,7 +2243,7 @@ select {
 .partner-enquiry__aside {
   display: flex;
   flex-direction: column;
-  width: 425px;
+  max-width: 425px;
   padding: 20px 32px 32px;
   align-items: flex-start;
   border-radius: var(--radius-main, 16px);
@@ -2211,27 +2368,6 @@ select {
   /* 24px */
 }
 
-@media (max-width: 991px) {
-  .partner-enquiry__wrapper {
-    grid-template-columns: 1fr;
-  }
-  .partner-enquiry__title {
-    font-size: 46px;
-  }
-}
-
-@media (max-width: 767px) {
-  .partner-enquiry {
-    padding: 70px 0;
-  }
-  .partner-enquiry__grid {
-    grid-template-columns: 1fr;
-  }
-  .partner-enquiry__title {
-    font-size: 36px;
-  }
-}
-
 /*partner-faq*/
 
 .partner-faq {
@@ -2281,12 +2417,191 @@ select {
   /* 24px */
 }
 
-.partner-faq .faq-content {
+/* .partner-faq .faq-content {
   padding: 0 24px 15px;
-}
+} */
 
 .partner-faq .dsp-faq-bottom__left .heading-2 {
   margin: 20px 0 25px;
+}
+
+/**/
+@media (max-width: 991px) {
+  .partner-enquiry__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .partner-program__hero .hero__eyebrow {
+    margin-bottom: 15px;
+  }
+
+  .partner .hero__stat-card {
+    gap: 16px;
+  }
+
+  .partner-program__hero .hero__wrap {
+    padding-bottom: 80px;
+  }
+
+  .partner-agent.about-intro {
+    padding: 74px 0px 74px;
+  }
+
+  .partner-agent .about-intro__title {
+    margin: 0 0 18px;
+  }
+
+  .partner-agent .about-intro__inner {
+    gap: 50px;
+  }
+
+  .partner-agent .about-intro__description {
+    margin-bottom: 15px;
+  }
+
+  .applications-success {
+    padding: 80px 0 80px;
+  }
+
+  .partner-program .why-vanuatu__card-title {
+    margin-bottom: 0;
+  }
+
+  .partner-program .why-vanuatu__card-desc {
+    margin-top: 7px;
+  }
+
+  .partner-program .label-section {
+    margin-bottom: 15px;
+  }
+
+  .partner-program .why-vanuatu__header {
+    margin-bottom: 28px;
+  }
+
+  .partner-benefits {
+    padding: 98px 0 72px;
+  }
+
+  .partner-benefits .page-intro__main-heading {
+    margin-bottom: 20px;
+  }
+
+  .partner-benefits__card {
+    padding: 22px 24px;
+  }
+
+  .partner-benefits__icon {
+    margin-bottom: 20px;
+  }
+
+  .partner-benefits__card-title {
+    margin-bottom: 8px;
+  }
+
+  .partner-enquiry {
+    padding: 70px 0 75px;
+  }
+
+  .partner-enquiry__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .applications-success__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .partner-benefits__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .partner-benefits__featured {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: auto;
+    padding: 32px 24px;
+    gap: 28px;
+  }
+
+  .partner-benefits__label {
+    margin-bottom: 12px;
+  }
+
+  .partner-benefits__featured-title {
+    margin-bottom: 25px;
+  }
+
+  .partner-benefits__license {
+    width: 100%;
+  }
+
+  .partner-benefits__license-image {
+    width: 100%;
+    aspect-ratio: 29/41;
+  }
+
+  .license-modal__content {
+    padding: 16px;
+  }
+
+  .license-modal__close svg {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+  }
+
+  .partner.timeline {
+    padding: 80px 0 78px;
+  }
+
+  .partner-models__grid {
+    gap: 24px;
+  }
+
+  .partner-models__card {
+    padding: 24px;
+  }
+
+  .partner-models__label {
+    margin: 0 0 18px;
+  }
+
+  .partner-models__footer {
+    margin-top: 25px;
+  }
+
+  .partner-enquiry__heading {
+    margin: 0 auto 35px;
+  }
+
+  .partner-enquiry__checkbox {
+    margin: 15px 0;
+  }
+
+  .partner-enquiry__aside {
+    padding: 32px 32px 45px;
+  }
+
+  .partner-enquiry__aside-label {
+    margin-bottom: 5px;
+  }
+
+  .partner-enquiry__aside-title {
+    margin: 0 0 20px;
+  }
+
+  .partner-enquiry__email span {
+    margin-bottom: 15px;
+  }
+
+  .partner-faq .btn {
+    display: none;
+  }
 }
 
 /*contact-us*/
